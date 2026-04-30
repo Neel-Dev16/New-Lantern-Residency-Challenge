@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Evaluate a baseline relevance predictor on the public relevant-priors data."""
+"""Evaluate the saved pure ML model on the validation split."""
 
 from __future__ import annotations
 
@@ -8,9 +8,19 @@ import string
 from pathlib import Path
 from typing import Any
 
+import joblib
+import numpy as np
+from scipy.sparse import csr_matrix, hstack
+from sklearn.metrics import accuracy_score, precision_score, recall_score
+from sklearn.model_selection import train_test_split
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "relevant_priors_public.json"
+MODEL_PATH = ROOT / "models" / "model.joblib"
+VECTORIZER_PATH = ROOT / "models" / "vectorizer.joblib"
+ERRORS_PATH = ROOT / "model_errors.txt"
+BEST_THRESHOLD = 0.51
 PUNCTUATION_TRANSLATION = str.maketrans(
     {character: " " for character in string.punctuation}
 )
@@ -30,9 +40,12 @@ def build_truth_map(dataset: dict[str, Any]) -> dict[tuple[str, str], bool]:
 
 
 def normalize_description(description: str) -> str:
-    """Lowercase, remove light punctuation differences, and collapse spaces."""
     without_punctuation = description.lower().translate(PUNCTUATION_TRANSLATION)
     return " ".join(without_punctuation.split())
+
+
+def tokenize(description: str) -> set[str]:
+    return set(normalize_description(description).split())
 
 
 def extract_body_region(description: str) -> str:
@@ -90,128 +103,226 @@ def extract_body_region(description: str) -> str:
     return "unknown"
 
 
-def contains_spine_term(description: str) -> bool:
-    normalized = normalize_description(description)
-    return "spine" in normalized or "thoracic spine" in normalized
+def has_left_right_mismatch(
+    current_description: str,
+    prior_description: str,
+) -> bool:
+    current_tokens = tokenize(current_description)
+    prior_tokens = tokenize(prior_description)
+    current_has_left = "left" in current_tokens or "lt" in current_tokens
+    current_has_right = "right" in current_tokens or "rt" in current_tokens
+    prior_has_left = "left" in prior_tokens or "lt" in prior_tokens
+    prior_has_right = "right" in prior_tokens or "rt" in prior_tokens
+
+    return (
+        (current_has_left and prior_has_right)
+        or (current_has_right and prior_has_left)
+    )
 
 
-def predict(case: dict[str, Any], prior_study: dict[str, Any]) -> bool:
-    """Predict relevance using exact description match, then body-region rules."""
-    current_description = case["current_study"].get("study_description", "")
-    prior_description = prior_study.get("study_description", "")
+def build_examples(dataset: dict[str, Any]) -> list[dict[str, Any]]:
+    truth_map = build_truth_map(dataset)
+    examples: list[dict[str, Any]] = []
 
-    if normalize_description(current_description) == normalize_description(
-        prior_description
-    ):
-        return True
+    for case in dataset["cases"]:
+        case_id = str(case["case_id"])
+        current_study = case["current_study"]
+        current_description = str(current_study.get("study_description", ""))
+        current_date = str(current_study.get("study_date", ""))
 
-    current_region = extract_body_region(current_description)
-    prior_region = extract_body_region(prior_description)
+        for prior_study in case["prior_studies"]:
+            study_id = str(prior_study["study_id"])
+            examples.append(
+                {
+                    "case_id": case_id,
+                    "study_id": study_id,
+                    "current_description": current_description,
+                    "prior_description": str(
+                        prior_study.get("study_description", "")
+                    ),
+                    "current_date": current_date,
+                    "prior_date": str(prior_study.get("study_date", "")),
+                    "label": truth_map[(case_id, study_id)],
+                }
+            )
 
-    if current_region == "unknown" or prior_region == "unknown":
-        return False
+    return examples
 
-    if current_region == prior_region == "breast":
-        return True
-    if current_region == prior_region == "chest" and not contains_spine_term(
-        prior_description
-    ):
-        return True
-    if current_region == prior_region == "spine":
-        return True
-    if current_region == prior_region and current_region in {
-        "abdomen_pelvis",
-        "kidney_urinary",
-        "brain_head",
-        "extremity",
-        "cardiac",
-    }:
-        return True
-    if current_region == "kidney_urinary" and prior_region == "abdomen_pelvis":
-        return True
-    if current_region == "cardiac" and prior_region == "chest":
-        return True
 
-    return False
+def build_numeric_and_rule_features(
+    examples: list[dict[str, Any]],
+    current_vectors: csr_matrix,
+    prior_vectors: csr_matrix,
+) -> csr_matrix:
+    cosine_similarities = np.asarray(
+        current_vectors.multiply(prior_vectors).sum(axis=1)
+    ).ravel()
+    numeric_features = np.zeros((len(examples), 5), dtype=float)
+
+    for index, example in enumerate(examples):
+        current_description = example["current_description"]
+        prior_description = example["prior_description"]
+        current_tokens = tokenize(current_description)
+        prior_tokens = tokenize(prior_description)
+        overlap_count = len(current_tokens & prior_tokens)
+        overlap_ratio = (
+            overlap_count / len(current_tokens | prior_tokens)
+            if current_tokens or prior_tokens
+            else 0.0
+        )
+        same_exact_description = int(
+            normalize_description(current_description)
+            == normalize_description(prior_description)
+        )
+        same_body_region = int(
+            extract_body_region(current_description) != "unknown"
+            and extract_body_region(current_description)
+            == extract_body_region(prior_description)
+        )
+
+        numeric_features[index] = [
+            cosine_similarities[index],
+            overlap_count,
+            overlap_ratio,
+            same_exact_description,
+            same_body_region,
+        ]
+
+    return csr_matrix(numeric_features)
+
+
+def build_features(
+    vectorizer: Any,
+    examples: list[dict[str, Any]],
+) -> csr_matrix:
+    current_descriptions = [example["current_description"] for example in examples]
+    prior_descriptions = [example["prior_description"] for example in examples]
+    current_vectors = vectorizer.transform(current_descriptions)
+    prior_vectors = vectorizer.transform(prior_descriptions)
+    numeric_and_rule_features = build_numeric_and_rule_features(
+        examples,
+        current_vectors,
+        prior_vectors,
+    )
+    return hstack(
+        [current_vectors, prior_vectors, numeric_and_rule_features],
+        format="csr",
+    )
+
+
+def sort_errors(errors: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    false_positives = [
+        error for error in errors if error["error_type"] == "FP"
+    ]
+    false_negatives = [
+        error for error in errors if error["error_type"] == "FN"
+    ]
+    false_positives.sort(key=lambda error: error["probability"], reverse=True)
+    false_negatives.sort(key=lambda error: error["probability"])
+    return false_positives + false_negatives
+
+
+def write_errors(errors: list[dict[str, Any]], path: Path) -> None:
+    with path.open("w", encoding="utf-8") as file:
+        file.write(f"Validation errors: {len(errors)}\n")
+        file.write(f"Threshold: {BEST_THRESHOLD:.2f}\n\n")
+
+        for index, error in enumerate(errors, start=1):
+            file.write(f"{index}.\n")
+            file.write(f"  error type: {error['error_type']}\n")
+            file.write(f"  case_id: {error['case_id']}\n")
+            file.write(
+                "  current study_description: "
+                f"{error['current_description']}\n"
+            )
+            file.write(
+                "  prior study_description: "
+                f"{error['prior_description']}\n"
+            )
+            file.write(f"  current study_date: {error['current_date']}\n")
+            file.write(f"  prior study_date: {error['prior_date']}\n")
+            file.write(
+                "  predicted probability: "
+                f"{error['probability']:.6f}\n"
+            )
+            file.write(f"  true label: {error['true_label']}\n\n")
 
 
 def main() -> None:
     dataset = load_dataset(DATA_PATH)
-    truth_map = build_truth_map(dataset)
+    examples = build_examples(dataset)
+    labels = [example["label"] for example in examples]
 
-    total_predictions = 0
-    correct_predictions = 0
-    true_positives = 0
-    true_negatives = 0
-    false_positives = 0
-    false_negatives = 0
-    false_negative_examples: list[dict[str, str]] = []
-
-    for case in dataset["cases"]:
-        case_id = str(case["case_id"])
-        for prior_study in case["prior_studies"]:
-            study_id = str(prior_study["study_id"])
-            truth = truth_map[(case_id, study_id)]
-            prediction = predict(case, prior_study)
-
-            total_predictions += 1
-            if prediction and truth:
-                true_positives += 1
-            elif not prediction and not truth:
-                true_negatives += 1
-            elif prediction and not truth:
-                false_positives += 1
-            elif not prediction and truth:
-                false_negatives += 1
-                if len(false_negative_examples) < 100:
-                    false_negative_examples.append(
-                        {
-                            "case_id": case_id,
-                            "current_description": str(
-                                case["current_study"].get("study_description", "")
-                            ),
-                            "prior_description": str(
-                                prior_study.get("study_description", "")
-                            ),
-                            "current_date": str(
-                                case["current_study"].get("study_date", "")
-                            ),
-                            "prior_date": str(prior_study.get("study_date", "")),
-                        }
-                    )
-
-    correct_predictions = true_positives + true_negatives
-    accuracy = correct_predictions / total_predictions if total_predictions else 0.0
-    precision = (
-        true_positives / (true_positives + false_positives)
-        if true_positives + false_positives
-        else 0.0
+    _, validation_examples = train_test_split(
+        examples,
+        train_size=0.8,
+        random_state=42,
+        stratify=labels,
     )
-    recall = (
-        true_positives / (true_positives + false_negatives)
-        if true_positives + false_negatives
-        else 0.0
+    validation_labels = [example["label"] for example in validation_examples]
+
+    model = joblib.load(MODEL_PATH)
+    vectorizer = joblib.load(VECTORIZER_PATH)
+    validation_features = build_features(vectorizer, validation_examples)
+
+    probabilities = model.predict_proba(validation_features)[:, 1]
+    ml_predictions = probabilities >= BEST_THRESHOLD
+    predictions = np.array(
+        [
+            False if has_left_right_mismatch(
+                example["current_description"],
+                example["prior_description"],
+            ) else bool(ml_prediction)
+            for example, ml_prediction in zip(
+                validation_examples,
+                ml_predictions,
+                strict=True,
+            )
+        ],
+        dtype=bool,
     )
+
+    errors: list[dict[str, Any]] = []
+    for example, probability, prediction, true_label in zip(
+        validation_examples,
+        probabilities,
+        predictions,
+        validation_labels,
+        strict=True,
+    ):
+        if bool(prediction) == bool(true_label):
+            continue
+
+        errors.append(
+            {
+                "error_type": "FP" if prediction else "FN",
+                "case_id": example["case_id"],
+                "current_description": example["current_description"],
+                "prior_description": example["prior_description"],
+                "current_date": example["current_date"],
+                "prior_date": example["prior_date"],
+                "probability": float(probability),
+                "true_label": bool(true_label),
+            }
+        )
+
+    sorted_errors = sort_errors(errors)
+    write_errors(sorted_errors, ERRORS_PATH)
+
+    accuracy = accuracy_score(validation_labels, predictions)
+    precision = precision_score(validation_labels, predictions, zero_division=0)
+    recall = recall_score(validation_labels, predictions, zero_division=0)
+    false_positives = sum(error["error_type"] == "FP" for error in errors)
+    false_negatives = sum(error["error_type"] == "FN" for error in errors)
 
     print(f"Accuracy: {accuracy:.4f}")
-    print(f"Total predictions: {total_predictions}")
-    print(f"Correct predictions: {correct_predictions}")
-    print(f"True positives: {true_positives}")
-    print(f"True negatives: {true_negatives}")
+    print(f"Total predictions: {len(validation_labels)}")
+    print(f"Correct predictions: {len(validation_labels) - len(errors)}")
     print(f"False positives: {false_positives}")
     print(f"False negatives: {false_negatives}")
     print(f"Precision: {precision:.4f}")
     print(f"Recall: {recall:.4f}")
-
-    print("\nFalse negative examples")
-    print("-----------------------")
-    for index, example in enumerate(false_negative_examples, start=1):
-        print(f"{index}.")
-        print(f"  case_id: {example['case_id']}")
-        print(f"  current study_description: {example['current_description']}")
-        print(f"  prior study_description: {example['prior_description']}")
-        print(f"  current study_date: {example['current_date']}")
-        print(f"  prior study_date: {example['prior_date']}")
+    print(f"Wrote validation errors: {ERRORS_PATH}")
 
 
 if __name__ == "__main__":
