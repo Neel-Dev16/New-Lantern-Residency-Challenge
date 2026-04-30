@@ -1,0 +1,612 @@
+Accuracy: 0.7949
+Total predictions: 27614
+Correct predictions: 21950
+True positives: 904
+True negatives: 21046
+False positives: 1
+False negatives: 5663
+Precision: 0.9989
+Recall: 0.1377
+
+False negative examples
+-----------------------
+1.
+  case_id: 1489859
+  current study_description: NM myo perf SPECT rest & str
+  prior study_description: CT coronary calc screening
+  current study_date: 2022-11-07
+  prior study_date: 2021-07-17
+2.
+  case_id: 1467
+  current study_description: CT CHEST WITH CONTRAST
+  prior study_description: CT CHEST WITHOUT CNTRST
+  current study_date: 2025-08-26
+  prior study_date: 2024-04-13
+3.
+  case_id: 1467
+  current study_description: CT CHEST WITH CONTRAST
+  prior study_description: PET/CT F18 piflu skullthigh in
+  current study_date: 2025-08-26
+  prior study_date: 2023-10-16
+4.
+  case_id: 1467
+  current study_description: CT CHEST WITH CONTRAST
+  prior study_description: CT CHEST, LUNG CANCER SCREENING (NON-ELCAP)
+  current study_date: 2025-08-26
+  prior study_date: 2020-12-02
+5.
+  case_id: 1467
+  current study_description: CT CHEST WITH CONTRAST
+  prior study_description: XR chest 2V PA/lat
+  current study_date: 2025-08-26
+  prior study_date: 2025-08-20
+6.
+  case_id: 1156071
+  current study_description: MAM diagnostic RT with tomo
+  prior study_description: MAMMOGRAPHY SCREEN  BILAT W CAD
+  current study_date: 2021-09-27
+  prior study_date: 2016-09-26
+7.
+  case_id: 1156071
+  current study_description: MAM diagnostic RT with tomo
+  prior study_description: R2 Mammography Digitized Film
+  current study_date: 2021-09-27
+  prior study_date: 2005-05-13
+8.
+  case_id: 1156071
+  current study_description: MAM diagnostic RT with tomo
+  prior study_description: BREAST
+  current study_date: 2021-09-27
+  prior study_date: 2005-05-13
+9.
+  case_id: 1156071
+  current study_description: MAM diagnostic RT with tomo
+  prior study_description: MAMMOGRAPHY SCREENING BILATERAL
+  current study_date: 2021-09-27
+  prior study_date: 2008-02-18
+10.
+  case_id: 1156071
+  current study_description: MAM diagnostic RT with tomo
+  prior study_description: MAMMOGRAPHY SCREENING BILATERAL
+  current study_date: 2021-09-27
+  prior study_date: 2010-04-01
+11.
+  case_id: 1156071
+  current study_description: MAM diagnostic RT with tomo
+  prior study_description: MAMMOGRAPHY SCREEN BILAT W CAD
+  current study_date: 2021-09-27
+  prior study_date: 2011-04-06
+12.
+  case_id: 1156071
+  current study_description: MAM diagnostic RT with tomo
+  prior study_description: MAMMOGRAPHY SCREENING BILATERAL
+  current study_date: 2021-09-27
+  prior study_date: 2012-04-09
+13.
+  case_id: 1156071
+  current study_description: MAM diagnostic RT with tomo
+  prior study_description: MAMMOGRAPHY SCREEN  BILAT W CAD
+  current study_date: 2021-09-27
+  prior study_date: 2013-04-29
+14.
+  case_id: 1156071
+  current study_description: MAM diagnostic RT with tomo
+  prior study_description: MAMMOGRAPHY SCREEN  BILAT W CAD
+  current study_date: 2021-09-27
+  prior study_date: 2014-05-06
+15.
+  case_id: 1156071
+  current study_description: MAM diagnostic RT with tomo
+  prior study_description: MAM screen BI with tomo
+  current study_date: 2021-09-27
+  prior study_date: 2020-02-10
+16.
+  case_id: 1156071
+  current study_description: MAM diagnostic RT with tomo
+  prior study_description: MAMMO SCREEN BILAT W/ CAD/TOMO
+  current study_date: 2021-09-27
+  prior study_date: 2019-02-25
+17.
+  case_id: 1156071
+  current study_description: MAM diagnostic RT with tomo
+  prior study_description: MAMMO SCREEN BILAT W/ CAD/TOMO
+  current study_date: 2021-09-27
+  prior study_date: 2017-09-27
+18.
+  case_id: 1156071
+  current study_description: MAM diagnostic RT with tomo
+  prior study_description: MAM screen BI with tomo
+  current study_date: 2021-09-27
+  prior study_date: 2021-04-07
+19.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: ULTRASOUND LT DIAG TARGET
+  current study_date: 2021-06-15
+  prior study_date: 2020-12-21
+20.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: ULTRASOUND BILAT SCREEN COMP
+  current study_date: 2021-06-15
+  prior study_date: 2021-06-15
+21.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: DIGITAL SCREENER W CAD
+  current study_date: 2021-06-15
+  prior study_date: 2010-01-26
+22.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: DIGITAL SCREENER W CAD
+  current study_date: 2021-06-15
+  prior study_date: 2011-02-01
+23.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: DIGITAL SCREENER W CAD
+  current study_date: 2021-06-15
+  prior study_date: 2012-02-15
+24.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: US BREAST BILATERAL
+  current study_date: 2021-06-15
+  prior study_date: 2012-02-15
+25.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: MRI BREAST, BILAT W/CONT C8906
+  current study_date: 2021-06-15
+  prior study_date: 2012-07-26
+26.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: MAMMOGRAPHY SCREENING BILATERAL
+  current study_date: 2021-06-15
+  prior study_date: 2013-02-16
+27.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: MRI BREAST BILAT W/O W CONTRAST
+  current study_date: 2021-06-15
+  prior study_date: 2013-07-24
+28.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: MAMMO SCREEN BILAT W/ CAD/TOMO
+  current study_date: 2021-06-15
+  prior study_date: 2014-02-26
+29.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: MAMMOGRAM SCREENING BILATERAL, WITH CAD AND TOMO
+  current study_date: 2021-06-15
+  prior study_date: 2015-02-27
+30.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: MAMMO SCREEN BILAT W/ CAD/TOMO
+  current study_date: 2021-06-15
+  prior study_date: 2016-02-29
+31.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: MAM screen BI with tomo
+  current study_date: 2021-06-15
+  prior study_date: 2019-03-05
+32.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: ULTRASOUND BILAT SCREEN COMP
+  current study_date: 2021-06-15
+  prior study_date: 2020-06-22
+33.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: ULTRASOUND BREAST SCREENING
+  current study_date: 2021-06-15
+  prior study_date: 2016-09-23
+34.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: MAMMO SCREEN BILAT W/ CAD/TOMO
+  current study_date: 2021-06-15
+  prior study_date: 2017-03-01
+35.
+  case_id: 1070740
+  current study_description: MAM SCREEN 3D
+  prior study_description: MAM screen BI with tomo
+  current study_date: 2021-06-15
+  prior study_date: 2018-03-02
+36.
+  case_id: 1012075
+  current study_description: MAM SCREEN 3D
+  prior study_description: ULTRASOUND BILAT DIAG COMP
+  current study_date: 2021-03-30
+  prior study_date: 2021-03-30
+37.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: CT chest wo con
+  current study_date: 2023-01-24
+  prior study_date: 2021-09-10
+38.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: XR chest 2V PA/lat
+  current study_date: 2023-01-24
+  prior study_date: 2021-08-12
+39.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: CT chest w con
+  current study_date: 2023-01-24
+  prior study_date: 2020-07-17
+40.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: XR Chest 1V Frontal Only
+  current study_date: 2023-01-24
+  prior study_date: 2020-01-24
+41.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: CT thoracic spine wo con
+  current study_date: 2023-01-24
+  prior study_date: 2020-01-24
+42.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: CHEST 1 VIEW
+  current study_date: 2023-01-24
+  prior study_date: 2016-05-07
+43.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: CHEST 1 VIEW
+  current study_date: 2023-01-24
+  prior study_date: 2016-02-29
+44.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: CHEST 1 VIEW
+  current study_date: 2023-01-24
+  prior study_date: 2011-09-09
+45.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: Chest
+  current study_date: 2023-01-24
+  prior study_date: 2011-04-19
+46.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: Chest
+  current study_date: 2023-01-24
+  prior study_date: 2010-06-09
+47.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: Chest
+  current study_date: 2023-01-24
+  prior study_date: 2009-03-23
+48.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: Chest
+  current study_date: 2023-01-24
+  prior study_date: 2007-08-21
+49.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: Chest
+  current study_date: 2023-01-24
+  prior study_date: 2007-08-21
+50.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: Chest
+  current study_date: 2023-01-24
+  prior study_date: 2006-08-29
+51.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: Chest
+  current study_date: 2023-01-24
+  prior study_date: 2006-06-11
+52.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: RIBS UNILATERAL,  LEFT
+  current study_date: 2023-01-24
+  prior study_date: 2006-03-18
+53.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: RIBS UNILATERAL, RIGHT
+  current study_date: 2023-01-24
+  prior study_date: 2006-03-18
+54.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: Chest
+  current study_date: 2023-01-24
+  prior study_date: 2009-12-27
+55.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: Thorax^1 CHEST ROUTINE
+  current study_date: 2023-01-24
+  prior study_date: 2006-10-27
+56.
+  case_id: 1555072
+  current study_description: CHEST 2 VIEW FRONTAL & LATRL
+  prior study_description: Chest
+  current study_date: 2023-01-24
+  prior study_date: 2006-04-06
+57.
+  case_id: 1190104
+  current study_description: ECHO Transesophageal
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2021-11-07
+  prior study_date: 2021-04-07
+58.
+  case_id: 1190104
+  current study_description: ECHO Transesophageal
+  prior study_description: CT CHEST WITHOUT CNTRST
+  current study_date: 2021-11-07
+  prior study_date: 2013-08-07
+59.
+  case_id: 1190104
+  current study_description: ECHO Transesophageal
+  prior study_description: ECHO definity study w/full ech
+  current study_date: 2021-11-07
+  prior study_date: 2021-04-07
+60.
+  case_id: 1190104
+  current study_description: ECHO Transesophageal
+  prior study_description: XR Chest 1V Frontal Only
+  current study_date: 2021-11-07
+  prior study_date: 2021-04-07
+61.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: MAM DIAG UNILAT LEFT WITH CAD
+  current study_date: 2021-12-21
+  prior study_date: 2012-03-13
+62.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: BREAST STEREO BX LEFT W CLIP
+  current study_date: 2021-12-21
+  prior study_date: 2011-09-19
+63.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: MAMMOGRAPHY DX UNI LFT W/O CAD
+  current study_date: 2021-12-21
+  prior study_date: 2011-08-03
+64.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: R2 Mammography Digitized Film
+  current study_date: 2021-12-21
+  prior study_date: 2008-09-26
+65.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: R2 Mammography Digitized Film
+  current study_date: 2021-12-21
+  prior study_date: 2005-09-09
+66.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: MAMMOGRAPHY SCREENING BILATERAL
+  current study_date: 2021-12-21
+  prior study_date: 2013-04-24
+67.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: US guide biopsy breast LT
+  current study_date: 2021-12-21
+  prior study_date: 2021-12-21
+68.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: MAMMOGRAPHY SCREEN BILAT W CAD
+  current study_date: 2021-12-21
+  prior study_date: 2014-12-08
+69.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: MAMMO BILAT SCREENING WITH CAD
+  current study_date: 2021-12-21
+  prior study_date: 2016-02-23
+70.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: STANDARD SCREENING COMBO
+  current study_date: 2021-12-21
+  prior study_date: 2019-02-26
+71.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: MAM screen BI with tomo
+  current study_date: 2021-12-21
+  prior study_date: 2021-06-25
+72.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: MAM diagnostic LT with tomo
+  current study_date: 2021-12-21
+  prior study_date: 2021-12-20
+73.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: US breast LT limited
+  current study_date: 2021-12-21
+  prior study_date: 2021-12-20
+74.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: MAMMO BILAT SCREENING WITH CAD
+  current study_date: 2021-12-21
+  prior study_date: 2011-07-20
+75.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: MAM diag mammo LT
+  current study_date: 2021-12-21
+  prior study_date: 2021-12-21
+76.
+  case_id: 1225959
+  current study_description: US guide biopsy breast LT addt
+  prior study_description: MAMMOGRAPHY SCREENING BILATERAL
+  current study_date: 2021-12-21
+  prior study_date: 2010-06-25
+77.
+  case_id: 1627665
+  current study_description: XR ribs RT
+  prior study_description: XR chest 2V PA/lat
+  current study_date: 2023-04-18
+  prior study_date: 2022-10-17
+78.
+  case_id: 1627665
+  current study_description: XR ribs RT
+  prior study_description: XR chest 2V PA/lat
+  current study_date: 2023-04-18
+  prior study_date: 2023-04-18
+79.
+  case_id: 1627665
+  current study_description: XR ribs RT
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2023-04-18
+  prior study_date: 2017-05-03
+80.
+  case_id: 1627665
+  current study_description: XR ribs RT
+  prior study_description: CT CHEST WITHOUT CNTRST
+  current study_date: 2023-04-18
+  prior study_date: 2018-06-18
+81.
+  case_id: 1627665
+  current study_description: XR ribs RT
+  prior study_description: CT CHEST WITHOUT CNTRST
+  current study_date: 2023-04-18
+  prior study_date: 2019-06-10
+82.
+  case_id: 1627665
+  current study_description: XR ribs RT
+  prior study_description: CT CHEST, LUNG CANCER SCREENING (NON-ELCAP)
+  current study_date: 2023-04-18
+  prior study_date: 2021-02-24
+83.
+  case_id: 1627665
+  current study_description: XR ribs RT
+  prior study_description: CT CHEST, LUNG CANCER SCREENING (NON-ELCAP)
+  current study_date: 2023-04-18
+  prior study_date: 2022-03-18
+84.
+  case_id: 1039505
+  current study_description: US kidneys and bladder
+  prior study_description: CT RENAL COLIC
+  current study_date: 2021-05-03
+  prior study_date: 2009-08-30
+85.
+  case_id: 1039505
+  current study_description: US kidneys and bladder
+  prior study_description: CT ABD W/O CNTRS - RENAL COLIC
+  current study_date: 2021-05-03
+  prior study_date: 2009-11-20
+86.
+  case_id: 1039505
+  current study_description: US kidneys and bladder
+  prior study_description: CT PLV W/O CNTRS - REN
+  current study_date: 2021-05-03
+  prior study_date: 2009-11-20
+87.
+  case_id: 1039505
+  current study_description: US kidneys and bladder
+  prior study_description: CT ABD PELVIS WO/W CTS
+  current study_date: 2021-05-03
+  prior study_date: 2012-01-18
+88.
+  case_id: 1039505
+  current study_description: US kidneys and bladder
+  prior study_description: CT ABD/PELVIS WO CNTRS
+  current study_date: 2021-05-03
+  prior study_date: 2012-02-03
+89.
+  case_id: 1039505
+  current study_description: US kidneys and bladder
+  prior study_description: US ABDOMINAL
+  current study_date: 2021-05-03
+  prior study_date: 2018-08-24
+90.
+  case_id: 1039505
+  current study_description: US kidneys and bladder
+  prior study_description: XR abdomen 2V AP and erect/dec
+  current study_date: 2021-05-03
+  prior study_date: 2020-09-23
+91.
+  case_id: 1039505
+  current study_description: US kidneys and bladder
+  prior study_description: US ABDOMINAL
+  current study_date: 2021-05-03
+  prior study_date: 2016-06-10
+92.
+  case_id: 1039505
+  current study_description: US kidneys and bladder
+  prior study_description: Abdomen^1 CT UROGRAM FOR HEMATURIA
+  current study_date: 2021-05-03
+  prior study_date: 2008-05-13
+93.
+  case_id: 1039505
+  current study_description: US kidneys and bladder
+  prior study_description: CT ABDOMEN WITH CNTRST
+  current study_date: 2021-05-03
+  prior study_date: 2008-12-18
+94.
+  case_id: 1039505
+  current study_description: US kidneys and bladder
+  prior study_description: US ABDOMINAL
+  current study_date: 2021-05-03
+  prior study_date: 2009-03-26
+95.
+  case_id: 10383
+  current study_description: SCREENING BREAST ULTRASOUND, BILATERAL
+  prior study_description: MAM DIAG 3D
+  current study_date: 2025-08-28
+  prior study_date: 2021-06-28
+96.
+  case_id: 10383
+  current study_description: SCREENING BREAST ULTRASOUND, BILATERAL
+  prior study_description: US BREAST LEFT, LIMITED
+  current study_date: 2025-08-28
+  prior study_date: 2022-06-27
+97.
+  case_id: 10383
+  current study_description: SCREENING BREAST ULTRASOUND, BILATERAL
+  prior study_description: MAM diagnostic BI with tomo
+  current study_date: 2025-08-28
+  prior study_date: 2022-06-26
+98.
+  case_id: 10383
+  current study_description: SCREENING BREAST ULTRASOUND, BILATERAL
+  prior study_description: ULTRASOUND BILAT DIAG COMP
+  current study_date: 2025-08-28
+  prior study_date: 2021-06-28
+99.
+  case_id: 10383
+  current study_description: SCREENING BREAST ULTRASOUND, BILATERAL
+  prior study_description: MAM DIAG 3D
+  current study_date: 2025-08-28
+  prior study_date: 2020-05-28
+100.
+  case_id: 10383
+  current study_description: SCREENING BREAST ULTRASOUND, BILATERAL
+  prior study_description: MAMMOGRAM SCREENING BILATERAL WITH TOMOSYNTHESIS
+  current study_date: 2025-08-28
+  prior study_date: 2025-08-27
