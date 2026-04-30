@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import os
 import time
 from pathlib import Path
 from typing import Any
@@ -13,7 +14,7 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "relevant_priors_public.json"
-PREDICT_URL = "http://127.0.0.1:8000/predict"
+PREDICT_URL = os.environ.get("API_URL", "http://127.0.0.1:8000/predict")
 
 
 def load_dataset(path: Path) -> dict[str, Any]:
