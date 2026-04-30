@@ -49,9 +49,9 @@ The API uses threshold `0.51`. It applies one rule before the model output: left
 Validation split result:
 
 ```text
-Accuracy: 0.9468
-Precision: 0.9271
-Recall: 0.8423
-False positives: 87
-False negatives: 207
+Accuracy: 0.9368
+Precision: 0.8714
+Recall: 0.7994
+False positives: 120
+False negatives: 204
 ```

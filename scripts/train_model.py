@@ -4,31 +4,26 @@
 from __future__ import annotations
 
 import json
-import string
+import sys
 from pathlib import Path
 from typing import Any
 
 import joblib
-import numpy as np
-from scipy.sparse import csr_matrix, hstack
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import (
-    accuracy_score,
-    confusion_matrix,
-    precision_score,
-    recall_score,
-)
+from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, recall_score
 from sklearn.model_selection import train_test_split
 
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from app.config import MODEL_PATH, THRESHOLD, VECTORIZER_PATH
+from app.features import build_features, build_labeled_examples, has_left_right_mismatch
+
 DATA_PATH = ROOT / "data" / "relevant_priors_public.json"
-MODEL_PATH = ROOT / "models" / "model.joblib"
-VECTORIZER_PATH = ROOT / "models" / "vectorizer.joblib"
-PUNCTUATION_TRANSLATION = str.maketrans(
-    {character: " " for character in string.punctuation}
-)
+METADATA_PATH = ROOT / "models" / "metadata.json"
+RANDOM_STATE = 42
 
 
 def load_dataset(path: Path) -> dict[str, Any]:
@@ -36,249 +31,140 @@ def load_dataset(path: Path) -> dict[str, Any]:
         return json.load(file)
 
 
-def build_truth_map(dataset: dict[str, Any]) -> dict[tuple[str, str], bool]:
-    truth_map: dict[tuple[str, str], bool] = {}
-    for label in dataset["truth"]:
-        key = (str(label["case_id"]), str(label["study_id"]))
-        truth_map[key] = bool(label["is_relevant_to_current"])
-    return truth_map
-
-
-def normalize_description(description: str) -> str:
-    without_punctuation = description.lower().translate(PUNCTUATION_TRANSLATION)
-    return " ".join(without_punctuation.split())
-
-
-def tokenize(description: str) -> set[str]:
-    return set(normalize_description(description).split())
-
-
-def extract_body_region(description: str) -> str:
-    normalized = normalize_description(description)
-
-    region_keywords = {
-        "breast": (
-            "mam",
-            "mammo",
-            "mammography",
-            "breast",
-            "tomo",
-            "ultrasound breast",
-            "mri breast",
-        ),
-        "spine": ("cervical", "thoracic spine", "lumbar", "spine"),
-        "chest": ("chest", "thorax", "rib", "ribs", "lung"),
-        "cardiac": (
-            "echo",
-            "coronary",
-            "cardiac",
-            "myo perf",
-            "myocardial",
-            "spect",
-            "stress",
-        ),
-        "abdomen_pelvis": ("abdomen", "abdominal", "pelvis", "abd", "plv"),
-        "kidney_urinary": (
-            "kidney",
-            "kidneys",
-            "bladder",
-            "renal",
-            "urogram",
-            "urinary",
-        ),
-        "brain_head": ("brain", "head", "stroke"),
-        "extremity": (
-            "knee",
-            "ankle",
-            "foot",
-            "hand",
-            "wrist",
-            "shoulder",
-            "hip",
-            "femur",
-            "tibia",
-            "humerus",
-            "elbow",
-        ),
-    }
-
-    for region, keywords in region_keywords.items():
-        if any(keyword in normalized for keyword in keywords):
-            return region
-    return "unknown"
-
-
-def build_training_data(
-    dataset: dict[str, Any],
-) -> tuple[list[str], list[str], list[bool]]:
-    truth_map = build_truth_map(dataset)
-    current_descriptions: list[str] = []
-    prior_descriptions: list[str] = []
-    labels: list[bool] = []
-
-    for case in dataset["cases"]:
-        case_id = str(case["case_id"])
-        current_description = str(
-            case["current_study"].get("study_description", "")
-        )
-
-        for prior_study in case["prior_studies"]:
-            study_id = str(prior_study["study_id"])
-            prior_description = str(prior_study.get("study_description", ""))
-            current_descriptions.append(current_description)
-            prior_descriptions.append(prior_description)
-            labels.append(truth_map[(case_id, study_id)])
-
-    return current_descriptions, prior_descriptions, labels
-
-
-def build_numeric_and_rule_features(
-    current_descriptions: list[str],
-    prior_descriptions: list[str],
-    current_vectors: csr_matrix,
-    prior_vectors: csr_matrix,
-) -> csr_matrix:
-    cosine_similarities = np.asarray(
-        current_vectors.multiply(prior_vectors).sum(axis=1)
-    ).ravel()
-    numeric_features = np.zeros((len(current_descriptions), 5), dtype=float)
-
-    for index, (current_description, prior_description) in enumerate(
-        zip(current_descriptions, prior_descriptions, strict=True)
-    ):
-        current_tokens = tokenize(current_description)
-        prior_tokens = tokenize(prior_description)
-        overlap_count = len(current_tokens & prior_tokens)
-        overlap_ratio = (
-            overlap_count / len(current_tokens | prior_tokens)
-            if current_tokens or prior_tokens
-            else 0.0
-        )
-        same_exact_description = int(
-            normalize_description(current_description)
-            == normalize_description(prior_description)
-        )
-        same_body_region = int(
-            extract_body_region(current_description) != "unknown"
-            and extract_body_region(current_description)
-            == extract_body_region(prior_description)
-        )
-
-        numeric_features[index] = [
-            cosine_similarities[index],
-            overlap_count,
-            overlap_ratio,
-            same_exact_description,
-            same_body_region,
-        ]
-
-    return csr_matrix(numeric_features)
-
-
-def build_features(
-    vectorizer: TfidfVectorizer,
-    current_descriptions: list[str],
-    prior_descriptions: list[str],
-) -> csr_matrix:
-    current_vectors = vectorizer.transform(current_descriptions)
-    prior_vectors = vectorizer.transform(prior_descriptions)
-    numeric_and_rule_features = build_numeric_and_rule_features(
-        current_descriptions,
-        prior_descriptions,
-        current_vectors,
-        prior_vectors,
+def split_case_ids(examples: list[dict[str, Any]]) -> tuple[set[str], set[str]]:
+    case_ids = sorted({example["case_id"] for example in examples})
+    train_case_ids, validation_case_ids = train_test_split(
+        case_ids,
+        train_size=0.8,
+        random_state=RANDOM_STATE,
     )
-    return hstack(
-        [current_vectors, prior_vectors, numeric_and_rule_features],
-        format="csr",
-    )
+    train_case_id_set = set(train_case_ids)
+    validation_case_id_set = set(validation_case_ids)
+    overlap = train_case_id_set & validation_case_id_set
+    if overlap:
+        raise RuntimeError(f"case_id leakage across splits: {sorted(overlap)[:10]}")
+    return train_case_id_set, validation_case_id_set
 
 
-def evaluate_thresholds(
-    validation_labels: list[bool],
-    probabilities: np.ndarray,
+def examples_for_case_ids(
+    examples: list[dict[str, Any]],
+    case_ids: set[str],
+) -> list[dict[str, Any]]:
+    return [example for example in examples if example["case_id"] in case_ids]
+
+
+def descriptions_for_vectorizer(examples: list[dict[str, Any]]) -> list[str]:
+    descriptions: list[str] = []
+    for example in examples:
+        descriptions.append(example["current_description"])
+        descriptions.append(example["prior_description"])
+    return descriptions
+
+
+def apply_prediction_rules(
+    examples: list[dict[str, Any]],
+    probabilities: Any,
+) -> list[bool]:
+    predictions: list[bool] = []
+    for example, probability in zip(examples, probabilities, strict=True):
+        if has_left_right_mismatch(
+            example["current_description"],
+            example["prior_description"],
+        ):
+            predictions.append(False)
+        else:
+            predictions.append(bool(probability >= THRESHOLD))
+    return predictions
+
+
+def write_metadata(
+    train_case_ids: set[str],
+    validation_case_ids: set[str],
+    train_examples: list[dict[str, Any]],
+    validation_examples: list[dict[str, Any]],
+    metrics: dict[str, float | int],
 ) -> None:
-    best_threshold = 0.0
-    best_accuracy = -1.0
-
-    print("Threshold metrics")
-    print("-----------------")
-    for threshold_index in range(10, 91):
-        threshold = threshold_index / 100
-        predictions = probabilities >= threshold
-
-        accuracy = accuracy_score(validation_labels, predictions)
-        precision = precision_score(validation_labels, predictions, zero_division=0)
-        recall = recall_score(validation_labels, predictions, zero_division=0)
-        true_negative, false_positive, false_negative, true_positive = (
-            confusion_matrix(validation_labels, predictions, labels=[False, True])
-            .ravel()
-            .tolist()
-        )
-
-        if accuracy > best_accuracy:
-            best_accuracy = accuracy
-            best_threshold = threshold
-
-        print(
-            f"threshold={threshold:.2f} "
-            f"accuracy={accuracy:.4f} "
-            f"precision={precision:.4f} "
-            f"recall={recall:.4f} "
-            f"false_positives={false_positive} "
-            f"false_negatives={false_negative}"
-        )
-
-    print("\nBest threshold by validation accuracy")
-    print("-------------------------------------")
-    print(f"threshold={best_threshold:.2f} accuracy={best_accuracy:.4f}")
+    metadata = {
+        "threshold": THRESHOLD,
+        "split": {
+            "type": "case_id",
+            "random_state": RANDOM_STATE,
+            "train_cases": len(train_case_ids),
+            "validation_cases": len(validation_case_ids),
+            "train_rows": len(train_examples),
+            "validation_rows": len(validation_examples),
+        },
+        "validation_metrics": metrics,
+    }
+    METADATA_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with METADATA_PATH.open("w", encoding="utf-8") as file:
+        json.dump(metadata, file, indent=2)
+        file.write("\n")
 
 
 def main() -> None:
     dataset = load_dataset(DATA_PATH)
-    current_descriptions, prior_descriptions, labels = build_training_data(dataset)
+    examples = build_labeled_examples(dataset)
+    train_case_ids, validation_case_ids = split_case_ids(examples)
+    train_examples = examples_for_case_ids(examples, train_case_ids)
+    validation_examples = examples_for_case_ids(examples, validation_case_ids)
 
-    (
-        train_current_descriptions,
-        validation_current_descriptions,
-        train_prior_descriptions,
-        validation_prior_descriptions,
-        train_labels,
-        validation_labels,
-    ) = train_test_split(
-        current_descriptions,
-        prior_descriptions,
-        labels,
-        train_size=0.8,
-        random_state=42,
-        stratify=labels,
-    )
+    train_labels = [example["label"] for example in train_examples]
+    validation_labels = [example["label"] for example in validation_examples]
 
     vectorizer = TfidfVectorizer(ngram_range=(1, 2), max_features=20_000)
-    vectorizer.fit(train_current_descriptions + train_prior_descriptions)
-    train_features = build_features(
-        vectorizer,
-        train_current_descriptions,
-        train_prior_descriptions,
-    )
-    validation_features = build_features(
-        vectorizer,
-        validation_current_descriptions,
-        validation_prior_descriptions,
-    )
+    vectorizer.fit(descriptions_for_vectorizer(train_examples))
+
+    train_features = build_features(vectorizer, train_examples)
+    validation_features = build_features(vectorizer, validation_examples)
 
     model = LogisticRegression(max_iter=1_000)
     model.fit(train_features, train_labels)
 
     probabilities = model.predict_proba(validation_features)[:, 1]
-    evaluate_thresholds(validation_labels, probabilities)
+    predictions = apply_prediction_rules(validation_examples, probabilities)
+    true_negative, false_positive, false_negative, true_positive = confusion_matrix(
+        validation_labels,
+        predictions,
+        labels=[False, True],
+    ).ravel()
+
+    metrics: dict[str, float | int] = {
+        "accuracy": float(accuracy_score(validation_labels, predictions)),
+        "precision": float(
+            precision_score(validation_labels, predictions, zero_division=0)
+        ),
+        "recall": float(recall_score(validation_labels, predictions, zero_division=0)),
+        "false_positives": int(false_positive),
+        "false_negatives": int(false_negative),
+        "true_positives": int(true_positive),
+        "true_negatives": int(true_negative),
+    }
+
+    print(f"Train cases: {len(train_case_ids)}")
+    print(f"Validation cases: {len(validation_case_ids)}")
+    print(f"Train rows: {len(train_examples)}")
+    print(f"Validation rows: {len(validation_examples)}")
+    print(f"Accuracy: {metrics['accuracy']:.4f}")
+    print(f"Precision: {metrics['precision']:.4f}")
+    print(f"Recall: {metrics['recall']:.4f}")
+    print(f"False positives: {metrics['false_positives']}")
+    print(f"False negatives: {metrics['false_negatives']}")
 
     MODEL_PATH.parent.mkdir(parents=True, exist_ok=True)
     joblib.dump(model, MODEL_PATH)
     joblib.dump(vectorizer, VECTORIZER_PATH)
+    write_metadata(
+        train_case_ids,
+        validation_case_ids,
+        train_examples,
+        validation_examples,
+        metrics,
+    )
 
     print(f"Saved model: {MODEL_PATH}")
     print(f"Saved vectorizer: {VECTORIZER_PATH}")
+    print(f"Saved metadata: {METADATA_PATH}")
 
 
 if __name__ == "__main__":

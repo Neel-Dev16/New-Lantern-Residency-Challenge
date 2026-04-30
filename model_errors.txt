@@ -1,624 +1,625 @@
-Validation errors: 294
+Validation errors: 324
 Threshold: 0.51
+Split: case_id
 
 1.
   error type: FP
-  case_id: 1355614
-  current study_description: ECHO 2D Mmode transthorac TTE
-  prior study_description: CT angio coronary artery
-  current study_date: 2022-05-31
-  prior study_date: 2022-05-12
-  predicted probability: 0.997479
+  case_id: 10366
+  current study_description: CHEST 2 VIEW FRONTAL AND LATERAL
+  prior study_description: XR chest 2V PA/lat
+  current study_date: 2025-08-28
+  prior study_date: 2023-11-16
+  predicted probability: 0.981629
   true label: False
 
 2.
   error type: FP
-  case_id: 1657471
-  current study_description: MAM surgical specimen
-  prior study_description: MAM SCREEN 2D
-  current study_date: 2023-05-22
-  prior study_date: 2011-11-17
-  predicted probability: 0.982331
+  case_id: 1049733
+  current study_description: XR foot RT 3V
+  prior study_description: XR hand RT 3V
+  current study_date: 2021-05-18
+  prior study_date: 2021-05-18
+  predicted probability: 0.965599
   true label: False
 
 3.
   error type: FP
-  case_id: 1508965
-  current study_description: MAM screen BI with tomo
-  prior study_description: Standard Screening - TomoHD
-  current study_date: 2022-11-30
-  prior study_date: 2018-04-17
-  predicted probability: 0.981246
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: CT HEAD
+  current study_date: 2023-02-15
+  prior study_date: 2009-01-31
+  predicted probability: 0.965095
   true label: False
 
 4.
-  error type: FP
-  case_id: 1300646
-  current study_description: MAM screen LT with tomo
-  prior study_description: MAM diagnostic LT with tomo
-  current study_date: 2022-03-20
-  prior study_date: 2019-10-23
-  predicted probability: 0.968758
-  true label: False
-
-5.
   error type: FP
   case_id: 1222597
   current study_description: MAM screen BI with tomo
   prior study_description: MAMMOGRAPHY SCREEN BILAT W CAD
   current study_date: 2021-12-13
   prior study_date: 2012-12-18
-  predicted probability: 0.966147
+  predicted probability: 0.964046
+  true label: False
+
+5.
+  error type: FP
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: CT thoracic spine wo con
+  current study_date: 2022-01-06
+  prior study_date: 2020-01-24
+  predicted probability: 0.962170
   true label: False
 
 6.
   error type: FP
-  case_id: 1614768
-  current study_description: CT head/brain wo con
-  prior study_description: CT brain perfusion w/cont
-  current study_date: 2023-04-03
-  prior study_date: 2022-07-20
-  predicted probability: 0.961408
+  case_id: 1541164
+  current study_description: MRI LUMBAR SPINE WITHOUT CONTRAST
+  prior study_description: CT THORACIC SPINE WITHOUT CNTR
+  current study_date: 2025-09-02
+  prior study_date: 2009-11-29
+  predicted probability: 0.960722
   true label: False
 
 7.
   error type: FP
-  case_id: 1143303
-  current study_description: CT abdomen pelvis wo con
-  prior study_description: CT ABDOMEN WITH CNTRST
-  current study_date: 2021-09-09
-  prior study_date: 2006-05-24
-  predicted probability: 0.955919
+  case_id: 1051131
+  current study_description: XR hand RT 3V
+  prior study_description: XR foot RT 3V
+  current study_date: 2021-05-18
+  prior study_date: 2021-05-18
+  predicted probability: 0.954380
   true label: False
 
 8.
   error type: FP
-  case_id: 1264945
-  current study_description: MAM diagnostic BI with tomo
-  prior study_description: MAM diagnostic LT w cad
-  current study_date: 2022-02-09
-  prior study_date: 2016-12-27
-  predicted probability: 0.944200
+  case_id: 1214974
+  current study_description: CT CHEST WITH CNTRST
+  prior study_description: CT BIOPSY LUNG LT
+  current study_date: 2021-12-06
+  prior study_date: 2021-07-19
+  predicted probability: 0.952715
   true label: False
 
 9.
   error type: FP
-  case_id: 1502058
-  current study_description: MRI guided breast biopsy LT
-  prior study_description: MRI GUIDED BREAST BIOPSY LEFT
-  current study_date: 2022-11-21
-  prior study_date: 2016-08-09
-  predicted probability: 0.937338
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2023-02-15
+  prior study_date: 2016-02-29
+  predicted probability: 0.948502
   true label: False
 
 10.
   error type: FP
-  case_id: 1666323
-  current study_description: MAM US BI breast screening
-  prior study_description: MAMMOGRAPHY DX LEFT W/O CAD
-  current study_date: 2023-05-30
-  prior study_date: 2017-02-10
-  predicted probability: 0.925010
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2023-02-15
+  prior study_date: 2012-04-10
+  predicted probability: 0.948502
   true label: False
 
 11.
   error type: FP
-  case_id: 1134926
-  current study_description: CT abdomen pelvis w con
-  prior study_description: Abdomen^1 ABDOMINAL ANGIO
-  current study_date: 2021-08-30
-  prior study_date: 2009-02-26
-  predicted probability: 0.917099
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2023-02-15
+  prior study_date: 2010-05-23
+  predicted probability: 0.948502
   true label: False
 
 12.
   error type: FP
-  case_id: 1471673
-  current study_description: MAM screen BI with tomo
-  prior study_description: MG tomo screening digital bilateral
-  current study_date: 2022-10-16
-  prior study_date: 2019-03-25
-  predicted probability: 0.916652
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2023-02-15
+  prior study_date: 2009-12-28
+  predicted probability: 0.948502
   true label: False
 
 13.
   error type: FP
-  case_id: 1614768
-  current study_description: CT head/brain wo con
-  prior study_description: IR cerebral stroke
-  current study_date: 2023-04-03
-  prior study_date: 2022-07-20
-  predicted probability: 0.916136
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2023-02-15
+  prior study_date: 2009-03-23
+  predicted probability: 0.948502
   true label: False
 
 14.
   error type: FP
-  case_id: 1535285
-  current study_description: XR scoliosis srvy 2 or 3 views
-  prior study_description: CT soft tissue neck w con
-  current study_date: 2022-12-29
-  prior study_date: 2021-01-26
-  predicted probability: 0.913689
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2023-02-15
+  prior study_date: 2008-03-03
+  predicted probability: 0.948502
   true label: False
 
 15.
   error type: FP
-  case_id: 1622691
-  current study_description: CT brain perfusion w/cont
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
   prior study_description: CT HEAD WITHOUT CNTRST
-  current study_date: 2023-04-12
-  prior study_date: 2018-07-18
-  predicted probability: 0.906324
+  current study_date: 2023-02-15
+  prior study_date: 2008-01-14
+  predicted probability: 0.948502
   true label: False
 
 16.
   error type: FP
-  case_id: 1622691
-  current study_description: CT brain perfusion w/cont
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
   prior study_description: CT HEAD WITHOUT CNTRST
-  current study_date: 2023-04-12
-  prior study_date: 2009-12-13
-  predicted probability: 0.906324
+  current study_date: 2023-02-15
+  prior study_date: 2007-08-21
+  predicted probability: 0.948502
   true label: False
 
 17.
   error type: FP
-  case_id: 1634787
-  current study_description: CT angio chest
-  prior study_description: CHEST 2 VIEW FRONTAL & LATRL
-  current study_date: 2023-04-18
-  prior study_date: 2015-02-24
-  predicted probability: 0.894963
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2023-02-15
+  prior study_date: 2006-10-15
+  predicted probability: 0.948502
   true label: False
 
 18.
   error type: FP
-  case_id: 1628651
-  current study_description: CERVICL SPINE, MIN 4 VIEWS
-  prior study_description: LUMBAR SPINE, MIN 4 VIEWS
-  current study_date: 2023-04-20
-  prior study_date: 2013-11-15
-  predicted probability: 0.870291
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2023-02-15
+  prior study_date: 2006-06-11
+  predicted probability: 0.948502
   true label: False
 
 19.
   error type: FP
-  case_id: 1422061
-  current study_description: MRI pelvis wo/w con
-  prior study_description: CT ABDOMEN WITH CNTRST
-  current study_date: 2022-08-18
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2023-02-15
   prior study_date: 2006-05-24
-  predicted probability: 0.863292
+  predicted probability: 0.948502
   true label: False
 
 20.
   error type: FP
-  case_id: 1422061
-  current study_description: MRI pelvis wo/w con
-  prior study_description: CT ABDOMEN WITH CNTRST
-  current study_date: 2022-08-18
-  prior study_date: 2005-03-19
-  predicted probability: 0.863292
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2023-02-15
+  prior study_date: 2006-04-06
+  predicted probability: 0.948502
   true label: False
 
 21.
+  error type: FP
+  case_id: 1051133
+  current study_description: XR hand LT 3V
+  prior study_description: XR foot LT 3V
+  current study_date: 2021-05-18
+  prior study_date: 2021-05-18
+  predicted probability: 0.941871
+  true label: False
+
+22.
+  error type: FP
+  case_id: 1194591
+  current study_description: MRI BRAIN WITHOUT/WITH CONTRST
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2021-11-13
+  prior study_date: 2009-12-13
+  predicted probability: 0.941147
+  true label: False
+
+23.
+  error type: FP
+  case_id: 1429311
+  current study_description: CT abdomen wo con
+  prior study_description: CT ABD W/O CNTRS - REN
+  current study_date: 2022-08-28
+  prior study_date: 2010-03-03
+  predicted probability: 0.937194
+  true label: False
+
+24.
+  error type: FP
+  case_id: 1672748
+  current study_description: CT angio coronary artery
+  prior study_description: MYO PERF STR/REST SPEC-NO PRO
+  current study_date: 2023-06-09
+  prior study_date: 2018-08-16
+  predicted probability: 0.924272
+  true label: False
+
+25.
+  error type: FP
+  case_id: 1672748
+  current study_description: CT angio coronary artery
+  prior study_description: MYO PERF STR/REST SPEC-NO PRO
+  current study_date: 2023-06-09
+  prior study_date: 2016-05-09
+  predicted probability: 0.924272
+  true label: False
+
+26.
+  error type: FP
+  case_id: 1672748
+  current study_description: CT angio coronary artery
+  prior study_description: MYO PERF STR/REST SPEC-NO PRO
+  current study_date: 2023-06-09
+  prior study_date: 2010-06-08
+  predicted probability: 0.924272
+  true label: False
+
+27.
+  error type: FP
+  case_id: 1331168
+  current study_description: CT CHEST WITHOUT AND WITH CONTRAST
+  prior study_description: PET/CT skull to thigh sbq/F18
+  current study_date: 2025-09-02
+  prior study_date: 2025-02-11
+  predicted probability: 0.922303
+  true label: False
+
+28.
+  error type: FP
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: HEAD^ CVA
+  current study_date: 2023-02-15
+  prior study_date: 2010-05-23
+  predicted probability: 0.921461
+  true label: False
+
+29.
+  error type: FP
+  case_id: 1541164
+  current study_description: MRI LUMBAR SPINE WITHOUT CONTRAST
+  prior study_description: XR thoracic spine 2V
+  current study_date: 2025-09-02
+  prior study_date: 2022-06-14
+  predicted probability: 0.917051
+  true label: False
+
+30.
+  error type: FP
+  case_id: 1672748
+  current study_description: CT angio coronary artery
+  prior study_description: PET/CT skull to thigh int/F18
+  current study_date: 2023-06-09
+  prior study_date: 2016-07-28
+  predicted probability: 0.914370
+  true label: False
+
+31.
+  error type: FP
+  case_id: 1520798
+  current study_description: NMmyo perf str/rest SPEC-no p
+  prior study_description: ECHO 2D Mmode transthorac TTE
+  current study_date: 2022-12-12
+  prior study_date: 2021-03-05
+  predicted probability: 0.913035
+  true label: False
+
+32.
   error type: FP
   case_id: 1677865
   current study_description: PET-CT SKULL TO THIGH INITIAL
   prior study_description: ULTRASOUND BILAT SCREEN COMP
   current study_date: 2023-06-14
   prior study_date: 2020-07-08
-  predicted probability: 0.857308
-  true label: False
-
-22.
-  error type: FP
-  case_id: 1209947
-  current study_description: MAM screen RT with tomo
-  prior study_description: MAM DIAG 3D
-  current study_date: 2021-11-30
-  prior study_date: 2018-11-19
-  predicted probability: 0.848856
-  true label: False
-
-23.
-  error type: FP
-  case_id: 1422061
-  current study_description: MRI pelvis wo/w con
-  prior study_description: US ABDOMEN COMPLETE WITH DOPPLER
-  current study_date: 2022-08-18
-  prior study_date: 2019-11-29
-  predicted probability: 0.840354
-  true label: False
-
-24.
-  error type: FP
-  case_id: 117785
-  current study_description: CT ANGIOGRAM, RADIOLOGY OVERREAD
-  prior study_description: CT UPPR RGT EXTREM W/O CTRST
-  current study_date: 2025-08-29
-  prior study_date: 2020-05-15
-  predicted probability: 0.840182
-  true label: False
-
-25.
-  error type: FP
-  case_id: 1271409
-  current study_description: NM hepatobiliary scan w cck
-  prior study_description: Standard Screening Combo
-  current study_date: 2022-02-16
-  prior study_date: 2014-09-29
-  predicted probability: 0.837047
-  true label: False
-
-26.
-  error type: FP
-  case_id: 1508667
-  current study_description: ECHO 2D Mmode transthorac TTE
-  prior study_description: NMmyo perf str/rest SPEC-no p
-  current study_date: 2022-11-30
-  prior study_date: 2021-01-18
-  predicted probability: 0.826674
-  true label: False
-
-27.
-  error type: FP
-  case_id: 1586042
-  current study_description: MRI abdomen wo/w con
-  prior study_description: MRI PELVIS WO/WITH CONTRAST
-  current study_date: 2023-02-25
-  prior study_date: 2009-10-06
-  predicted probability: 0.808638
-  true label: False
-
-28.
-  error type: FP
-  case_id: 1268668
-  current study_description: XR esophagram with air
-  prior study_description: PET-CT SKULL TO THIGH INITIAL
-  current study_date: 2022-02-13
-  prior study_date: 2014-10-08
-  predicted probability: 0.789933
-  true label: False
-
-29.
-  error type: FP
-  case_id: 1646978
-  current study_description: US abdomen limited w/ doppler
-  prior study_description: XR pelvis and hip LT 2-3 views
-  current study_date: 2023-05-11
-  prior study_date: 2023-04-30
-  predicted probability: 0.785806
-  true label: False
-
-30.
-  error type: FP
-  case_id: 1272837
-  current study_description: CT brain perfusion w/cont
-  prior study_description: HEAD^SELLA
-  current study_date: 2022-02-18
-  prior study_date: 2015-02-27
-  predicted probability: 0.783499
-  true label: False
-
-31.
-  error type: FP
-  case_id: 1194348
-  current study_description: MRI lumbar spine wo/w con
-  prior study_description: CT LUMBAR SPINE WITHOUT CNTRST
-  current study_date: 2021-11-13
-  prior study_date: 2015-02-10
-  predicted probability: 0.779526
-  true label: False
-
-32.
-  error type: FP
-  case_id: 1244688
-  current study_description: CT angio carotid
-  prior study_description: Standard Screening - ComboHD
-  current study_date: 2022-01-13
-  prior study_date: 2016-12-28
-  predicted probability: 0.759066
+  predicted probability: 0.905187
   true label: False
 
 33.
   error type: FP
-  case_id: 1502058
-  current study_description: MRI guided breast biopsy LT
-  prior study_description: US BREAST LEFT, LIMITED
-  current study_date: 2022-11-21
-  prior study_date: 2017-03-16
-  predicted probability: 0.748075
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: MRI BRAIN WITHOUT CONTRAST
+  current study_date: 2023-02-15
+  prior study_date: 2015-08-21
+  predicted probability: 0.889670
   true label: False
 
 34.
   error type: FP
-  case_id: 1643966
-  current study_description: XR thoracic spine 2V
-  prior study_description: MRI LUMBAR SPNE WITHOUT/WITH C
-  current study_date: 2023-05-07
-  prior study_date: 2017-02-13
-  predicted probability: 0.746754
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: MRI BRAIN WITHOUT CONTRAST
+  current study_date: 2023-02-15
+  prior study_date: 2012-04-10
+  predicted probability: 0.889670
   true label: False
 
 35.
   error type: FP
-  case_id: 1643966
-  current study_description: XR thoracic spine 2V
-  prior study_description: MRI LUMBAR SPNE WITHOUT/WITH C
-  current study_date: 2023-05-07
-  prior study_date: 2019-05-08
-  predicted probability: 0.746754
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: MRI ANGIO BRAIN WO CNTRST
+  current study_date: 2023-02-15
+  prior study_date: 2012-04-10
+  predicted probability: 0.880969
   true label: False
 
 36.
   error type: FP
-  case_id: 1385608
-  current study_description: XR pelvis, 1 or 2 views
-  prior study_description: CT angio coronary artery
-  current study_date: 2022-07-07
-  prior study_date: 2021-02-10
-  predicted probability: 0.745378
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: MRI ANGIO BRAIN WO CNTRST
+  current study_date: 2023-02-15
+  prior study_date: 2008-01-14
+  predicted probability: 0.880969
   true label: False
 
 37.
   error type: FP
-  case_id: 1081983
-  current study_description: CT abdomen pelvis w con
-  prior study_description: ABDOMEN PORTABLE 1 VIEW
-  current study_date: 2021-06-22
-  prior study_date: 2017-12-17
-  predicted probability: 0.742181
+  case_id: 1616810
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: NMmyo perf str/rest SPEC-no p
+  current study_date: 2023-04-03
+  prior study_date: 2020-02-03
+  predicted probability: 0.864488
   true label: False
 
 38.
   error type: FP
-  case_id: 1337812
-  current study_description: MAM screen BI with tomo
-  prior study_description: US BREAST LEFT, LIMITED
-  current study_date: 2022-05-09
-  prior study_date: 2016-09-23
-  predicted probability: 0.735777
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: MRI BRAIN WITHOUT/WITH CONTRST
+  current study_date: 2023-02-15
+  prior study_date: 2018-07-21
+  predicted probability: 0.859109
   true label: False
 
 39.
   error type: FP
-  case_id: 1239276
-  current study_description: MRI lumbar spine wo/w con
-  prior study_description: LUMBAR SPINE, LIMITED VIEWS
-  current study_date: 2022-01-06
-  prior study_date: 2015-07-14
-  predicted probability: 0.729794
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: MRI BRAIN WITHOUT/WITH CONTRST
+  current study_date: 2023-02-15
+  prior study_date: 2016-09-28
+  predicted probability: 0.859109
   true label: False
 
 40.
   error type: FP
-  case_id: 1105861
-  current study_description: NE EEG Request
-  prior study_description: MR CARDIAC WO/W CONTRST
-  current study_date: 2021-07-26
-  prior study_date: 2017-01-16
-  predicted probability: 0.727221
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: MRI BRAIN WITHOUT/WITH CONTRST
+  current study_date: 2023-02-15
+  prior study_date: 2008-01-14
+  predicted probability: 0.859109
   true label: False
 
 41.
   error type: FP
-  case_id: 1143303
-  current study_description: CT abdomen pelvis wo con
-  prior study_description: US ABDOMINAL
-  current study_date: 2021-09-09
-  prior study_date: 2018-03-19
-  predicted probability: 0.722529
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: MRI brain wo/w contrast w/ IAC
+  current study_date: 2023-02-15
+  prior study_date: 2022-01-05
+  predicted probability: 0.858379
   true label: False
 
 42.
   error type: FP
-  case_id: 1502058
-  current study_description: MRI guided breast biopsy LT
-  prior study_description: MAMMO DX UNI LT W/O CAD W/TOMO
-  current study_date: 2022-11-21
-  prior study_date: 2018-07-13
-  predicted probability: 0.718676
+  case_id: 1374
+  current study_description: ANKLE, RIGHT - COMPLETE MIN 3 VIEWS
+  prior study_description: ANKLEL
+  current study_date: 2025-08-25
+  prior study_date: 2025-08-25
+  predicted probability: 0.852133
   true label: False
 
 43.
   error type: FP
-  case_id: 1544147
-  current study_description: DXA appendicular skeleton
-  prior study_description: ULTRASOUND BILAT SCREEN COMP
-  current study_date: 2023-01-09
-  prior study_date: 2020-07-08
-  predicted probability: 0.718054
+  case_id: 11558
+  current study_description: MRI SHOULDER RIGHT WITHOUT AND WITH CONTRAST
+  prior study_description: MRI KNEE RIGHT WO CONTRAST
+  current study_date: 2025-08-28
+  prior study_date: 2021-03-04
+  predicted probability: 0.835157
   true label: False
 
 44.
   error type: FP
-  case_id: 1615779
-  current study_description: MRI thoracic spine wo con
-  prior study_description: CT CERVICAL SPINE WITH
-  current study_date: 2023-04-03
-  prior study_date: 2008-03-03
-  predicted probability: 0.713793
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: BRAIN^WITH-W-DWI
+  current study_date: 2023-02-15
+  prior study_date: 2007-02-01
+  predicted probability: 0.832444
   true label: False
 
 45.
+  error type: FP
+  case_id: 1051131
+  current study_description: XR hand RT 3V
+  prior study_description: XR knee RT, 3 views
+  current study_date: 2021-05-18
+  prior study_date: 2021-05-18
+  predicted probability: 0.832188
+  true label: False
+
+46.
+  error type: FP
+  case_id: 1049733
+  current study_description: XR foot RT 3V
+  prior study_description: XR knee RT, 3 views
+  current study_date: 2021-05-18
+  prior study_date: 2021-05-18
+  predicted probability: 0.832093
+  true label: False
+
+47.
   error type: FP
   case_id: 1677865
   current study_description: PET-CT SKULL TO THIGH INITIAL
   prior study_description: ULTRASOUND LT DIAG TARGET
   current study_date: 2023-06-14
   prior study_date: 2021-07-08
-  predicted probability: 0.705406
-  true label: False
-
-46.
-  error type: FP
-  case_id: 112765
-  current study_description: MRI NECK WITHOUT AND WITH CONTRAST
-  prior study_description: MRI BRAIN WITHOUT AND WITH CONTRAST
-  current study_date: 2025-08-29
-  prior study_date: 2025-08-29
-  predicted probability: 0.696058
-  true label: False
-
-47.
-  error type: FP
-  case_id: 1416096
-  current study_description: MAM screen BI with tomo
-  prior study_description: PET-CT SKULL TO THIGH SUBSQNT
-  current study_date: 2022-08-11
-  prior study_date: 2021-02-01
-  predicted probability: 0.694161
+  predicted probability: 0.827331
   true label: False
 
 48.
   error type: FP
-  case_id: 1416096
-  current study_description: MAM screen BI with tomo
-  prior study_description: PET-CT SKULL TO THIGH SUBSQNT
-  current study_date: 2022-08-11
-  prior study_date: 2021-04-06
-  predicted probability: 0.694161
+  case_id: 1051133
+  current study_description: XR hand LT 3V
+  prior study_description: XR knee LT, 3 views
+  current study_date: 2021-05-18
+  prior study_date: 2021-05-18
+  predicted probability: 0.802043
   true label: False
 
 49.
   error type: FP
-  case_id: 1565346
-  current study_description: CT FFR
-  prior study_description: PET-CT SKULL TO THIGH INITIAL
-  current study_date: 2023-02-07
-  prior study_date: 2014-10-08
-  predicted probability: 0.690776
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: CT CERVICAL SPINE WITH
+  current study_date: 2022-01-06
+  prior study_date: 2008-03-03
+  predicted probability: 0.785056
   true label: False
 
 50.
   error type: FP
-  case_id: 106527
-  current study_description: MRI BRAIN WITHOUT AND WITH CONTRAST
-  prior study_description: PET/CT skull to thigh int/F18
-  current study_date: 2025-08-29
-  prior study_date: 2019-06-28
-  predicted probability: 0.688362
+  case_id: 1105861
+  current study_description: NE EEG Request
+  prior study_description: CT CHEST WITHOUT CNTRST
+  current study_date: 2021-07-26
+  prior study_date: 2018-02-15
+  predicted probability: 0.779840
   true label: False
 
 51.
   error type: FP
-  case_id: 1645176
-  current study_description: XR cervical spine limited
-  prior study_description: XR lumbar spine limited
-  current study_date: 2023-05-09
-  prior study_date: 2021-10-11
-  predicted probability: 0.677195
+  case_id: 1273114
+  current study_description: CT HEAD WITHOUT CNTRST
+  prior study_description: HEAD^SELLA
+  current study_date: 2022-02-18
+  prior study_date: 2015-02-27
+  predicted probability: 0.774493
   true label: False
 
 52.
   error type: FP
-  case_id: 1668281
-  current study_description: XR cervical spine limited
-  prior study_description: XR lumbar spine limited
-  current study_date: 2023-06-05
-  prior study_date: 2021-10-11
-  predicted probability: 0.677195
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: MRI THORACIC SPINE WITHOUT CNT
+  current study_date: 2021-11-15
+  prior study_date: 2018-01-20
+  predicted probability: 0.769422
   true label: False
 
 53.
   error type: FP
-  case_id: 1105861
-  current study_description: NE EEG Request
-  prior study_description: CT abdomen pelvis w con
-  current study_date: 2021-07-26
-  prior study_date: 2021-07-26
-  predicted probability: 0.674973
+  case_id: 1673147
+  current study_description: PET^PETCT_SKULLBASE_TO_MIDTHIGH (Adult)
+  prior study_description: ULTRASOUND BILAT SCREEN COMP
+  current study_date: 2023-06-08
+  prior study_date: 2018-11-19
+  predicted probability: 0.769158
   true label: False
 
 54.
   error type: FP
-  case_id: 1626088
-  current study_description: ECHO Chemo TTE w/Dopp,Complete
-  prior study_description: PET/CT skull to thigh sbq/F18
-  current study_date: 2023-04-16
-  prior study_date: 2020-09-03
-  predicted probability: 0.650522
+  case_id: 1105861
+  current study_description: NE EEG Request
+  prior study_description: MR CARDIAC WO/W CONTRST
+  current study_date: 2021-07-26
+  prior study_date: 2017-01-16
+  predicted probability: 0.766676
   true label: False
 
 55.
   error type: FP
-  case_id: 1387759
-  current study_description: MRI enterography
-  prior study_description: SMALL BOWEL SERIES
-  current study_date: 2022-07-07
-  prior study_date: 2019-05-22
-  predicted probability: 0.650061
+  case_id: 1635986
+  current study_description: NE EEG Request
+  prior study_description: CT RENAL COLIC
+  current study_date: 2023-04-28
+  prior study_date: 2022-02-09
+  predicted probability: 0.763210
   true label: False
 
 56.
   error type: FP
-  case_id: 1643966
-  current study_description: XR thoracic spine 2V
-  prior study_description: LUMBAR SPINE AP/LAT FLEX/EXT
-  current study_date: 2023-05-07
-  prior study_date: 2016-09-26
-  predicted probability: 0.636928
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: MRI cervical spine wo/w con
+  current study_date: 2021-11-15
+  prior study_date: 2021-11-13
+  predicted probability: 0.760500
   true label: False
 
 57.
   error type: FP
-  case_id: 1549396
-  current study_description: Bone Scan
-  prior study_description: US pelvic & transvaginal
-  current study_date: 2023-01-16
-  prior study_date: 2022-01-30
-  predicted probability: 0.626992
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: MRI cervical spine wo con
+  current study_date: 2021-11-15
+  prior study_date: 2021-02-15
+  predicted probability: 0.760500
   true label: False
 
 58.
   error type: FP
-  case_id: 1006147
-  current study_description: MRI angio carotid wo/w con
-  prior study_description: Standard Screening - ComboHD
-  current study_date: 2021-03-22
-  prior study_date: 2016-12-28
-  predicted probability: 0.609708
+  case_id: 1049733
+  current study_description: XR foot RT 3V
+  prior study_description: XR wrist RT complete
+  current study_date: 2021-05-18
+  prior study_date: 2021-05-18
+  predicted probability: 0.755871
   true label: False
 
 59.
   error type: FP
-  case_id: 1139760
-  current study_description: CT biopsy abdomen percutaneous
-  prior study_description: Abdomen
-  current study_date: 2021-09-07
-  prior study_date: 2009-02-04
-  predicted probability: 0.607089
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: LUMBAR SPINE, LIMITED VIEWS
+  current study_date: 2022-01-06
+  prior study_date: 2015-07-14
+  predicted probability: 0.753359
   true label: False
 
 60.
   error type: FP
-  case_id: 1139760
-  current study_description: CT biopsy abdomen percutaneous
-  prior study_description: Abdomen
-  current study_date: 2021-09-07
-  prior study_date: 2008-02-11
-  predicted probability: 0.607089
+  case_id: 1331168
+  current study_description: CT CHEST WITHOUT AND WITH CONTRAST
+  prior study_description: CT GUIDED BIOPSY
+  current study_date: 2025-09-02
+  prior study_date: 2024-06-13
+  predicted probability: 0.743999
   true label: False
 
 61.
   error type: FP
-  case_id: 1246695
-  current study_description: BONE SCAN, TOTAL BODY
-  prior study_description: XR chest 2V PA/lat
-  current study_date: 2022-01-17
-  prior study_date: 2021-07-19
-  predicted probability: 0.605094
+  case_id: 1677865
+  current study_description: PET-CT SKULL TO THIGH INITIAL
+  prior study_description: CT coronary calc screening
+  current study_date: 2023-06-14
+  prior study_date: 2023-05-14
+  predicted probability: 0.731333
   true label: False
 
 62.
   error type: FP
-  case_id: 1564548
-  current study_description: CT cervical spine wo con
-  prior study_description: MRI thoracic spine wo con
-  current study_date: 2023-02-05
-  prior study_date: 2023-01-03
-  predicted probability: 0.602454
+  case_id: 1156675
+  current study_description: US pelvic & transvaginal
+  prior study_description: CT guided FNA
+  current study_date: 2021-09-29
+  prior study_date: 2021-07-19
+  predicted probability: 0.728371
   true label: False
 
 63.
@@ -628,2316 +629,2616 @@ Threshold: 0.51
   prior study_description: CT angio carotid
   current study_date: 2022-11-07
   prior study_date: 2022-07-20
-  predicted probability: 0.601546
+  predicted probability: 0.725965
   true label: False
 
 64.
   error type: FP
-  case_id: 1573790
-  current study_description: MRI lumbar spine wo con
-  prior study_description: XR cerv spine ap/lat/flx/ext
-  current study_date: 2023-02-16
-  prior study_date: 2022-12-30
-  predicted probability: 0.599742
+  case_id: 1081983
+  current study_description: CT abdomen pelvis w con
+  prior study_description: ABDOMEN PORTABLE 1 VIEW
+  current study_date: 2021-06-22
+  prior study_date: 2017-12-17
+  predicted probability: 0.725662
   true label: False
 
 65.
   error type: FP
-  case_id: 1565193
-  current study_description: CT abdomen pelvis wo con
-  prior study_description: ABDOMEN 2 VIEW - FLAT & UPRGHT
-  current study_date: 2023-02-01
-  prior study_date: 2008-01-15
-  predicted probability: 0.597542
+  case_id: 1337812
+  current study_description: MAM screen BI with tomo
+  prior study_description: US BREAST LEFT, LIMITED
+  current study_date: 2022-05-09
+  prior study_date: 2016-09-23
+  predicted probability: 0.719012
   true label: False
 
 66.
   error type: FP
-  case_id: 1422061
-  current study_description: MRI pelvis wo/w con
-  prior study_description: ABDOMEN^LIVER
-  current study_date: 2022-08-18
-  prior study_date: 2005-06-16
-  predicted probability: 0.587847
+  case_id: 1635986
+  current study_description: NE EEG Request
+  prior study_description: VAS transcranial doppler
+  current study_date: 2023-04-28
+  prior study_date: 2020-07-09
+  predicted probability: 0.718797
   true label: False
 
 67.
   error type: FP
-  case_id: 1508189
-  current study_description: NM pul perfusion
-  prior study_description: CT RENAL COLIC
-  current study_date: 2022-11-29
-  prior study_date: 2021-03-08
-  predicted probability: 0.586214
+  case_id: 1541164
+  current study_description: MRI LUMBAR SPINE WITHOUT CONTRAST
+  prior study_description: MRI CERV SPINE WO/WI CONTRAST
+  current study_date: 2025-09-02
+  prior study_date: 2023-04-19
+  predicted probability: 0.711438
   true label: False
 
 68.
   error type: FP
-  case_id: 1681911
-  current study_description: CT CHEST WITH CNTRST
-  prior study_description: RIBS UNILATERAL, LEFT
-  current study_date: 2023-06-12
-  prior study_date: 2010-10-01
-  predicted probability: 0.573873
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: MRI THORACIC SPINE WITHOUT CNT
+  current study_date: 2022-01-06
+  prior study_date: 2016-10-10
+  predicted probability: 0.710914
   true label: False
 
 69.
   error type: FP
-  case_id: 1471673
-  current study_description: MAM screen BI with tomo
-  prior study_description: PET/CT skull to thigh int/F18
-  current study_date: 2022-10-16
-  prior study_date: 2015-10-19
-  predicted probability: 0.571710
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: MRI thoracic spine wo/w con
+  current study_date: 2021-11-15
+  prior study_date: 2021-11-13
+  predicted probability: 0.706519
   true label: False
 
 70.
   error type: FP
-  case_id: 1677865
-  current study_description: PET-CT SKULL TO THIGH INITIAL
-  prior study_description: CT coronary calc screening
-  current study_date: 2023-06-14
-  prior study_date: 2023-05-14
-  predicted probability: 0.568977
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: MRI thoracic spine wo con
+  current study_date: 2021-11-15
+  prior study_date: 2021-02-19
+  predicted probability: 0.706519
   true label: False
 
 71.
   error type: FP
-  case_id: 1364636
-  current study_description: US PELVIC AND ENDOVAGINAL
-  prior study_description: CT ANGIOGRAM, CORONARY
-  current study_date: 2022-06-13
-  prior study_date: 2013-03-12
-  predicted probability: 0.562767
+  case_id: 1458573
+  current study_description: MRI SHOULDER RIGHT WITHOUT CONTRAST
+  prior study_description: MRI KNEE RIGHT WO CONTRAST
+  current study_date: 2022-10-03
+  prior study_date: 2006-03-09
+  predicted probability: 0.691193
   true label: False
 
 72.
   error type: FP
-  case_id: 1274689
-  current study_description: CAROTID ULTRASOUND
-  prior study_description: MR ANGIO HEAD WO CONTRST
-  current study_date: 2022-02-21
-  prior study_date: 2019-12-02
-  predicted probability: 0.559000
+  case_id: 1416096
+  current study_description: MAM screen BI with tomo
+  prior study_description: PET-CT SKULL TO THIGH SUBSQNT
+  current study_date: 2022-08-11
+  prior study_date: 2021-09-28
+  predicted probability: 0.686621
   true label: False
 
 73.
   error type: FP
-  case_id: 1268668
-  current study_description: XR esophagram with air
-  prior study_description: CT angio carotid
-  current study_date: 2022-02-13
-  prior study_date: 2022-01-13
-  predicted probability: 0.558031
+  case_id: 1416096
+  current study_description: MAM screen BI with tomo
+  prior study_description: PET-CT SKULL TO THIGH SUBSQNT
+  current study_date: 2022-08-11
+  prior study_date: 2022-04-11
+  predicted probability: 0.686621
   true label: False
 
 74.
+  error type: FP
+  case_id: 1416096
+  current study_description: MAM screen BI with tomo
+  prior study_description: PET-CT SKULL TO THIGH SUBSQNT
+  current study_date: 2022-08-11
+  prior study_date: 2021-02-01
+  predicted probability: 0.686621
+  true label: False
+
+75.
+  error type: FP
+  case_id: 1416096
+  current study_description: MAM screen BI with tomo
+  prior study_description: PET-CT SKULL TO THIGH SUBSQNT
+  current study_date: 2022-08-11
+  prior study_date: 2021-04-06
+  predicted probability: 0.686621
+  true label: False
+
+76.
+  error type: FP
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: CERVICL SPINE, LIMITED
+  current study_date: 2021-11-15
+  prior study_date: 2009-12-13
+  predicted probability: 0.685011
+  true label: False
+
+77.
+  error type: FP
+  case_id: 1657121
+  current study_description: Bone Scan
+  prior study_description: US pelvic & transvaginal
+  current study_date: 2023-05-22
+  prior study_date: 2022-01-30
+  predicted probability: 0.679897
+  true label: False
+
+78.
+  error type: FP
+  case_id: 1520798
+  current study_description: NMmyo perf str/rest SPEC-no p
+  prior study_description: ECHO definity study w/full ech
+  current study_date: 2022-12-12
+  prior study_date: 2021-09-04
+  predicted probability: 0.668845
+  true label: False
+
+79.
+  error type: FP
+  case_id: 1105861
+  current study_description: NE EEG Request
+  prior study_description: CT abdomen pelvis w con
+  current study_date: 2021-07-26
+  prior study_date: 2021-07-26
+  predicted probability: 0.665388
+  true label: False
+
+80.
   error type: FP
   case_id: 1239276
   current study_description: MRI lumbar spine wo/w con
   prior study_description: THORACIC SPINE - 2 VIEWS
   current study_date: 2022-01-06
   prior study_date: 2006-03-18
-  predicted probability: 0.554251
+  predicted probability: 0.657485
   true label: False
 
-75.
+81.
   error type: FP
-  case_id: 1287246
-  current study_description: CT cervical spine wo con
-  prior study_description: MRI lumbar spine wo con
-  current study_date: 2022-03-07
-  prior study_date: 2021-03-24
-  predicted probability: 0.551536
+  case_id: 1194452
+  current study_description: MRI cervical spine wo/w con
+  prior study_description: MRI lumbar spine wo/w con
+  current study_date: 2021-11-13
+  prior study_date: 2021-11-13
+  predicted probability: 0.647738
   true label: False
 
-76.
+82.
   error type: FP
-  case_id: 1594927
-  current study_description: Seed Localization Right Mammo
-  prior study_description: MAMMOGRAPHY DX UNI LFT W/O CAD
-  current study_date: 2023-03-09
-  prior study_date: 2013-06-14
-  predicted probability: 0.551222
+  case_id: 1194452
+  current study_description: MRI cervical spine wo/w con
+  prior study_description: MRI lumbar spine wo/w con
+  current study_date: 2021-11-13
+  prior study_date: 2020-01-10
+  predicted probability: 0.647738
   true label: False
 
-77.
+83.
   error type: FP
-  case_id: 1565763
-  current study_description: MAM diagnostic RT with tomo
-  prior study_description: MAMMOGRAPHY DX UNI LFT W/O CAD
-  current study_date: 2023-02-06
-  prior study_date: 2013-06-14
-  predicted probability: 0.543719
+  case_id: 1105861
+  current study_description: NE EEG Request
+  prior study_description: CT ANGIO CHEST W/DYE
+  current study_date: 2021-07-26
+  prior study_date: 2016-10-21
+  predicted probability: 0.640685
   true label: False
 
-78.
+84.
   error type: FP
-  case_id: 1038976
-  current study_description: MAM diagnostic RT with tomo
-  prior study_description: MAMMOGRAPHY DX UNI LFT W/O CAD
-  current study_date: 2021-05-03
-  prior study_date: 2013-06-14
-  predicted probability: 0.543719
+  case_id: 1577780
+  current study_description: US head and neck (soft tissue)
+  prior study_description: PET/CT skull to thigh int/F18
+  current study_date: 2023-02-15
+  prior study_date: 2016-07-28
+  predicted probability: 0.638869
   true label: False
 
-79.
+85.
+  error type: FP
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: CERVICL SPINE, FLEX/EXT ONLY
+  current study_date: 2021-11-15
+  prior study_date: 2011-11-30
+  predicted probability: 0.624079
+  true label: False
+
+86.
   error type: FP
   case_id: 1657121
   current study_description: Bone Scan
   prior study_description: XR chest 2V PA/lat
   current study_date: 2023-05-22
   prior study_date: 2021-07-19
-  predicted probability: 0.543133
-  true label: False
-
-80.
-  error type: FP
-  case_id: 1070741
-  current study_description: ULTRASOUND BILAT SCREEN COMP
-  prior study_description: CT MAXFACIAL/SINUSES W
-  current study_date: 2021-06-15
-  prior study_date: 2011-11-02
-  predicted probability: 0.542958
-  true label: False
-
-81.
-  error type: FP
-  case_id: 1544146
-  current study_description: BONE DENSITY (HIP_SPINE)
-  prior study_description: LUMBAR SPINE, LIMITED VIEWS
-  current study_date: 2023-01-10
-  prior study_date: 2005-06-20
-  predicted probability: 0.536006
-  true label: False
-
-82.
-  error type: FP
-  case_id: 1680842
-  current study_description: CT abdomen pelvis w con
-  prior study_description: PELVIS - 1 OR 2 VIEWS
-  current study_date: 2023-06-11
-  prior study_date: 2013-04-14
-  predicted probability: 0.534419
-  true label: False
-
-83.
-  error type: FP
-  case_id: 1606286
-  current study_description: CT abdomen pelvis w con
-  prior study_description: PELVIS - 1 OR 2 VIEWS
-  current study_date: 2023-03-20
-  prior study_date: 2013-04-14
-  predicted probability: 0.534419
-  true label: False
-
-84.
-  error type: FP
-  case_id: 1577408
-  current study_description: CHEST 2 VIEW FRONTAL & LATRL
-  prior study_description: STANDARD SCREENING COMBO
-  current study_date: 2023-02-16
-  prior study_date: 2019-02-26
-  predicted probability: 0.524615
-  true label: False
-
-85.
-  error type: FP
-  case_id: 1508965
-  current study_description: MAM screen BI with tomo
-  prior study_description: CT UPPR RGT EXTREM W/O CTRST
-  current study_date: 2022-11-30
-  prior study_date: 2022-09-13
-  predicted probability: 0.521101
-  true label: False
-
-86.
-  error type: FP
-  case_id: 1432636
-  current study_description: CT angio abdomen pelvis
-  prior study_description: ABDOMEN 2 VIEW - FLAT & UPRGHT
-  current study_date: 2022-09-05
-  prior study_date: 2007-11-29
-  predicted probability: 0.517451
+  predicted probability: 0.619489
   true label: False
 
 87.
   error type: FP
-  case_id: 1565193
-  current study_description: CT abdomen pelvis wo con
-  prior study_description: Abdomen
-  current study_date: 2023-02-01
-  prior study_date: 2015-04-14
-  predicted probability: 0.511422
+  case_id: 1657121
+  current study_description: Bone Scan
+  prior study_description: XR chest 2V PA/lat
+  current study_date: 2023-05-22
+  prior study_date: 2021-08-03
+  predicted probability: 0.619489
   true label: False
 
 88.
-  error type: FN
-  case_id: 1054305
-  current study_description: XR Abdomen 1V
-  prior study_description: LUMBAR SPINE, LIMITED VIEWS
-  current study_date: 2021-05-20
-  prior study_date: 2005-06-20
-  predicted probability: 0.003973
-  true label: True
+  error type: FP
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: MRI CERV SPINE WITHOUT CNTRST
+  current study_date: 2021-11-15
+  prior study_date: 2018-01-20
+  predicted probability: 0.615956
+  true label: False
 
 89.
-  error type: FN
-  case_id: 1672059
-  current study_description: CHEST 2 VIEW FRONTAL & LATRL
-  prior study_description: XR thoracic spine 2V
-  current study_date: 2023-06-08
-  prior study_date: 2023-05-07
-  predicted probability: 0.004799
-  true label: True
+  error type: FP
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: MRI CERV SPINE WITHOUT CNTRST
+  current study_date: 2021-11-15
+  prior study_date: 2011-11-30
+  predicted probability: 0.615956
+  true label: False
 
 90.
-  error type: FN
-  case_id: 1294679
-  current study_description: MRI head/brain wo con
-  prior study_description: MRI cervical spine wo con
-  current study_date: 2022-03-16
-  prior study_date: 2022-03-15
-  predicted probability: 0.006845
-  true label: True
+  error type: FP
+  case_id: 1105861
+  current study_description: NE EEG Request
+  prior study_description: VAS US carotid BIL
+  current study_date: 2021-07-26
+  prior study_date: 2021-07-26
+  predicted probability: 0.608842
+  true label: False
 
 91.
-  error type: FN
-  case_id: 1510953
-  current study_description: XR finger RT
-  prior study_description: XR wrist RT complete
-  current study_date: 2022-12-03
-  prior study_date: 2021-04-10
-  predicted probability: 0.007805
-  true label: True
+  error type: FP
+  case_id: 1635986
+  current study_description: NE EEG Request
+  prior study_description: VAS US carotid BIL
+  current study_date: 2023-04-28
+  prior study_date: 2020-07-09
+  predicted probability: 0.608842
+  true label: False
 
 92.
-  error type: FN
-  case_id: 1666323
-  current study_description: MAM US BI breast screening
-  prior study_description: CERVICL SPINE, MIN 4 VIEWS
-  current study_date: 2023-05-30
-  prior study_date: 2015-08-17
-  predicted probability: 0.008035
-  true label: True
+  error type: FP
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: MRI CERV SPINE WO/WI CONTRAST
+  current study_date: 2022-01-06
+  prior study_date: 2014-09-19
+  predicted probability: 0.606665
+  true label: False
 
 93.
-  error type: FN
-  case_id: 1422061
-  current study_description: MRI pelvis wo/w con
-  prior study_description: MRI hip LT wo/w con
-  current study_date: 2022-08-18
-  prior study_date: 2022-08-18
-  predicted probability: 0.010115
-  true label: True
+  error type: FP
+  case_id: 1057706
+  current study_description: MRI lumbar spine wo con
+  prior study_description: BONE DENSITY (HIP_SPINE)
+  current study_date: 2021-05-25
+  prior study_date: 2021-03-26
+  predicted probability: 0.606163
+  true label: False
 
 94.
-  error type: FN
-  case_id: 1586042
-  current study_description: MRI abdomen wo/w con
-  prior study_description: GI SERIES, SINGLE CONTRAST
-  current study_date: 2023-02-25
-  prior study_date: 2007-09-05
-  predicted probability: 0.010978
-  true label: True
+  error type: FP
+  case_id: 1209980
+  current study_description: LUMBAR SPINE, LATERAL FLEXION   EXTENSION ONLY (2 OR 3 VIEWS)
+  prior study_description: CT angio carotid
+  current study_date: 2025-09-02
+  prior study_date: 2022-03-16
+  predicted probability: 0.600497
+  true label: False
 
 95.
-  error type: FN
-  case_id: 1011469
-  current study_description: MRI lumbar spine wo/w con
-  prior study_description: CT ABDOMEN WITHOUT CNT
-  current study_date: 2021-03-28
-  prior study_date: 2009-10-28
-  predicted probability: 0.012653
-  true label: True
+  error type: FP
+  case_id: 1194452
+  current study_description: MRI cervical spine wo/w con
+  prior study_description: MRI lumbar spine wo con
+  current study_date: 2021-11-13
+  prior study_date: 2021-02-19
+  predicted probability: 0.599135
+  true label: False
 
 96.
+  error type: FP
+  case_id: 1672748
+  current study_description: CT angio coronary artery
+  prior study_description: CT soft tissue neck w con
+  current study_date: 2023-06-09
+  prior study_date: 2020-07-16
+  predicted probability: 0.584428
+  true label: False
+
+97.
+  error type: FP
+  case_id: 1635986
+  current study_description: NE EEG Request
+  prior study_description: CT ABD PELVIS WO/W CTS (UROGM)
+  current study_date: 2023-04-28
+  prior study_date: 2022-03-23
+  predicted probability: 0.577399
+  true label: False
+
+98.
+  error type: FP
+  case_id: 1384234
+  current study_description: XR esophagram with air
+  prior study_description: CT coronary calc screening
+  current study_date: 2022-07-05
+  prior study_date: 2022-07-05
+  predicted probability: 0.574423
+  true label: False
+
+99.
+  error type: FP
+  case_id: 1214974
+  current study_description: CT CHEST WITH CNTRST
+  prior study_description: RIBS UNILATERAL, LEFT
+  current study_date: 2021-12-06
+  prior study_date: 2010-10-01
+  predicted probability: 0.569536
+  true label: False
+
+100.
+  error type: FP
+  case_id: 1194452
+  current study_description: MRI cervical spine wo/w con
+  prior study_description: MRI LUMBAR SPNE WITHOUT/WITH C
+  current study_date: 2021-11-13
+  prior study_date: 2015-02-10
+  predicted probability: 0.561347
+  true label: False
+
+101.
+  error type: FP
+  case_id: 1194452
+  current study_description: MRI cervical spine wo/w con
+  prior study_description: MRI LUMBAR SPNE WITHOUT/WITH C
+  current study_date: 2021-11-13
+  prior study_date: 2013-07-10
+  predicted probability: 0.561347
+  true label: False
+
+102.
+  error type: FP
+  case_id: 1194452
+  current study_description: MRI cervical spine wo/w con
+  prior study_description: MRI LUMBAR SPNE WITHOUT/WITH C
+  current study_date: 2021-11-13
+  prior study_date: 2012-05-04
+  predicted probability: 0.561347
+  true label: False
+
+103.
+  error type: FP
+  case_id: 1281405
+  current study_description: MAM screen BI with tomo
+  prior study_description: PET/CT skull to thigh int/F18
+  current study_date: 2022-02-28
+  prior study_date: 2021-05-28
+  predicted probability: 0.560736
+  true label: False
+
+104.
+  error type: FP
+  case_id: 1331168
+  current study_description: CT CHEST WITHOUT AND WITH CONTRAST
+  prior study_description: CT NECK WITH CONTRAST
+  current study_date: 2025-09-02
+  prior study_date: 2024-04-24
+  predicted probability: 0.556243
+  true label: False
+
+105.
+  error type: FP
+  case_id: 1627142
+  current study_description: MRI shoulder LT wo con
+  prior study_description: Foot
+  current study_date: 2023-04-16
+  prior study_date: 2018-10-17
+  predicted probability: 0.555871
+  true label: False
+
+106.
+  error type: FP
+  case_id: 1672748
+  current study_description: CT angio coronary artery
+  prior study_description: CT RENAL COLIC
+  current study_date: 2023-06-09
+  prior study_date: 2008-03-03
+  predicted probability: 0.549655
+  true label: False
+
+107.
+  error type: FP
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: MRI CERV SPINE WITHOUT CNTRST
+  current study_date: 2022-01-06
+  prior study_date: 2010-08-28
+  predicted probability: 0.547283
+  true label: False
+
+108.
+  error type: FP
+  case_id: 1475874
+  current study_description: MRI lumbar spine wo con
+  prior study_description: MRI CERV SPINE WITHOUT CNTRST
+  current study_date: 2022-10-24
+  prior study_date: 2019-11-04
+  predicted probability: 0.546972
+  true label: False
+
+109.
+  error type: FP
+  case_id: 1302812
+  current study_description: MRI lumbar spine wo con
+  prior study_description: MRI CERV SPINE WITHOUT CNTRST
+  current study_date: 2022-03-25
+  prior study_date: 2013-08-22
+  predicted probability: 0.546972
+  true label: False
+
+110.
+  error type: FP
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: CERVICL SPINE, LIMITED
+  current study_date: 2022-01-06
+  prior study_date: 2006-03-01
+  predicted probability: 0.543842
+  true label: False
+
+111.
+  error type: FP
+  case_id: 1657121
+  current study_description: Bone Scan
+  prior study_description: MRI head/brain wo/w con
+  current study_date: 2023-05-22
+  prior study_date: 2022-07-13
+  predicted probability: 0.543503
+  true label: False
+
+112.
+  error type: FP
+  case_id: 1672748
+  current study_description: CT angio coronary artery
+  prior study_description: Seed localization statistic
+  current study_date: 2023-06-09
+  prior study_date: 2017-02-15
+  predicted probability: 0.535102
+  true label: False
+
+113.
+  error type: FP
+  case_id: 1214974
+  current study_description: CT CHEST WITH CNTRST
+  prior study_description: PET/CT skull to thigh int/F18
+  current study_date: 2021-12-06
+  prior study_date: 2015-10-19
+  predicted probability: 0.527829
+  true label: False
+
+114.
+  error type: FP
+  case_id: 1489566
+  current study_description: ECHO Transesophageal
+  prior study_description: VAS transcranial doppler
+  current study_date: 2022-11-07
+  prior study_date: 2022-07-20
+  predicted probability: 0.527649
+  true label: False
+
+115.
+  error type: FP
+  case_id: 1657121
+  current study_description: Bone Scan
+  prior study_description: XR Chest 1V Frontal Only
+  current study_date: 2023-05-22
+  prior study_date: 2021-07-21
+  predicted probability: 0.524590
+  true label: False
+
+116.
+  error type: FP
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: CERVICL SPINE, MIN 4 VIEWS
+  current study_date: 2022-01-06
+  prior study_date: 2015-07-14
+  predicted probability: 0.522871
+  true label: False
+
+117.
+  error type: FP
+  case_id: 1302812
+  current study_description: MRI lumbar spine wo con
+  prior study_description: CERVICL SPINE, MIN 4 VIEWS
+  current study_date: 2022-03-25
+  prior study_date: 2011-07-01
+  predicted probability: 0.522745
+  true label: False
+
+118.
+  error type: FP
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: PET/CT skull to thigh int/F18
+  current study_date: 2022-01-06
+  prior study_date: 2016-07-28
+  predicted probability: 0.520822
+  true label: False
+
+119.
+  error type: FP
+  case_id: 1489566
+  current study_description: ECHO Transesophageal
+  prior study_description: CT angio head
+  current study_date: 2022-11-07
+  prior study_date: 2022-07-20
+  predicted probability: 0.511798
+  true label: False
+
+120.
+  error type: FP
+  case_id: 1672748
+  current study_description: CT angio coronary artery
+  prior study_description: LYMPH NODE BIOPSY LEFT, ULTRASOUND GUIDED
+  current study_date: 2023-06-09
+  prior study_date: 2016-07-14
+  predicted probability: 0.511132
+  true label: False
+
+121.
+  error type: FN
+  case_id: 1650008
+  current study_description: MRI pelvis wo con
+  prior study_description: XR hip RT 2 or 3 views
+  current study_date: 2023-05-13
+  prior study_date: 2020-01-04
+  predicted probability: 0.000357
+  true label: True
+
+122.
+  error type: FN
+  case_id: 1689106
+  current study_description: DXA (Hip/Spine Only)
+  prior study_description: Bone Density
+  current study_date: 2023-06-26
+  prior study_date: 2015-04-03
+  predicted probability: 0.000457
+  true label: True
+
+123.
+  error type: FN
+  case_id: 1627142
+  current study_description: MRI shoulder LT wo con
+  prior study_description: RIBS UNILATERAL, LEFT MIN 2 VIEWS
+  current study_date: 2023-04-16
+  prior study_date: 2016-01-07
+  predicted probability: 0.001179
+  true label: True
+
+124.
+  error type: FN
+  case_id: 1361064
+  current study_description: MAM screen BI with tomo
+  prior study_description: MRI SHOULDER LEFT WO CONTRAST
+  current study_date: 2022-06-07
+  prior study_date: 2013-08-12
+  predicted probability: 0.003629
+  true label: True
+
+125.
   error type: FN
   case_id: 1439882
   current study_description: CT UPPR RGT EXTREM W/O CTRST
   prior study_description: WRIST, RIGHT - COMPL MIN 3 VWS
   current study_date: 2022-09-13
   prior study_date: 2008-08-22
-  predicted probability: 0.013238
+  predicted probability: 0.005894
   true label: True
 
-97.
+126.
   error type: FN
-  case_id: 1155727
-  current study_description: XR chest 2V PA/lat
-  prior study_description: XR thoracic spine 2V
-  current study_date: 2021-09-27
-  prior study_date: 2021-05-03
-  predicted probability: 0.015415
+  case_id: 1528183
+  current study_description: US venous doppler LE BI
+  prior study_description: VENOUS IMAGING W/DOP LEFT LEG
+  current study_date: 2022-12-22
+  prior study_date: 2018-05-15
+  predicted probability: 0.007009
   true label: True
 
-98.
+127.
   error type: FN
-  case_id: 1273312
-  current study_description: MRI thoracic spine wo con
-  prior study_description: XR Chest 1V Frontal Only
-  current study_date: 2022-02-18
-  prior study_date: 2020-04-15
-  predicted probability: 0.018770
+  case_id: 1554212
+  current study_description: Seed Localization US Right
+  prior study_description: MAM diag mammo RT
+  current study_date: 2023-01-22
+  prior study_date: 2022-12-15
+  predicted probability: 0.010029
   true label: True
 
-99.
+128.
   error type: FN
-  case_id: 1273312
-  current study_description: MRI thoracic spine wo con
-  prior study_description: XR Chest 1V Frontal Only
-  current study_date: 2022-02-18
-  prior study_date: 2022-02-18
-  predicted probability: 0.018770
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: ABDOMEN 2 VIEW - FLAT & UPRGHT
+  current study_date: 2021-11-15
+  prior study_date: 2007-11-29
+  predicted probability: 0.012515
   true label: True
 
-100.
+129.
   error type: FN
-  case_id: 1637205
-  current study_description: XR pelvis and hip LT 2-3 views
-  prior study_description: XR femur LT min 2 views
-  current study_date: 2023-04-30
-  prior study_date: 2023-04-30
-  predicted probability: 0.019571
+  case_id: 1195410
+  current study_description: MRI head/brain wo/w con
+  prior study_description: MRI cervical spine wo/w con
+  current study_date: 2021-11-15
+  prior study_date: 2021-11-14
+  predicted probability: 0.013686
   true label: True
 
-101.
+130.
   error type: FN
-  case_id: 1294440
-  current study_description: MRI cervical spine wo con
-  prior study_description: CT head/brain wo con
-  current study_date: 2022-03-15
-  prior study_date: 2020-07-05
-  predicted probability: 0.022942
+  case_id: 1528183
+  current study_description: US venous doppler LE BI
+  prior study_description: VENOUS EXTREMITY RIGHT
+  current study_date: 2022-12-22
+  prior study_date: 2013-07-25
+  predicted probability: 0.015696
   true label: True
 
-102.
-  error type: FN
-  case_id: 1273312
-  current study_description: MRI thoracic spine wo con
-  prior study_description: CHEST 2 VIEW FRONTAL & LATRL
-  current study_date: 2022-02-18
-  prior study_date: 2008-02-27
-  predicted probability: 0.023397
-  true label: True
-
-103.
-  error type: FN
-  case_id: 1273312
-  current study_description: MRI thoracic spine wo con
-  prior study_description: CHEST 2 VIEW FRONTAL & LATRL
-  current study_date: 2022-02-18
-  prior study_date: 2014-12-16
-  predicted probability: 0.023397
-  true label: True
-
-104.
-  error type: FN
-  case_id: 106054
-  current study_description: ELBOW, LEFT - 2 VIEWS
-  prior study_description: FOREARM, LEFT MIN 2 VIEWS
-  current study_date: 2025-08-29
-  prior study_date: 2025-08-29
-  predicted probability: 0.023472
-  true label: True
-
-105.
-  error type: FN
-  case_id: 1607277
-  current study_description: CT head/brain wo con
-  prior study_description: CT cervical spine wo con
-  current study_date: 2023-03-25
-  prior study_date: 2023-03-25
-  predicted probability: 0.026404
-  true label: True
-
-106.
-  error type: FN
-  case_id: 1143304
-  current study_description: CT chest wo con
-  prior study_description: CT thoracic spine wo con
-  current study_date: 2021-09-10
-  prior study_date: 2020-01-24
-  predicted probability: 0.026488
-  true label: True
-
-107.
-  error type: FN
-  case_id: 1127519
-  current study_description: XR lumbar spine ap/lat flx/ext
-  prior study_description: MRI PELVIS WITHOUT CONTRAST
-  current study_date: 2021-08-22
-  prior study_date: 2021-04-19
-  predicted probability: 0.027764
-  true label: True
-
-108.
-  error type: FN
-  case_id: 1004514
-  current study_description: CT CHEST WITH CNTRST
-  prior study_description: XR esophagram with air
-  current study_date: 2021-03-23
-  prior study_date: 2020-08-06
-  predicted probability: 0.030378
-  true label: True
-
-109.
-  error type: FN
-  case_id: 1454775
-  current study_description: VAS hemodial access ven map
-  prior study_description: VAS venous doppler LE BI
-  current study_date: 2022-09-28
-  prior study_date: 2021-07-08
-  predicted probability: 0.030427
-  true label: True
-
-110.
-  error type: FN
-  case_id: 1454775
-  current study_description: VAS hemodial access ven map
-  prior study_description: VAS venous doppler LE BI
-  current study_date: 2022-09-28
-  prior study_date: 2021-08-31
-  predicted probability: 0.030427
-  true label: True
-
-111.
-  error type: FN
-  case_id: 1273312
-  current study_description: MRI thoracic spine wo con
-  prior study_description: CT CHEST WITH CNTRST
-  current study_date: 2022-02-18
-  prior study_date: 2020-05-08
-  predicted probability: 0.031314
-  true label: True
-
-112.
+131.
   error type: FN
   case_id: 1528183
   current study_description: US venous doppler LE BI
   prior study_description: Venous
   current study_date: 2022-12-22
   prior study_date: 2013-11-12
-  predicted probability: 0.036793
+  predicted probability: 0.017391
   true label: True
 
-113.
+132.
+  error type: FN
+  case_id: 1594303
+  current study_description: XR forearm RT
+  prior study_description: XR wrist RT complete
+  current study_date: 2023-03-10
+  prior study_date: 2023-03-10
+  predicted probability: 0.018096
+  true label: True
+
+133.
+  error type: FN
+  case_id: 1439882
+  current study_description: CT UPPR RGT EXTREM W/O CTRST
+  prior study_description: SHOULDER, RIGHT - MIN 2 VIEWS
+  current study_date: 2022-09-13
+  prior study_date: 2022-09-03
+  predicted probability: 0.018367
+  true label: True
+
+134.
+  error type: FN
+  case_id: 1439882
+  current study_description: CT UPPR RGT EXTREM W/O CTRST
+  prior study_description: SHOULDER, RIGHT - MIN 2 VIEWS
+  current study_date: 2022-09-13
+  prior study_date: 2022-04-22
+  predicted probability: 0.018367
+  true label: True
+
+135.
+  error type: FN
+  case_id: 1650008
+  current study_description: MRI pelvis wo con
+  prior study_description: US bladder
+  current study_date: 2023-05-13
+  prior study_date: 2021-10-20
+  predicted probability: 0.018674
+  true label: True
+
+136.
+  error type: FN
+  case_id: 1439882
+  current study_description: CT UPPR RGT EXTREM W/O CTRST
+  prior study_description: XR shoulder RT 1V
+  current study_date: 2022-09-13
+  prior study_date: 2022-07-27
+  predicted probability: 0.018773
+  true label: True
+
+137.
+  error type: FN
+  case_id: 1554212
+  current study_description: Seed Localization US Right
+  prior study_description: MAM biopsy US guide RT
+  current study_date: 2023-01-22
+  prior study_date: 2022-12-15
+  predicted probability: 0.019655
+  true label: True
+
+138.
   error type: FN
   case_id: 1650008
   current study_description: MRI pelvis wo con
   prior study_description: US bladder post void residual
   current study_date: 2023-05-13
   prior study_date: 2021-10-19
-  predicted probability: 0.037269
-  true label: True
-
-114.
-  error type: FN
-  case_id: 1167067
-  current study_description: XR pelvis, 1 or 2 views
-  prior study_description: XR lumbar spine limited
-  current study_date: 2021-10-11
-  prior study_date: 2020-10-02
-  predicted probability: 0.037298
-  true label: True
-
-115.
-  error type: FN
-  case_id: 1331793
-  current study_description: XR knee AP/LAT, Right
-  prior study_description: CT LE RT wo con
-  current study_date: 2022-05-02
-  prior study_date: 2022-04-18
-  predicted probability: 0.037634
-  true label: True
-
-116.
-  error type: FN
-  case_id: 1398460
-  current study_description: MRI head/brain wo con
-  prior study_description: VAS transcranial doppler
-  current study_date: 2022-07-20
-  prior study_date: 2022-07-20
-  predicted probability: 0.039098
-  true label: True
-
-117.
-  error type: FN
-  case_id: 1481420
-  current study_description: MRI head/brain wo con
-  prior study_description: VAS transcranial doppler
-  current study_date: 2022-10-27
-  prior study_date: 2021-07-26
-  predicted probability: 0.039098
-  true label: True
-
-118.
-  error type: FN
-  case_id: 1643966
-  current study_description: XR thoracic spine 2V
-  prior study_description: CHEST 2 VIEW FRONTAL & LATRL
-  current study_date: 2023-05-07
-  prior study_date: 2006-11-15
-  predicted probability: 0.039293
-  true label: True
-
-119.
-  error type: FN
-  case_id: 1272400
-  current study_description: XR thoracic spine 2V
-  prior study_description: CHEST 2 VIEW FRONTAL & LATRL
-  current study_date: 2022-02-18
-  prior study_date: 2019-08-22
-  predicted probability: 0.039293
-  true label: True
-
-120.
-  error type: FN
-  case_id: 1577780
-  current study_description: US head and neck (soft tissue)
-  prior study_description: CT soft tissue neck w con
-  current study_date: 2023-02-15
-  prior study_date: 2020-07-16
-  predicted probability: 0.040325
-  true label: True
-
-121.
-  error type: FN
-  case_id: 1194348
-  current study_description: MRI lumbar spine wo/w con
-  prior study_description: CT ABD/PEL WITH CNTRST
-  current study_date: 2021-11-13
-  prior study_date: 2015-10-26
-  predicted probability: 0.041412
-  true label: True
-
-122.
-  error type: FN
-  case_id: 1281405
-  current study_description: MAM screen BI with tomo
-  prior study_description: CHEST 2 VIEW FRONTAL & LATRL
-  current study_date: 2022-02-28
-  prior study_date: 2021-08-23
-  predicted probability: 0.041635
-  true label: True
-
-123.
-  error type: FN
-  case_id: 1137820
-  current study_description: US kidneys and bladder
-  prior study_description: KUB - ABDOMEN 1 VIEW
-  current study_date: 2021-09-06
-  prior study_date: 2005-02-11
-  predicted probability: 0.044701
-  true label: True
-
-124.
-  error type: FN
-  case_id: 1384077
-  current study_description: XR chest 2V PA/lat
-  prior study_description: XR esophagram with air
-  current study_date: 2022-07-05
-  prior study_date: 2022-07-05
-  predicted probability: 0.045634
-  true label: True
-
-125.
-  error type: FN
-  case_id: 1008805
-  current study_description: MRI thoracic spine wo con
-  prior study_description: CT chest lung cancer screening
-  current study_date: 2021-03-24
-  prior study_date: 2020-02-24
-  predicted probability: 0.049290
-  true label: True
-
-126.
-  error type: FN
-  case_id: 1645176
-  current study_description: XR cervical spine limited
-  prior study_description: CT soft tissue neck w con
-  current study_date: 2023-05-09
-  prior study_date: 2021-01-26
-  predicted probability: 0.050227
-  true label: True
-
-127.
-  error type: FN
-  case_id: 1551191
-  current study_description: CT chest w con
-  prior study_description: Bone Scan
-  current study_date: 2023-01-15
-  prior study_date: 2022-10-17
-  predicted probability: 0.050603
-  true label: True
-
-128.
-  error type: FN
-  case_id: 1056616
-  current study_description: XR upper GI series single
-  prior study_description: XR Abdomen 1V
-  current study_date: 2021-05-24
-  prior study_date: 2021-05-20
-  predicted probability: 0.053658
-  true label: True
-
-129.
-  error type: FN
-  case_id: 1056616
-  current study_description: XR upper GI series single
-  prior study_description: XR Abdomen 1V
-  current study_date: 2021-05-24
-  prior study_date: 2021-05-21
-  predicted probability: 0.053658
-  true label: True
-
-130.
-  error type: FN
-  case_id: 1405699
-  current study_description: CT ANGIOGRAM, HEAD
-  prior study_description: VAS US carotid BIL
-  current study_date: 2025-09-02
-  prior study_date: 2025-07-11
-  predicted probability: 0.055158
-  true label: True
-
-131.
-  error type: FN
-  case_id: 1365460
-  current study_description: CT abdomen pelvis w con
-  prior study_description: US RETRO LTD (AORTA OR KIDNEY)
-  current study_date: 2022-06-08
-  prior study_date: 2021-11-16
-  predicted probability: 0.056869
-  true label: True
-
-132.
-  error type: FN
-  case_id: 1364636
-  current study_description: US PELVIC AND ENDOVAGINAL
-  prior study_description: MRI PELVIS WO/WITH CONTRAST
-  current study_date: 2022-06-13
-  prior study_date: 2011-01-28
-  predicted probability: 0.057604
-  true label: True
-
-133.
-  error type: FN
-  case_id: 1391803
-  current study_description: CT cervical spine wo con
-  prior study_description: CT head/brain wo con
-  current study_date: 2022-07-16
-  prior study_date: 2022-07-16
-  predicted probability: 0.058510
-  true label: True
-
-134.
-  error type: FN
-  case_id: 1326950
-  current study_description: CT ABD/PEL WITH CNTRST
-  prior study_description: Pelvic
-  current study_date: 2022-04-25
-  prior study_date: 2010-05-25
-  predicted probability: 0.061076
-  true label: True
-
-135.
-  error type: FN
-  case_id: 1687268
-  current study_description: CT CERVICAL SPINE WITHOUT CNTR
-  prior study_description: CT HEAD WITHOUT CNTRST
-  current study_date: 2023-06-26
-  prior study_date: 2023-05-16
-  predicted probability: 0.062210
-  true label: True
-
-136.
-  error type: FN
-  case_id: 1365460
-  current study_description: CT abdomen pelvis w con
-  prior study_description: US ENDOVAGINAL
-  current study_date: 2022-06-08
-  prior study_date: 2019-01-29
-  predicted probability: 0.062260
-  true label: True
-
-137.
-  error type: FN
-  case_id: 1326950
-  current study_description: CT ABD/PEL WITH CNTRST
-  prior study_description: US ENDOVAGINAL
-  current study_date: 2022-04-25
-  prior study_date: 2018-11-09
-  predicted probability: 0.066006
-  true label: True
-
-138.
-  error type: FN
-  case_id: 1667519
-  current study_description: LUM TTE W/DOPPL COMPLETE W/CO
-  prior study_description: CHEST 1 VIEW
-  current study_date: 2023-06-03
-  prior study_date: 2019-01-02
-  predicted probability: 0.066932
+  predicted probability: 0.019961
   true label: True
 
 139.
   error type: FN
-  case_id: 1274108
-  current study_description: CT angio head
-  prior study_description: MRI ANGIO CAROTID WO/W CNTST
-  current study_date: 2022-02-18
-  prior study_date: 2015-02-27
-  predicted probability: 0.067003
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: CT ABDOMEN WITH CNTRST
+  current study_date: 2022-01-06
+  prior study_date: 2005-03-21
+  predicted probability: 0.020435
   true label: True
 
 140.
   error type: FN
-  case_id: 1667519
-  current study_description: LUM TTE W/DOPPL COMPLETE W/CO
-  prior study_description: XR Chest 1V Frontal Only
-  current study_date: 2023-06-03
-  prior study_date: 2023-05-09
-  predicted probability: 0.067583
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: CT ABDOMEN WITH CNTRST
+  current study_date: 2022-01-06
+  prior study_date: 2005-03-19
+  predicted probability: 0.020435
   true label: True
 
 141.
-  error type: FN
-  case_id: 1143861
-  current study_description: CT angio coronary artery
-  prior study_description: CHEST 2 VIEW FRONTAL & LATRL
-  current study_date: 2021-09-14
-  prior study_date: 2016-04-15
-  predicted probability: 0.068331
-  true label: True
-
-142.
-  error type: FN
-  case_id: 1495949
-  current study_description: US KIDNEY & BLADDER
-  prior study_description: US ABDOMINAL
-  current study_date: 2022-11-15
-  prior study_date: 2016-12-23
-  predicted probability: 0.068467
-  true label: True
-
-143.
-  error type: FN
-  case_id: 1628756
-  current study_description: CT ABD_PEL WITH CNTRST
-  prior study_description: ABCESS DRAINAGE / CATH CHANGE
-  current study_date: 2023-04-14
-  prior study_date: 2019-08-15
-  predicted probability: 0.069674
-  true label: True
-
-144.
-  error type: FN
-  case_id: 1209981
-  current study_description: CT ABDOMEN AND PELVIS WITH CONTRAST
-  prior study_description: US pelvic & transvaginal
-  current study_date: 2025-09-02
-  prior study_date: 2025-02-25
-  predicted probability: 0.070101
-  true label: True
-
-145.
-  error type: FN
-  case_id: 1258242
-  current study_description: NMmyo perf str/rest SPEC-no p
-  prior study_description: CT CHEST WITHOUT CNTRST
-  current study_date: 2022-01-31
-  prior study_date: 2021-08-02
-  predicted probability: 0.071062
-  true label: True
-
-146.
-  error type: FN
-  case_id: 1636124
-  current study_description: CT angio head
-  prior study_description: VAS transcranial doppler
-  current study_date: 2023-04-28
-  prior study_date: 2020-07-09
-  predicted probability: 0.074248
-  true label: True
-
-147.
   error type: FN
   case_id: 1439882
   current study_description: CT UPPR RGT EXTREM W/O CTRST
   prior study_description: MRI SHOULDER RIGHT WO CONTRAST
   current study_date: 2022-09-13
   prior study_date: 2020-05-15
-  predicted probability: 0.080366
+  predicted probability: 0.021307
+  true label: True
+
+142.
+  error type: FN
+  case_id: 1439882
+  current study_description: CT UPPR RGT EXTREM W/O CTRST
+  prior study_description: MRI SHOULDER RIGHT WO CONTRAST
+  current study_date: 2022-09-13
+  prior study_date: 2019-07-23
+  predicted probability: 0.021307
+  true label: True
+
+143.
+  error type: FN
+  case_id: 1688185
+  current study_description: MRI CERV SPINE WITHOUT CNTRST
+  prior study_description: MRI BRAIN WITHOUT CONTRAST
+  current study_date: 2023-06-27
+  prior study_date: 2021-10-20
+  predicted probability: 0.022490
+  true label: True
+
+144.
+  error type: FN
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: MRI ABDOMEN WO & W CONTRAST
+  current study_date: 2021-11-15
+  prior study_date: 2007-12-18
+  predicted probability: 0.023502
+  true label: True
+
+145.
+  error type: FN
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: CT ABDOMEN WITHOUT CNTRST
+  current study_date: 2022-01-06
+  prior study_date: 2007-09-04
+  predicted probability: 0.024535
+  true label: True
+
+146.
+  error type: FN
+  case_id: 1673147
+  current study_description: PET^PETCT_SKULLBASE_TO_MIDTHIGH (Adult)
+  prior study_description: CT THORACIC SPINE WITH
+  current study_date: 2023-06-08
+  prior study_date: 2008-03-08
+  predicted probability: 0.028736
+  true label: True
+
+147.
+  error type: FN
+  case_id: 1637205
+  current study_description: XR pelvis and hip LT 2-3 views
+  prior study_description: XR femur LT min 2 views
+  current study_date: 2023-04-30
+  prior study_date: 2023-04-30
+  predicted probability: 0.030619
   true label: True
 
 148.
   error type: FN
-  case_id: 1239276
-  current study_description: MRI lumbar spine wo/w con
-  prior study_description: CT ABD/PELVIS WO CNTRST
-  current study_date: 2022-01-06
-  prior study_date: 2014-10-27
-  predicted probability: 0.082367
+  case_id: 1554212
+  current study_description: Seed Localization US Right
+  prior study_description: MAM screen BI - diag RT
+  current study_date: 2023-01-22
+  prior study_date: 2022-12-08
+  predicted probability: 0.031777
   true label: True
 
 149.
   error type: FN
-  case_id: 1239276
-  current study_description: MRI lumbar spine wo/w con
-  prior study_description: CT ABD/PELVIS WO CNTRST
-  current study_date: 2022-01-06
-  prior study_date: 2015-04-13
-  predicted probability: 0.082367
+  case_id: 1688185
+  current study_description: MRI CERV SPINE WITHOUT CNTRST
+  prior study_description: CT SOFT TISSUE NECK WITH CNTRS
+  current study_date: 2023-06-27
+  prior study_date: 2023-06-23
+  predicted probability: 0.031945
   true label: True
 
 150.
   error type: FN
-  case_id: 1667519
-  current study_description: LUM TTE W/DOPPL COMPLETE W/CO
-  prior study_description: CHEST 2 VIEW FRONTAL & LATRL
-  current study_date: 2023-06-03
-  prior study_date: 2019-02-04
-  predicted probability: 0.083220
+  case_id: 1606286
+  current study_description: CT abdomen pelvis w con
+  prior study_description: US transvaginal
+  current study_date: 2023-03-20
+  prior study_date: 2020-07-07
+  predicted probability: 0.032895
   true label: True
 
 151.
   error type: FN
-  case_id: 1667519
-  current study_description: LUM TTE W/DOPPL COMPLETE W/CO
-  prior study_description: CHEST 2 VIEW FRONTAL & LATRL
-  current study_date: 2023-06-03
-  prior study_date: 2019-02-10
-  predicted probability: 0.083220
+  case_id: 1281405
+  current study_description: MAM screen BI with tomo
+  prior study_description: Chest
+  current study_date: 2022-02-28
+  prior study_date: 2010-01-24
+  predicted probability: 0.033387
   true label: True
 
 152.
   error type: FN
-  case_id: 1628572
-  current study_description: US bladder post void residual
-  prior study_description: CT abdomen pelvis wo con
-  current study_date: 2023-04-18
-  prior study_date: 2022-09-07
-  predicted probability: 0.085020
+  case_id: 1008550
+  current study_description: BONE DENSITY (HIP_SPINE)
+  prior study_description: Bone Density
+  current study_date: 2021-03-26
+  prior study_date: 2017-02-20
+  predicted probability: 0.034164
   true label: True
 
 153.
   error type: FN
-  case_id: 1196043
-  current study_description: XR lumbar puncture
-  prior study_description: CT ABDOMEN WITH CNTRST
-  current study_date: 2021-11-15
-  prior study_date: 2008-09-25
-  predicted probability: 0.091008
+  case_id: 1311323
+  current study_description: XR Abdomen 1V
+  prior study_description: CT COLONOGRAPHY DX WO CONTRAST
+  current study_date: 2022-04-05
+  prior study_date: 2019-12-11
+  predicted probability: 0.034825
   true label: True
 
 154.
   error type: FN
-  case_id: 1157489
-  current study_description: ECHO 2D Mmode transthorac TTE
-  prior study_description: XR Chest 1V Frontal Only
-  current study_date: 2021-09-30
-  prior study_date: 2021-09-29
-  predicted probability: 0.092131
+  case_id: 1207833
+  current study_description: Modified Barium ADULT [cookie]
+  prior study_description: COOKIE SWALLOW
+  current study_date: 2021-11-28
+  prior study_date: 2021-04-22
+  predicted probability: 0.035478
   true label: True
 
 155.
   error type: FN
-  case_id: 1409080
-  current study_description: CT abdomen pelvis w con
-  prior study_description: IR nephrostomy tube insertion
-  current study_date: 2022-08-02
-  prior study_date: 2020-09-17
-  predicted probability: 0.093846
+  case_id: 1337898
+  current study_description: NM pul perfusion
+  prior study_description: VAS venous doppler LE BI
+  current study_date: 2022-05-09
+  prior study_date: 2022-05-09
+  predicted probability: 0.037871
   true label: True
 
 156.
-  error type: FN
-  case_id: 1572170
-  current study_description: CT abdomen pelvis w con
-  prior study_description: IR nephrostomy tube insertion
-  current study_date: 2023-02-07
-  prior study_date: 2020-09-17
-  predicted probability: 0.093846
-  true label: True
-
-157.
-  error type: FN
-  case_id: 1544146
-  current study_description: BONE DENSITY (HIP_SPINE)
-  prior study_description: DXA appendicular skeleton
-  current study_date: 2023-01-10
-  prior study_date: 2021-04-26
-  predicted probability: 0.097010
-  true label: True
-
-158.
-  error type: FN
-  case_id: 1156675
-  current study_description: US pelvic & transvaginal
-  prior study_description: CT abdomen w con
-  current study_date: 2021-09-29
-  prior study_date: 2021-08-27
-  predicted probability: 0.100264
-  true label: True
-
-159.
-  error type: FN
-  case_id: 1632254
-  current study_description: CT angio coronary artery
-  prior study_description: LUM TTE W/DOPPL COMPLETE W/CO
-  current study_date: 2023-04-21
-  prior study_date: 2022-10-04
-  predicted probability: 0.103666
-  true label: True
-
-160.
-  error type: FN
-  case_id: 1615779
-  current study_description: MRI thoracic spine wo con
-  prior study_description: CT chest w con
-  current study_date: 2023-04-03
-  prior study_date: 2020-07-17
-  predicted probability: 0.105732
-  true label: True
-
-161.
-  error type: FN
-  case_id: 1574855
-  current study_description: MAM stereo bx w pst clp mam RT
-  prior study_description: Dx Bilateral Combo
-  current study_date: 2023-02-12
-  prior study_date: 2012-04-23
-  predicted probability: 0.108089
-  true label: True
-
-162.
-  error type: FN
-  case_id: 1324313
-  current study_description: CT abdomen pelvis w con
-  prior study_description: ABCESS DRAINAGE / CATH CHANGE
-  current study_date: 2022-04-18
-  prior study_date: 2019-08-15
-  predicted probability: 0.110288
-  true label: True
-
-163.
-  error type: FN
-  case_id: 1239276
-  current study_description: MRI lumbar spine wo/w con
-  prior study_description: CT abdomen pelvis w con
-  current study_date: 2022-01-06
-  prior study_date: 2020-06-25
-  predicted probability: 0.116071
-  true label: True
-
-164.
-  error type: FN
-  case_id: 1194348
-  current study_description: MRI lumbar spine wo/w con
-  prior study_description: CT abdomen pelvis w con
-  current study_date: 2021-11-13
-  prior study_date: 2020-05-25
-  predicted probability: 0.116071
-  true label: True
-
-165.
-  error type: FN
-  case_id: 1632254
-  current study_description: CT angio coronary artery
-  prior study_description: CT CHEST WITH CNTRST
-  current study_date: 2023-04-21
-  prior study_date: 2022-10-09
-  predicted probability: 0.116076
-  true label: True
-
-166.
-  error type: FN
-  case_id: 1480196
-  current study_description: NM myo perf SPECT rest & str
-  prior study_description: CT FFR
-  current study_date: 2022-10-27
-  prior study_date: 2022-03-22
-  predicted probability: 0.116160
-  true label: True
-
-167.
-  error type: FN
-  case_id: 1196043
-  current study_description: XR lumbar puncture
-  prior study_description: CT ABD/PEL WITH CNTRST
-  current study_date: 2021-11-15
-  prior study_date: 2012-07-14
-  predicted probability: 0.116193
-  true label: True
-
-168.
-  error type: FN
-  case_id: 1152476
-  current study_description: CT ABD/PEL WITH CNTRST
-  prior study_description: US PELVIC AND ENDOVAGINAL
-  current study_date: 2021-09-22
-  prior study_date: 2013-01-18
-  predicted probability: 0.117994
-  true label: True
-
-169.
-  error type: FN
-  case_id: 1395481
-  current study_description: IR cerebral stroke
-  prior study_description: VAS US carotid BIL
-  current study_date: 2022-07-20
-  prior study_date: 2022-07-20
-  predicted probability: 0.118197
-  true label: True
-
-170.
-  error type: FN
-  case_id: 1535285
-  current study_description: XR scoliosis srvy 2 or 3 views
-  prior study_description: MRI lumbar spine wo con
-  current study_date: 2022-12-29
-  prior study_date: 2021-11-15
-  predicted probability: 0.118468
-  true label: True
-
-171.
-  error type: FN
-  case_id: 1679233
-  current study_description: CT ABD/PELVIS WO CNTRST
-  prior study_description: US ENDOVAGINAL
-  current study_date: 2023-06-12
-  prior study_date: 2019-01-29
-  predicted probability: 0.119412
-  true label: True
-
-172.
-  error type: FN
-  case_id: 1039505
-  current study_description: US kidneys and bladder
-  prior study_description: US ABDOMINAL
-  current study_date: 2021-05-03
-  prior study_date: 2009-03-26
-  predicted probability: 0.120740
-  true label: True
-
-173.
-  error type: FN
-  case_id: 1039505
-  current study_description: US kidneys and bladder
-  prior study_description: US ABDOMINAL
-  current study_date: 2021-05-03
-  prior study_date: 2018-08-24
-  predicted probability: 0.120740
-  true label: True
-
-174.
-  error type: FN
-  case_id: 1409080
-  current study_description: CT abdomen pelvis w con
-  prior study_description: CT biopsy liver
-  current study_date: 2022-08-02
-  prior study_date: 2022-01-03
-  predicted probability: 0.130109
-  true label: True
-
-175.
-  error type: FN
-  case_id: 1204059
-  current study_description: CT angio carotid
-  prior study_description: CT HEAD WITHOUT CNTRST
-  current study_date: 2021-11-24
-  prior study_date: 2021-11-24
-  predicted probability: 0.130657
-  true label: True
-
-176.
-  error type: FN
-  case_id: 1274107
-  current study_description: CT angio carotid
-  prior study_description: CT HEAD WITHOUT CNTRST
-  current study_date: 2022-02-18
-  prior study_date: 2019-09-14
-  predicted probability: 0.130657
-  true label: True
-
-177.
-  error type: FN
-  case_id: 1635457
-  current study_description: XR scoliosis srvy 2 or 3 views
-  prior study_description: CERVICL SPINE, LIMITED
-  current study_date: 2023-04-26
-  prior study_date: 2023-04-07
-  predicted probability: 0.139810
-  true label: True
-
-178.
-  error type: FN
-  case_id: 1462783
-  current study_description: MRI breast BI wo/w con
-  prior study_description: Seed Localization US Right
-  current study_date: 2022-10-09
-  prior study_date: 2020-12-08
-  predicted probability: 0.141312
-  true label: True
-
-179.
-  error type: FN
-  case_id: 1204744
-  current study_description: MRI BRAIN WITHOUT CONTRAST
-  prior study_description: CT angio carotid
-  current study_date: 2021-11-24
-  prior study_date: 2021-11-24
-  predicted probability: 0.144759
-  true label: True
-
-180.
-  error type: FN
-  case_id: 1651574
-  current study_description: ECHO 2D Mmode transthorac TTE
-  prior study_description: CT CHEST WITH CNTRST
-  current study_date: 2023-05-15
-  prior study_date: 2022-03-24
-  predicted probability: 0.146387
-  true label: True
-
-181.
-  error type: FN
-  case_id: 1616810
-  current study_description: ECHO 2D Mmode transthorac TTE
-  prior study_description: CT CHEST WITH CNTRST
-  current study_date: 2023-04-03
-  prior study_date: 2020-06-17
-  predicted probability: 0.146387
-  true label: True
-
-182.
-  error type: FN
-  case_id: 1630426
-  current study_description: ECHO 2D Mmode transthorac TTE
-  prior study_description: CT CHEST WITH CNTRST
-  current study_date: 2023-04-20
-  prior study_date: 2022-10-09
-  predicted probability: 0.146387
-  true label: True
-
-183.
-  error type: FN
-  case_id: 1685584
-  current study_description: ECHO 2D Mmode transthorac TTE
-  prior study_description: CT CHEST WITH CNTRST
-  current study_date: 2023-06-23
-  prior study_date: 2023-06-23
-  predicted probability: 0.146387
-  true label: True
-
-184.
-  error type: FN
-  case_id: 1156675
-  current study_description: US pelvic & transvaginal
-  prior study_description: CT ABD/PEL WITH CNTRST
-  current study_date: 2021-09-29
-  prior study_date: 2011-08-19
-  predicted probability: 0.148783
-  true label: True
-
-185.
-  error type: FN
-  case_id: 104561
-  current study_description: US TRANSVAGINAL
-  prior study_description: OB US Nuchal Meas, 1 Gest
-  current study_date: 2025-08-29
-  prior study_date: 2023-08-10
-  predicted probability: 0.148951
-  true label: True
-
-186.
-  error type: FN
-  case_id: 1268668
-  current study_description: XR esophagram with air
-  prior study_description: CHEST 1 VIEW
-  current study_date: 2022-02-13
-  prior study_date: 2014-08-14
-  predicted probability: 0.149727
-  true label: True
-
-187.
-  error type: FN
-  case_id: 1081983
-  current study_description: CT abdomen pelvis w con
-  prior study_description: SMALL BOWEL SERIES
-  current study_date: 2021-06-22
-  prior study_date: 2019-05-22
-  predicted probability: 0.152473
-  true label: True
-
-188.
-  error type: FN
-  case_id: 1402133
-  current study_description: XR Chest 1V Frontal Only
-  prior study_description: CT ANGIO, CORONARY/CT HEART
-  current study_date: 2022-07-28
-  prior study_date: 2008-09-11
-  predicted probability: 0.154555
-  true label: True
-
-189.
-  error type: FN
-  case_id: 1561148
-  current study_description: US thyroid
-  prior study_description: US THYROID/SOFT TISSUE NECK
-  current study_date: 2023-01-26
-  prior study_date: 2018-07-24
-  predicted probability: 0.155111
-  true label: True
-
-190.
-  error type: FN
-  case_id: 1601373
-  current study_description: CT HEAD WITHOUT CNTRST
-  prior study_description: CT angio carotid
-  current study_date: 2023-03-19
-  prior study_date: 2023-03-19
-  predicted probability: 0.157401
-  true label: True
-
-191.
-  error type: FN
-  case_id: 1273114
-  current study_description: CT HEAD WITHOUT CNTRST
-  prior study_description: CT angio carotid
-  current study_date: 2022-02-18
-  prior study_date: 2022-02-18
-  predicted probability: 0.157401
-  true label: True
-
-192.
-  error type: FN
-  case_id: 1432728
-  current study_description: SHOULDER, RIGHT - MIN 2 VIEWS
-  prior study_description: CT UPPR RGT EXTREM W/O CTRST
-  current study_date: 2022-09-03
-  prior study_date: 2022-04-26
-  predicted probability: 0.158181
-  true label: True
-
-193.
-  error type: FN
-  case_id: 1303795
-  current study_description: CT CHEST WITH CNTRST
-  prior study_description: CT CORONARY CALC SCREENING
-  current study_date: 2022-03-24
-  prior study_date: 2017-07-10
-  predicted probability: 0.161569
-  true label: True
-
-194.
-  error type: FN
-  case_id: 1112439
-  current study_description: CT lumbar spine wo con
-  prior study_description: CT abdomen pelvis w con
-  current study_date: 2021-08-04
-  prior study_date: 2021-07-30
-  predicted probability: 0.164580
-  true label: True
-
-195.
-  error type: FN
-  case_id: 1458339
-  current study_description: Modified Barium ADULT [cookie]
-  prior study_description: CT RENAL COLIC
-  current study_date: 2022-10-03
-  prior study_date: 2021-03-08
-  predicted probability: 0.168262
-  true label: True
-
-196.
-  error type: FN
-  case_id: 1056616
-  current study_description: XR upper GI series single
-  prior study_description: XR Chest 1V Frontal Only
-  current study_date: 2021-05-24
-  prior study_date: 2021-05-24
-  predicted probability: 0.172387
-  true label: True
-
-197.
-  error type: FN
-  case_id: 1206190
-  current study_description: ARTERIAL IMAGING RIGHT LEG
-  prior study_description: CT ANGIOGRAM, ABD/PELVIS
-  current study_date: 2021-11-26
-  prior study_date: 2018-01-21
-  predicted probability: 0.172893
-  true label: True
-
-198.
-  error type: FN
-  case_id: 1588281
-  current study_description: XR shoulder RT complete
-  prior study_description: CT UPPR RGT EXTREM W/O CTRST
-  current study_date: 2023-03-03
-  prior study_date: 2022-09-13
-  predicted probability: 0.175343
-  true label: True
-
-199.
-  error type: FN
-  case_id: 1154416
-  current study_description: NM myo perf SPECT rest & str
-  prior study_description: CT CHEST WO AND WITH C
-  current study_date: 2021-09-26
-  prior study_date: 2009-09-05
-  predicted probability: 0.178121
-  true label: True
-
-200.
-  error type: FN
-  case_id: 1535285
-  current study_description: XR scoliosis srvy 2 or 3 views
-  prior study_description: CT lumbar spine wo con
-  current study_date: 2022-12-29
-  prior study_date: 2021-07-14
-  predicted probability: 0.178682
-  true label: True
-
-201.
-  error type: FN
-  case_id: 1535285
-  current study_description: XR scoliosis srvy 2 or 3 views
-  prior study_description: CT lumbar spine wo con
-  current study_date: 2022-12-29
-  prior study_date: 2022-06-11
-  predicted probability: 0.178682
-  true label: True
-
-202.
-  error type: FN
-  case_id: 1039505
-  current study_description: US kidneys and bladder
-  prior study_description: CT ABDOMEN WITH CNTRST
-  current study_date: 2021-05-03
-  prior study_date: 2008-12-18
-  predicted probability: 0.188572
-  true label: True
-
-203.
-  error type: FN
-  case_id: 1001847
-  current study_description: Modified Barium ADULT [cookie]
-  prior study_description: CT soft tissue neck w con
-  current study_date: 2021-03-16
-  prior study_date: 2020-12-06
-  predicted probability: 0.189336
-  true label: True
-
-204.
-  error type: FN
-  case_id: 1673012
-  current study_description: MRI cholangiography wo/w con
-  prior study_description: CT abdomen pelvis w con
-  current study_date: 2023-06-10
-  prior study_date: 2023-06-10
-  predicted probability: 0.191586
-  true label: True
-
-205.
-  error type: FN
-  case_id: 1051131
-  current study_description: XR hand RT 3V
-  prior study_description: XR wrist RT complete
-  current study_date: 2021-05-18
-  prior study_date: 2021-05-18
-  predicted probability: 0.192755
-  true label: True
-
-206.
-  error type: FN
-  case_id: 1528694
-  current study_description: CT CHEST WITHOUT CNTRST
-  prior study_description: CT soft tissue neck w con
-  current study_date: 2022-12-22
-  prior study_date: 2021-10-19
-  predicted probability: 0.200674
-  true label: True
-
-207.
-  error type: FN
-  case_id: 1469703
-  current study_description: Bone Scan
-  prior study_description: MRI abdomen wo/w con
-  current study_date: 2022-10-17
-  prior study_date: 2022-07-13
-  predicted probability: 0.214068
-  true label: True
-
-208.
-  error type: FN
-  case_id: 1469703
-  current study_description: Bone Scan
-  prior study_description: MRI abdomen wo/w con
-  current study_date: 2022-10-17
-  prior study_date: 2022-05-15
-  predicted probability: 0.214068
-  true label: True
-
-209.
-  error type: FN
-  case_id: 1504703
-  current study_description: STANDARD SCREENING COMBO
-  prior study_description: R2 Mammography Digitized Film
-  current study_date: 2022-11-22
-  prior study_date: 2008-04-23
-  predicted probability: 0.219645
-  true label: True
-
-210.
-  error type: FN
-  case_id: 1569722
-  current study_description: XR Chest 1V Frontal Only
-  prior study_description: CT guided FNA
-  current study_date: 2023-02-12
-  prior study_date: 2021-07-19
-  predicted probability: 0.220614
-  true label: True
-
-211.
-  error type: FN
-  case_id: 1570643
-  current study_description: CT angio coronary artery
-  prior study_description: CT CHEST WITHOUT CNTRST
-  current study_date: 2023-02-02
-  prior study_date: 2019-06-25
-  predicted probability: 0.225115
-  true label: True
-
-212.
-  error type: FN
-  case_id: 1407316
-  current study_description: CT chest w con
-  prior study_description: CT coronary calc screening
-  current study_date: 2022-08-04
-  prior study_date: 2022-07-05
-  predicted probability: 0.226065
-  true label: True
-
-213.
-  error type: FN
-  case_id: 1134926
-  current study_description: CT abdomen pelvis w con
-  prior study_description: CT UROGRAM
-  current study_date: 2021-08-30
-  prior study_date: 2014-05-20
-  predicted probability: 0.226443
-  true label: True
-
-214.
-  error type: FN
-  case_id: 1607689
-  current study_description: XR cholangiogram
-  prior study_description: CT ABD/PEL WITH CNTRST
-  current study_date: 2023-03-27
-  prior study_date: 2022-02-08
-  predicted probability: 0.226748
-  true label: True
-
-215.
-  error type: FN
-  case_id: 1607689
-  current study_description: XR cholangiogram
-  prior study_description: CT ABD/PEL WITH CNTRST
-  current study_date: 2023-03-27
-  prior study_date: 2023-03-27
-  predicted probability: 0.226748
-  true label: True
-
-216.
-  error type: FN
-  case_id: 16757
-  current study_description: CT MAXILLOFACIAL AND SINUSES WITHOUT CONTRAST
-  prior study_description: CT HEAD WITHOUT CNTRST
-  current study_date: 2025-08-28
-  prior study_date: 2017-07-23
-  predicted probability: 0.228222
-  true label: True
-
-217.
-  error type: FN
-  case_id: 1681671
-  current study_description: CT biopsy lung/mediastinum RT
-  prior study_description: CT coronary calc screening
-  current study_date: 2023-06-19
-  prior study_date: 2023-05-14
-  predicted probability: 0.228553
-  true label: True
-
-218.
-  error type: FN
-  case_id: 1508189
-  current study_description: NM pul perfusion
-  prior study_description: XR Chest 1V Frontal Only
-  current study_date: 2022-11-29
-  prior study_date: 2022-09-23
-  predicted probability: 0.229274
-  true label: True
-
-219.
-  error type: FN
-  case_id: 1090380
-  current study_description: ULTRASOUND LT DIAG TARGET
-  prior study_description: MRI breast BI wo/w con
-  current study_date: 2021-07-08
-  prior study_date: 2020-08-02
-  predicted probability: 0.230768
-  true label: True
-
-220.
-  error type: FN
-  case_id: 1258279
-  current study_description: US pelvic & transvaginal
-  prior study_description: CT abdomen pelvis w con
-  current study_date: 2022-01-30
-  prior study_date: 2022-01-16
-  predicted probability: 0.233566
-  true label: True
-
-221.
-  error type: FN
-  case_id: 1553543
-  current study_description: NM lymphocnt breast inj only
-  prior study_description: Seed Localization US Right
-  current study_date: 2023-01-22
-  prior study_date: 2023-01-22
-  predicted probability: 0.238721
-  true label: True
-
-222.
-  error type: FN
-  case_id: 1194452
-  current study_description: MRI cervical spine wo/w con
-  prior study_description: MRI THORACIC SPINE WITHOUT CNT
-  current study_date: 2021-11-13
-  prior study_date: 2018-01-20
-  predicted probability: 0.243471
-  true label: True
-
-223.
-  error type: FN
-  case_id: 1573362
-  current study_description: MRI ANGIO HEAD WO CONTRST
-  prior study_description: CT angio carotid
-  current study_date: 2023-02-10
-  prior study_date: 2022-02-18
-  predicted probability: 0.244875
-  true label: True
-
-224.
-  error type: FN
-  case_id: 1457096
-  current study_description: CT ANGIOGRAM, RADIOLOGY OVERREAD
-  prior study_description: CT ABD/PEL WITH CNTRST
-  current study_date: 2025-09-02
-  prior study_date: 2021-12-17
-  predicted probability: 0.245229
-  true label: True
-
-225.
-  error type: FN
-  case_id: 1600864
-  current study_description: CT ANGIOGRAM, HEAD
-  prior study_description: CT angio carotid
-  current study_date: 2023-03-19
-  prior study_date: 2020-07-09
-  predicted probability: 0.248131
-  true label: True
-
-226.
-  error type: FN
-  case_id: 1462089
-  current study_description: CT ANGIOGRAM, CORONARY
-  prior study_description: CT ANGIOGRAM, RADIOLOGY OVERREAD
-  current study_date: 2025-09-02
-  prior study_date: 2025-09-02
-  predicted probability: 0.249028
-  true label: True
-
-227.
-  error type: FN
-  case_id: 1022686
-  current study_description: VAS transcranial doppler
-  prior study_description: MRI BRAIN WITHOUT CONTRAST
-  current study_date: 2021-04-13
-  prior study_date: 2021-04-13
-  predicted probability: 0.249401
-  true label: True
-
-228.
-  error type: FN
-  case_id: 1681798
-  current study_description: MAM US breast RT limited dx
-  prior study_description: ULTRASOUND RT DIAG COMP
-  current study_date: 2023-06-19
-  prior study_date: 2021-12-16
-  predicted probability: 0.252841
-  true label: True
-
-229.
-  error type: FN
-  case_id: 1628651
-  current study_description: CERVICL SPINE, MIN 4 VIEWS
-  prior study_description: MRI CERV SPINE WITHOUT CNTRST
-  current study_date: 2023-04-20
-  prior study_date: 2023-04-20
-  predicted probability: 0.255680
-  true label: True
-
-230.
-  error type: FN
-  case_id: 1535887
-  current study_description: CT CHEST WITH CNTRST
-  prior study_description: CT guided FNA
-  current study_date: 2022-12-28
-  prior study_date: 2021-07-19
-  predicted probability: 0.257292
-  true label: True
-
-231.
-  error type: FN
-  case_id: 1352111
-  current study_description: XR Chest 1V Frontal Only
-  prior study_description: CT angio coronary artery
-  current study_date: 2022-05-26
-  prior study_date: 2022-05-12
-  predicted probability: 0.259545
-  true label: True
-
-232.
-  error type: FN
-  case_id: 1458532
-  current study_description: XR esophagram single
-  prior study_description: XR Chest 1V Frontal Only
-  current study_date: 2022-10-04
-  prior study_date: 2021-07-01
-  predicted probability: 0.260179
-  true label: True
-
-233.
-  error type: FN
-  case_id: 1274821
-  current study_description: VAS transcranial doppler
-  prior study_description: CT HEAD WITHOUT CNTRST
-  current study_date: 2022-02-18
-  prior study_date: 2015-02-27
-  predicted probability: 0.261058
-  true label: True
-
-234.
-  error type: FN
-  case_id: 1274821
-  current study_description: VAS transcranial doppler
-  prior study_description: CT HEAD WITHOUT CNTRST
-  current study_date: 2022-02-18
-  prior study_date: 2022-02-18
-  predicted probability: 0.261058
-  true label: True
-
-235.
-  error type: FN
-  case_id: 1204059
-  current study_description: CT angio carotid
-  prior study_description: VAS US carotid BIL
-  current study_date: 2021-11-24
-  prior study_date: 2020-07-09
-  predicted probability: 0.265312
-  true label: True
-
-236.
-  error type: FN
-  case_id: 1486466
-  current study_description: ECHO 2D Mmode transthorac TTE
-  prior study_description: CT CHEST WITHOUT CNTRST
-  current study_date: 2022-11-03
-  prior study_date: 2018-07-31
-  predicted probability: 0.276436
-  true label: True
-
-237.
-  error type: FN
-  case_id: 1101686
-  current study_description: ECHO 2D Mmode transthorac TTE
-  prior study_description: CT CHEST WITHOUT CNTRST
-  current study_date: 2021-07-21
-  prior study_date: 2020-09-28
-  predicted probability: 0.276436
-  true label: True
-
-238.
-  error type: FN
-  case_id: 1486466
-  current study_description: ECHO 2D Mmode transthorac TTE
-  prior study_description: CT CHEST WITHOUT CNTRST
-  current study_date: 2022-11-03
-  prior study_date: 2016-07-01
-  predicted probability: 0.276436
-  true label: True
-
-239.
-  error type: FN
-  case_id: 1224827
-  current study_description: ECHO 2D Mmode transthorac TTE
-  prior study_description: CT CHEST WITHOUT CNTRST
-  current study_date: 2021-12-18
-  prior study_date: 2013-08-07
-  predicted probability: 0.276436
-  true label: True
-
-240.
-  error type: FN
-  case_id: 104563
-  current study_description: CHEST FRONTAL VIEW
-  prior study_description: PET^PETCT_SKULLBASE_TO_MIDTHIGH (Adult)
-  current study_date: 2025-08-29
-  prior study_date: 2025-01-30
-  predicted probability: 0.278545
-  true label: True
-
-241.
-  error type: FN
-  case_id: 1535285
-  current study_description: XR scoliosis srvy 2 or 3 views
-  prior study_description: XR lumbar spine limited
-  current study_date: 2022-12-29
-  prior study_date: 2021-10-11
-  predicted probability: 0.280528
-  true label: True
-
-242.
-  error type: FN
-  case_id: 1565346
-  current study_description: CT FFR
-  prior study_description: CT CHEST WITHOUT CNTRST
-  current study_date: 2023-02-07
-  prior study_date: 2017-07-25
-  predicted probability: 0.299862
-  true label: True
-
-243.
-  error type: FN
-  case_id: 1278812
-  current study_description: XR wrist RT complete
-  prior study_description: XR hand RT 3V
-  current study_date: 2022-02-28
-  prior study_date: 2022-02-28
-  predicted probability: 0.300358
-  true label: True
-
-244.
-  error type: FN
-  case_id: 1396408
-  current study_description: CT angio carotid
-  prior study_description: CT brain perfusion w/cont
-  current study_date: 2022-07-20
-  prior study_date: 2022-07-20
-  predicted probability: 0.301034
-  true label: True
-
-245.
-  error type: FN
-  case_id: 1574846
-  current study_description: CT CHEST WITH CNTRST
-  prior study_description: CT angio coronary artery
-  current study_date: 2023-02-12
-  prior study_date: 2021-02-24
-  predicted probability: 0.301847
-  true label: True
-
-246.
-  error type: FN
-  case_id: 1670173
-  current study_description: Breast Specimen, Left
-  prior study_description: ULTRASOUND LT DIAG TARGET
-  current study_date: 2023-06-07
-  prior study_date: 2021-07-08
-  predicted probability: 0.304067
-  true label: True
-
-247.
-  error type: FN
-  case_id: 1274821
-  current study_description: VAS transcranial doppler
-  prior study_description: CAROTID ULTRASOUND
-  current study_date: 2022-02-18
-  prior study_date: 2015-02-27
-  predicted probability: 0.310393
-  true label: True
-
-248.
-  error type: FN
-  case_id: 1157489
-  current study_description: ECHO 2D Mmode transthorac TTE
-  prior study_description: CT chest wo/w con
-  current study_date: 2021-09-30
-  prior study_date: 2021-09-19
-  predicted probability: 0.316171
-  true label: True
-
-249.
-  error type: FN
-  case_id: 1111193
-  current study_description: PET/CT skull to thigh sbq/F18
-  prior study_description: XR chest 2V PA/lat
-  current study_date: 2021-08-01
-  prior study_date: 2021-01-20
-  predicted probability: 0.319362
-  true label: True
-
-250.
-  error type: FN
-  case_id: 1090380
-  current study_description: ULTRASOUND LT DIAG TARGET
-  prior study_description: SCREENING-BILATERAL MAMMOGRAPHY
-  current study_date: 2021-07-08
-  prior study_date: 2013-12-27
-  predicted probability: 0.329835
-  true label: True
-
-251.
   error type: FN
   case_id: 1554212
   current study_description: Seed Localization US Right
   prior study_description: MAM screen BI with tomo
   current study_date: 2023-01-22
   prior study_date: 2020-07-05
-  predicted probability: 0.333578
+  predicted probability: 0.038330
   true label: True
 
-252.
+157.
   error type: FN
-  case_id: 1681244
-  current study_description: XR cholangiogram
-  prior study_description: CT abdomen pelvis w con
-  current study_date: 2023-06-14
-  prior study_date: 2023-06-10
-  predicted probability: 0.338301
+  case_id: 1554212
+  current study_description: Seed Localization US Right
+  prior study_description: MAM screen BI with tomo
+  current study_date: 2023-01-22
+  prior study_date: 2021-09-19
+  predicted probability: 0.038330
   true label: True
 
-253.
+158.
+  error type: FN
+  case_id: 1606286
+  current study_description: CT abdomen pelvis w con
+  prior study_description: US PELVIC, COMPLETE
+  current study_date: 2023-03-20
+  prior study_date: 2010-10-13
+  predicted probability: 0.038483
+  true label: True
+
+159.
+  error type: FN
+  case_id: 1607952
+  current study_description: CT ABD/PEL WITH CNTRST
+  prior study_description: XR cholangiogram
+  current study_date: 2023-03-27
+  prior study_date: 2023-03-27
+  predicted probability: 0.039539
+  true label: True
+
+160.
+  error type: FN
+  case_id: 1206190
+  current study_description: ARTERIAL IMAGING RIGHT LEG
+  prior study_description: ABDOMINAL ARTERIOGRAM
+  current study_date: 2021-11-26
+  prior study_date: 2021-11-26
+  predicted probability: 0.039866
+  true label: True
+
+161.
+  error type: FN
+  case_id: 1206190
+  current study_description: ARTERIAL IMAGING RIGHT LEG
+  prior study_description: ABDOMINAL ARTERIOGRAM
+  current study_date: 2021-11-26
+  prior study_date: 2021-11-12
+  predicted probability: 0.039866
+  true label: True
+
+162.
+  error type: FN
+  case_id: 1281405
+  current study_description: MAM screen BI with tomo
+  prior study_description: CHEST 2 VIEW FRONTAL & LATRL
+  current study_date: 2022-02-28
+  prior study_date: 2021-08-23
+  predicted probability: 0.040709
+  true label: True
+
+163.
+  error type: FN
+  case_id: 1081983
+  current study_description: CT abdomen pelvis w con
+  prior study_description: FISTULOGRAM
+  current study_date: 2021-06-22
+  prior study_date: 2019-08-07
+  predicted probability: 0.041638
+  true label: True
+
+164.
+  error type: FN
+  case_id: 1324313
+  current study_description: CT abdomen pelvis w con
+  prior study_description: FISTULOGRAM
+  current study_date: 2022-04-18
+  prior study_date: 2019-08-07
+  predicted probability: 0.041638
+  true label: True
+
+165.
+  error type: FN
+  case_id: 1388711
+  current study_description: US guide biopsy FNA
+  prior study_description: Thyroid Scan
+  current study_date: 2022-07-11
+  prior study_date: 2022-04-01
+  predicted probability: 0.042973
+  true label: True
+
+166.
+  error type: FN
+  case_id: 1554212
+  current study_description: Seed Localization US Right
+  prior study_description: MAM US gd FNA RT
+  current study_date: 2023-01-22
+  prior study_date: 2022-12-16
+  predicted probability: 0.043217
+  true label: True
+
+167.
+  error type: FN
+  case_id: 1606286
+  current study_description: CT abdomen pelvis w con
+  prior study_description: US RETRO LTD (AORTA OR KIDNEY)
+  current study_date: 2023-03-20
+  prior study_date: 2013-09-20
+  predicted probability: 0.044071
+  true label: True
+
+168.
+  error type: FN
+  case_id: 1544146
+  current study_description: BONE DENSITY (HIP_SPINE)
+  prior study_description: DXA appendicular skeleton
+  current study_date: 2023-01-10
+  prior study_date: 2023-01-09
+  predicted probability: 0.045920
+  true label: True
+
+169.
+  error type: FN
+  case_id: 1544146
+  current study_description: BONE DENSITY (HIP_SPINE)
+  prior study_description: DXA appendicular skeleton
+  current study_date: 2023-01-10
+  prior study_date: 2021-04-26
+  predicted probability: 0.045920
+  true label: True
+
+170.
   error type: FN
   case_id: 1554212
   current study_description: Seed Localization US Right
   prior study_description: MRI breast BI wo/w con
   current study_date: 2023-01-22
   prior study_date: 2023-01-08
-  predicted probability: 0.338376
+  predicted probability: 0.051808
+  true label: True
+
+171.
+  error type: FN
+  case_id: 1337898
+  current study_description: NM pul perfusion
+  prior study_description: XR Chest 1V Frontal Only
+  current study_date: 2022-05-09
+  prior study_date: 2022-05-09
+  predicted probability: 0.053497
+  true label: True
+
+172.
+  error type: FN
+  case_id: 1508189
+  current study_description: NM pul perfusion
+  prior study_description: XR Chest 1V Frontal Only
+  current study_date: 2022-11-29
+  prior study_date: 2021-07-01
+  predicted probability: 0.053497
+  true label: True
+
+173.
+  error type: FN
+  case_id: 1508189
+  current study_description: NM pul perfusion
+  prior study_description: XR Chest 1V Frontal Only
+  current study_date: 2022-11-29
+  prior study_date: 2021-08-31
+  predicted probability: 0.053497
+  true label: True
+
+174.
+  error type: FN
+  case_id: 1508189
+  current study_description: NM pul perfusion
+  prior study_description: XR Chest 1V Frontal Only
+  current study_date: 2022-11-29
+  prior study_date: 2022-09-23
+  predicted probability: 0.053497
+  true label: True
+
+175.
+  error type: FN
+  case_id: 1508189
+  current study_description: NM pul perfusion
+  prior study_description: XR Chest 1V Frontal Only
+  current study_date: 2022-11-29
+  prior study_date: 2022-09-24
+  predicted probability: 0.053497
+  true label: True
+
+176.
+  error type: FN
+  case_id: 1508189
+  current study_description: NM pul perfusion
+  prior study_description: XR Chest 1V Frontal Only
+  current study_date: 2022-11-29
+  prior study_date: 2022-11-29
+  predicted probability: 0.053497
+  true label: True
+
+177.
+  error type: FN
+  case_id: 1541164
+  current study_description: MRI LUMBAR SPINE WITHOUT CONTRAST
+  prior study_description: CT abdomen pelvis wo/w con
+  current study_date: 2025-09-02
+  prior study_date: 2022-04-19
+  predicted probability: 0.053702
+  true label: True
+
+178.
+  error type: FN
+  case_id: 1508189
+  current study_description: NM pul perfusion
+  prior study_description: CHEST 1 VIEW
+  current study_date: 2022-11-29
+  prior study_date: 2022-09-29
+  predicted probability: 0.053767
+  true label: True
+
+179.
+  error type: FN
+  case_id: 1520798
+  current study_description: NMmyo perf str/rest SPEC-no p
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2022-12-12
+  prior study_date: 2021-09-03
+  predicted probability: 0.055206
+  true label: True
+
+180.
+  error type: FN
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: CT ABDOMEN WITH CNTRST
+  current study_date: 2021-11-15
+  prior study_date: 2007-11-29
+  predicted probability: 0.055426
+  true label: True
+
+181.
+  error type: FN
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: CT ABDOMEN WITH CNTRST
+  current study_date: 2021-11-15
+  prior study_date: 2008-09-25
+  predicted probability: 0.055426
+  true label: True
+
+182.
+  error type: FN
+  case_id: 1429311
+  current study_description: CT abdomen wo con
+  prior study_description: CT COLONOGRAPHY DX WO CONTRAST
+  current study_date: 2022-08-28
+  prior study_date: 2019-07-11
+  predicted probability: 0.056229
+  true label: True
+
+183.
+  error type: FN
+  case_id: 1689106
+  current study_description: DXA (Hip/Spine Only)
+  prior study_description: BONE DENSITY (HIP/SPINE)
+  current study_date: 2023-06-26
+  prior study_date: 2017-04-24
+  predicted probability: 0.056448
+  true label: True
+
+184.
+  error type: FN
+  case_id: 10915
+  current study_description: US KIDNEY AND BLADDER
+  prior study_description: ABDOMEN SINGLE VIEW
+  current study_date: 2025-08-28
+  prior study_date: 2025-08-28
+  predicted probability: 0.056513
+  true label: True
+
+185.
+  error type: FN
+  case_id: 1673147
+  current study_description: PET^PETCT_SKULLBASE_TO_MIDTHIGH (Adult)
+  prior study_description: MRI chest wo con
+  current study_date: 2023-06-08
+  prior study_date: 2023-02-01
+  predicted probability: 0.057709
+  true label: True
+
+186.
+  error type: FN
+  case_id: 1273114
+  current study_description: CT HEAD WITHOUT CNTRST
+  prior study_description: CT SOFT TISSUE NECK WI
+  current study_date: 2022-02-18
+  prior study_date: 2008-03-03
+  predicted probability: 0.058469
+  true label: True
+
+187.
+  error type: FN
+  case_id: 1650008
+  current study_description: MRI pelvis wo con
+  prior study_description: CT enterography
+  current study_date: 2023-05-13
+  prior study_date: 2023-05-13
+  predicted probability: 0.061189
+  true label: True
+
+188.
+  error type: FN
+  case_id: 1606286
+  current study_description: CT abdomen pelvis w con
+  prior study_description: US pelvic & transvaginal
+  current study_date: 2023-03-20
+  prior study_date: 2021-09-29
+  predicted probability: 0.062555
+  true label: True
+
+189.
+  error type: FN
+  case_id: 1337898
+  current study_description: NM pul perfusion
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2022-05-09
+  prior study_date: 2021-12-28
+  predicted probability: 0.066132
+  true label: True
+
+190.
+  error type: FN
+  case_id: 1508189
+  current study_description: NM pul perfusion
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2022-11-29
+  prior study_date: 2021-09-03
+  predicted probability: 0.066132
+  true label: True
+
+191.
+  error type: FN
+  case_id: 1081983
+  current study_description: CT abdomen pelvis w con
+  prior study_description: SMALL BOWEL SERIES
+  current study_date: 2021-06-22
+  prior study_date: 2019-05-22
+  predicted probability: 0.068591
+  true label: True
+
+192.
+  error type: FN
+  case_id: 1324313
+  current study_description: CT abdomen pelvis w con
+  prior study_description: SMALL BOWEL SERIES
+  current study_date: 2022-04-18
+  prior study_date: 2019-05-22
+  predicted probability: 0.068591
+  true label: True
+
+193.
+  error type: FN
+  case_id: 1606286
+  current study_description: CT abdomen pelvis w con
+  prior study_description: US ENDOVAGINAL
+  current study_date: 2023-03-20
+  prior study_date: 2018-08-15
+  predicted probability: 0.068663
+  true label: True
+
+194.
+  error type: FN
+  case_id: 1508189
+  current study_description: NM pul perfusion
+  prior study_description: CHEST 2 VIEW FRONTAL & LATRL
+  current study_date: 2022-11-29
+  prior study_date: 2005-02-11
+  predicted probability: 0.069086
+  true label: True
+
+195.
+  error type: FN
+  case_id: 1594303
+  current study_description: XR forearm RT
+  prior study_description: XR humerus RT
+  current study_date: 2023-03-10
+  prior study_date: 2023-03-10
+  predicted probability: 0.070366
+  true label: True
+
+196.
+  error type: FN
+  case_id: 1337898
+  current study_description: NM pul perfusion
+  prior study_description: XR chest 2V PA/lat
+  current study_date: 2022-05-09
+  prior study_date: 2022-01-19
+  predicted probability: 0.076973
+  true label: True
+
+197.
+  error type: FN
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: CT ABD/PELVIS WO CNTRST
+  current study_date: 2022-01-06
+  prior study_date: 2014-10-27
+  predicted probability: 0.084065
+  true label: True
+
+198.
+  error type: FN
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: CT ABD/PELVIS WO CNTRST
+  current study_date: 2022-01-06
+  prior study_date: 2015-04-13
+  predicted probability: 0.084065
+  true label: True
+
+199.
+  error type: FN
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: CT ABD/PELVIS WO CNTRST
+  current study_date: 2022-01-06
+  prior study_date: 2017-05-22
+  predicted probability: 0.084065
+  true label: True
+
+200.
+  error type: FN
+  case_id: 1236660
+  current study_description: CT biopsy liver
+  prior study_description: CT abdomen pelvis wo con
+  current study_date: 2022-01-03
+  prior study_date: 2020-09-15
+  predicted probability: 0.084221
+  true label: True
+
+201.
+  error type: FN
+  case_id: 1236660
+  current study_description: CT biopsy liver
+  prior study_description: CT abdomen pelvis wo con
+  current study_date: 2022-01-03
+  prior study_date: 2020-12-10
+  predicted probability: 0.084221
+  true label: True
+
+202.
+  error type: FN
+  case_id: 1081983
+  current study_description: CT abdomen pelvis w con
+  prior study_description: ABCESS DRAINAGE / CATH CHANGE
+  current study_date: 2021-06-22
+  prior study_date: 2019-08-15
+  predicted probability: 0.086306
+  true label: True
+
+203.
+  error type: FN
+  case_id: 1324313
+  current study_description: CT abdomen pelvis w con
+  prior study_description: ABCESS DRAINAGE / CATH CHANGE
+  current study_date: 2022-04-18
+  prior study_date: 2019-08-15
+  predicted probability: 0.086306
+  true label: True
+
+204.
+  error type: FN
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: XR abdomen 2V AP and erect/dec
+  current study_date: 2021-11-15
+  prior study_date: 2020-06-05
+  predicted probability: 0.088214
+  true label: True
+
+205.
+  error type: FN
+  case_id: 1388711
+  current study_description: US guide biopsy FNA
+  prior study_description: US THYROID/SOFT TISSUE NECK
+  current study_date: 2022-07-11
+  prior study_date: 2021-01-22
+  predicted probability: 0.089028
+  true label: True
+
+206.
+  error type: FN
+  case_id: 1388711
+  current study_description: US guide biopsy FNA
+  prior study_description: US THYROID/SOFT TISSUE NECK
+  current study_date: 2022-07-11
+  prior study_date: 2022-03-31
+  predicted probability: 0.089028
+  true label: True
+
+207.
+  error type: FN
+  case_id: 1554212
+  current study_description: Seed Localization US Right
+  prior study_description: MAM US BI breast screening
+  current study_date: 2023-01-22
+  prior study_date: 2022-12-08
+  predicted probability: 0.097003
+  true label: True
+
+208.
+  error type: FN
+  case_id: 1554212
+  current study_description: Seed Localization US Right
+  prior study_description: MAM US BI breast screening
+  current study_date: 2023-01-22
+  prior study_date: 2021-09-19
+  predicted probability: 0.097003
+  true label: True
+
+209.
+  error type: FN
+  case_id: 1554212
+  current study_description: Seed Localization US Right
+  prior study_description: MAM US BI breast screening
+  current study_date: 2023-01-22
+  prior study_date: 2020-07-05
+  predicted probability: 0.097003
+  true label: True
+
+210.
+  error type: FN
+  case_id: 1206190
+  current study_description: ARTERIAL IMAGING RIGHT LEG
+  prior study_description: CT ANGIOGRAM, ABD/PELVIS
+  current study_date: 2021-11-26
+  prior study_date: 2018-01-21
+  predicted probability: 0.097951
+  true label: True
+
+211.
+  error type: FN
+  case_id: 1484417
+  current study_description: LUM TTE W/DOPPL COMPLETE W/CO
+  prior study_description: ECHO 2D Mmode transthorac TTE
+  current study_date: 2022-11-02
+  prior study_date: 2020-10-04
+  predicted probability: 0.099353
+  true label: True
+
+212.
+  error type: FN
+  case_id: 1600494
+  current study_description: LUM TTE W/DOPPL COMPLETE W/CO
+  prior study_description: ECHO 2D Mmode transthorac TTE
+  current study_date: 2023-03-17
+  prior study_date: 2021-07-21
+  predicted probability: 0.099353
+  true label: True
+
+213.
+  error type: FN
+  case_id: 1382662
+  current study_description: US pelvic & transvaginal
+  prior study_description: GYN
+  current study_date: 2022-07-04
+  prior study_date: 2014-06-07
+  predicted probability: 0.099978
+  true label: True
+
+214.
+  error type: FN
+  case_id: 1156675
+  current study_description: US pelvic & transvaginal
+  prior study_description: CT abdomen w con
+  current study_date: 2021-09-29
+  prior study_date: 2021-08-27
+  predicted probability: 0.101177
+  true label: True
+
+215.
+  error type: FN
+  case_id: 1601728
+  current study_description: CT CHEST, LUNG CANCER SCREENING (NON-ELCAP)
+  prior study_description: CT ANGIOGRAM, CORONARY
+  current study_date: 2023-03-15
+  prior study_date: 2018-03-13
+  predicted probability: 0.101509
+  true label: True
+
+216.
+  error type: FN
+  case_id: 1630426
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2023-04-20
+  prior study_date: 2022-10-09
+  predicted probability: 0.104087
+  true label: True
+
+217.
+  error type: FN
+  case_id: 1651574
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2023-05-15
+  prior study_date: 2023-03-20
+  predicted probability: 0.104087
+  true label: True
+
+218.
+  error type: FN
+  case_id: 1651574
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2023-05-15
+  prior study_date: 2022-09-19
+  predicted probability: 0.104087
+  true label: True
+
+219.
+  error type: FN
+  case_id: 1651574
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2023-05-15
+  prior study_date: 2022-03-24
+  predicted probability: 0.104087
+  true label: True
+
+220.
+  error type: FN
+  case_id: 1651574
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2023-05-15
+  prior study_date: 2021-11-19
+  predicted probability: 0.104087
+  true label: True
+
+221.
+  error type: FN
+  case_id: 1616810
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2023-04-03
+  prior study_date: 2021-06-09
+  predicted probability: 0.104087
+  true label: True
+
+222.
+  error type: FN
+  case_id: 1616810
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2023-04-03
+  prior study_date: 2020-06-17
+  predicted probability: 0.104087
+  true label: True
+
+223.
+  error type: FN
+  case_id: 1616810
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2023-04-03
+  prior study_date: 2019-09-30
+  predicted probability: 0.104087
+  true label: True
+
+224.
+  error type: FN
+  case_id: 1616810
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2023-04-03
+  prior study_date: 2019-09-11
+  predicted probability: 0.104087
+  true label: True
+
+225.
+  error type: FN
+  case_id: 1102229
+  current study_description: NM hyperthyroid therapy
+  prior study_description: NM thyroid uptake & scan I123
+  current study_date: 2021-07-21
+  prior study_date: 2021-07-19
+  predicted probability: 0.105062
+  true label: True
+
+226.
+  error type: FN
+  case_id: 11990
+  current study_description: MRI BREAST BILATERAL WITHOUT AND WITH CONTRAST
+  prior study_description: MRI chest wo/w con
+  current study_date: 2025-09-24
+  prior study_date: 2023-05-16
+  predicted probability: 0.106229
+  true label: True
+
+227.
+  error type: FN
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: CT RENAL COLIC
+  current study_date: 2022-01-06
+  prior study_date: 2008-03-03
+  predicted probability: 0.108320
+  true label: True
+
+228.
+  error type: FN
+  case_id: 1673147
+  current study_description: PET^PETCT_SKULLBASE_TO_MIDTHIGH (Adult)
+  prior study_description: NM bone scan whole body
+  current study_date: 2023-06-08
+  prior study_date: 2023-01-04
+  predicted probability: 0.110162
+  true label: True
+
+229.
+  error type: FN
+  case_id: 1630426
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: LUM TTE W/DOPPL COMPLETE W/CO
+  current study_date: 2023-04-20
+  prior study_date: 2022-10-04
+  predicted probability: 0.110980
+  true label: True
+
+230.
+  error type: FN
+  case_id: 1206190
+  current study_description: ARTERIAL IMAGING RIGHT LEG
+  prior study_description: CT angio peripheral
+  current study_date: 2021-11-26
+  prior study_date: 2021-10-29
+  predicted probability: 0.112060
+  true label: True
+
+231.
+  error type: FN
+  case_id: 1152207
+  current study_description: CT ANGIOGRAM, CORONARY
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2021-09-23
+  prior study_date: 2021-03-23
+  predicted probability: 0.115704
+  true label: True
+
+232.
+  error type: FN
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: CT abdomen pelvis w con
+  current study_date: 2022-01-06
+  prior study_date: 2020-06-25
+  predicted probability: 0.122191
+  true label: True
+
+233.
+  error type: FN
+  case_id: 1644023
+  current study_description: CT MAXFACIAL/SINUSES MEDTRONIC
+  prior study_description: MRI head/brain wo con
+  current study_date: 2023-05-08
+  prior study_date: 2022-11-21
+  predicted probability: 0.131075
+  true label: True
+
+234.
+  error type: FN
+  case_id: 1156675
+  current study_description: US pelvic & transvaginal
+  prior study_description: CT ABD PELVIS WO_W CTS (UROGM)
+  current study_date: 2021-09-29
+  prior study_date: 2018-02-02
+  predicted probability: 0.131510
+  true label: True
+
+235.
+  error type: FN
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: CT ABD/PEL WITH CNTRST
+  current study_date: 2021-11-15
+  prior study_date: 2012-07-14
+  predicted probability: 0.132096
+  true label: True
+
+236.
+  error type: FN
+  case_id: 1568222
+  current study_description: PET^PETCT_SKULLBASE_TO_MIDTHIGH (Adult)
+  prior study_description: CT CHEST  W/CONTRAST
+  current study_date: 2023-02-08
+  prior study_date: 2015-12-07
+  predicted probability: 0.132229
+  true label: True
+
+237.
+  error type: FN
+  case_id: 1236660
+  current study_description: CT biopsy liver
+  prior study_description: CT ABD PELVIS WO/W CTS (UROGM)
+  current study_date: 2022-01-03
+  prior study_date: 2019-03-28
+  predicted probability: 0.132894
+  true label: True
+
+238.
+  error type: FN
+  case_id: 1236660
+  current study_description: CT biopsy liver
+  prior study_description: CT ABD_PELVIS WO CNTRST
+  current study_date: 2022-01-03
+  prior study_date: 2019-11-07
+  predicted probability: 0.142862
+  true label: True
+
+239.
+  error type: FN
+  case_id: 1081983
+  current study_description: CT abdomen pelvis w con
+  prior study_description: DRAINAGE OF COLLECTION, PERITONEAL/RETROPERITONEAL
+  current study_date: 2021-06-22
+  prior study_date: 2019-05-10
+  predicted probability: 0.147492
+  true label: True
+
+240.
+  error type: FN
+  case_id: 1081983
+  current study_description: CT abdomen pelvis w con
+  prior study_description: DRAINAGE OF COLLECTION, PERITONEAL/RETROPERITONEAL
+  current study_date: 2021-06-22
+  prior study_date: 2018-07-09
+  predicted probability: 0.147492
+  true label: True
+
+241.
+  error type: FN
+  case_id: 1324313
+  current study_description: CT abdomen pelvis w con
+  prior study_description: DRAINAGE OF COLLECTION, PERITONEAL/RETROPERITONEAL
+  current study_date: 2022-04-18
+  prior study_date: 2019-05-10
+  predicted probability: 0.147492
+  true label: True
+
+242.
+  error type: FN
+  case_id: 1324313
+  current study_description: CT abdomen pelvis w con
+  prior study_description: DRAINAGE OF COLLECTION, PERITONEAL/RETROPERITONEAL
+  current study_date: 2022-04-18
+  prior study_date: 2018-07-09
+  predicted probability: 0.147492
+  true label: True
+
+243.
+  error type: FN
+  case_id: 1672748
+  current study_description: CT angio coronary artery
+  prior study_description: LUM TTE W/DOPPL COMPLETE W/CO
+  current study_date: 2023-06-09
+  prior study_date: 2023-06-09
+  predicted probability: 0.154709
+  true label: True
+
+244.
+  error type: FN
+  case_id: 1633167
+  current study_description: CT FFR
+  prior study_description: CT ANGIOGRAM, CHEST
+  current study_date: 2023-04-24
+  prior study_date: 2023-04-22
+  predicted probability: 0.156193
+  true label: True
+
+245.
+  error type: FN
+  case_id: 1156675
+  current study_description: US pelvic & transvaginal
+  prior study_description: CT ABD W/O & W CNT (UROGRAM)
+  current study_date: 2021-09-29
+  prior study_date: 2009-09-04
+  predicted probability: 0.156503
+  true label: True
+
+246.
+  error type: FN
+  case_id: 1156675
+  current study_description: US pelvic & transvaginal
+  prior study_description: CT ABD W/O CNTRS - REN
+  current study_date: 2021-09-29
+  prior study_date: 2010-03-03
+  predicted probability: 0.162988
+  true label: True
+
+247.
+  error type: FN
+  case_id: 10915
+  current study_description: US KIDNEY AND BLADDER
+  prior study_description: US PELVIC, COMPLETE
+  current study_date: 2025-08-28
+  prior study_date: 2022-06-30
+  predicted probability: 0.164513
+  true label: True
+
+248.
+  error type: FN
+  case_id: 1568222
+  current study_description: PET^PETCT_SKULLBASE_TO_MIDTHIGH (Adult)
+  prior study_description: CT SOFT TISSUE NECK W/CONTRAST
+  current study_date: 2023-02-08
+  prior study_date: 2015-12-07
+  predicted probability: 0.172575
+  true label: True
+
+249.
+  error type: FN
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: CT abdomen pelvis w con
+  current study_date: 2021-11-15
+  prior study_date: 2020-01-17
+  predicted probability: 0.174106
+  true label: True
+
+250.
+  error type: FN
+  case_id: 1196043
+  current study_description: XR lumbar puncture
+  prior study_description: CT abdomen pelvis w con
+  current study_date: 2021-11-15
+  prior study_date: 2020-05-25
+  predicted probability: 0.174106
+  true label: True
+
+251.
+  error type: FN
+  case_id: 1156095
+  current study_description: US bladder
+  prior study_description: CT abdomen pelvis w con
+  current study_date: 2021-09-27
+  prior study_date: 2020-07-30
+  predicted probability: 0.174349
+  true label: True
+
+252.
+  error type: FN
+  case_id: 1568222
+  current study_description: PET^PETCT_SKULLBASE_TO_MIDTHIGH (Adult)
+  prior study_description: CT LE RT wo con
+  current study_date: 2023-02-08
+  prior study_date: 2022-04-18
+  predicted probability: 0.177751
+  true label: True
+
+253.
+  error type: FN
+  case_id: 1524764
+  current study_description: CT brain perfusion w/cont
+  prior study_description: CT angio carotid
+  current study_date: 2022-12-17
+  prior study_date: 2022-12-17
+  predicted probability: 0.178610
   true label: True
 
 254.
   error type: FN
-  case_id: 1253446
-  current study_description: MAM US breast LT limited dx
-  prior study_description: ULTRASOUND LT DIAG TARGET
-  current study_date: 2022-01-25
-  prior study_date: 2021-07-08
-  predicted probability: 0.341258
+  case_id: 1634017
+  current study_description: CT abdomen pelvis w con
+  prior study_description: CT drain peritoneal
+  current study_date: 2023-04-24
+  prior study_date: 2022-10-26
+  predicted probability: 0.183202
   true label: True
 
 255.
-  error type: FN
-  case_id: 1137820
-  current study_description: US kidneys and bladder
-  prior study_description: CT abdomen pelvis w con
-  current study_date: 2021-09-06
-  prior study_date: 2021-09-02
-  predicted probability: 0.347277
-  true label: True
-
-256.
-  error type: FN
-  case_id: 1629144
-  current study_description: MRI CERV SPINE WITHOUT CNTRST
-  prior study_description: CERVICL SPINE, MIN 4 VIEWS
-  current study_date: 2023-04-20
-  prior study_date: 2023-04-20
-  predicted probability: 0.353601
-  true label: True
-
-257.
-  error type: FN
-  case_id: 1361064
-  current study_description: MAM screen BI with tomo
-  prior study_description: ULTRASOUND LT DIAG TARGET
-  current study_date: 2022-06-07
-  prior study_date: 2020-12-21
-  predicted probability: 0.362376
-  true label: True
-
-258.
-  error type: FN
-  case_id: 1676407
-  current study_description: MAM screen BI with tomo
-  prior study_description: DIGITAL SCREENER W CAD
-  current study_date: 2023-06-08
-  prior study_date: 2012-02-15
-  predicted probability: 0.366041
-  true label: True
-
-259.
-  error type: FN
-  case_id: 1676407
-  current study_description: MAM screen BI with tomo
-  prior study_description: DIGITAL SCREENER W CAD
-  current study_date: 2023-06-08
-  prior study_date: 2010-01-26
-  predicted probability: 0.366041
-  true label: True
-
-260.
-  error type: FN
-  case_id: 1676407
-  current study_description: MAM screen BI with tomo
-  prior study_description: DIGITAL SCREENER W CAD
-  current study_date: 2023-06-08
-  prior study_date: 2011-02-01
-  predicted probability: 0.366041
-  true label: True
-
-261.
-  error type: FN
-  case_id: 1387759
-  current study_description: MRI enterography
-  prior study_description: BIOPSY - ABDOMINL MASS (CT GD)
-  current study_date: 2022-07-07
-  prior study_date: 2018-02-01
-  predicted probability: 0.369926
-  true label: True
-
-262.
-  error type: FN
-  case_id: 1635986
-  current study_description: NE EEG Request
-  prior study_description: CT HEAD WITHOUT CNTRST
-  current study_date: 2023-04-28
-  prior study_date: 2020-07-09
-  predicted probability: 0.375853
-  true label: True
-
-263.
-  error type: FN
-  case_id: 1387759
-  current study_description: MRI enterography
-  prior study_description: CT ABD_PEL WITH CNTRST
-  current study_date: 2022-07-07
-  prior study_date: 2018-01-23
-  predicted probability: 0.378811
-  true label: True
-
-264.
-  error type: FN
-  case_id: 1387759
-  current study_description: MRI enterography
-  prior study_description: CT ABD_PEL WITH CNTRST
-  current study_date: 2022-07-07
-  prior study_date: 2020-09-18
-  predicted probability: 0.378811
-  true label: True
-
-265.
-  error type: FN
-  case_id: 143844
-  current study_description: CT THORACIC SPINE WITHOUT CONTRAST
-  prior study_description: CT CHEST WITHOUT CONTRAST
-  current study_date: 2025-08-29
-  prior study_date: 2025-08-28
-  predicted probability: 0.384244
-  true label: True
-
-266.
-  error type: FN
-  case_id: 1457096
-  current study_description: CT ANGIOGRAM, RADIOLOGY OVERREAD
-  prior study_description: CT CHEST WITHOUT CNTRST
-  current study_date: 2025-09-02
-  prior study_date: 2022-12-06
-  predicted probability: 0.396059
-  true label: True
-
-267.
-  error type: FN
-  case_id: 1268668
-  current study_description: XR esophagram with air
-  prior study_description: CT CHEST WITHOUT CNTRST
-  current study_date: 2022-02-13
-  prior study_date: 2022-02-02
-  predicted probability: 0.401146
-  true label: True
-
-268.
-  error type: FN
-  case_id: 1422061
-  current study_description: MRI pelvis wo/w con
-  prior study_description: PET/CT skull to thigh int/F18
-  current study_date: 2022-08-18
-  prior study_date: 2016-07-28
-  predicted probability: 0.409215
-  true label: True
-
-269.
-  error type: FN
-  case_id: 1657156
-  current study_description: Seed Localization Right Mammo
-  prior study_description: Standard Screening - ComboHD
-  current study_date: 2023-05-21
-  prior study_date: 2019-08-07
-  predicted probability: 0.419825
-  true label: True
-
-270.
-  error type: FN
-  case_id: 1594927
-  current study_description: Seed Localization Right Mammo
-  prior study_description: Standard Screening - ComboHD
-  current study_date: 2023-03-09
-  prior study_date: 2015-08-31
-  predicted probability: 0.419825
-  true label: True
-
-271.
-  error type: FN
-  case_id: 1294440
-  current study_description: MRI cervical spine wo con
-  prior study_description: MRI THORACIC SPINE WO/W CONTRS
-  current study_date: 2022-03-15
-  prior study_date: 2017-10-14
-  predicted probability: 0.423557
-  true label: True
-
-272.
-  error type: FN
-  case_id: 112765
-  current study_description: MRI NECK WITHOUT AND WITH CONTRAST
-  prior study_description: PET^PET_CT_HEADNECK_BODY (Adult)
-  current study_date: 2025-08-29
-  prior study_date: 2024-06-07
-  predicted probability: 0.425869
-  true label: True
-
-273.
-  error type: FN
-  case_id: 1274689
-  current study_description: CAROTID ULTRASOUND
-  prior study_description: MRI ANGIO CAROTID WO/W CNTST
-  current study_date: 2022-02-21
-  prior study_date: 2015-02-27
-  predicted probability: 0.429434
-  true label: True
-
-274.
-  error type: FN
-  case_id: 1484561
-  current study_description: US PARACENTESIS
-  prior study_description: US ABDOMEN LIMITED WITH DOPPLER
-  current study_date: 2022-11-02
-  prior study_date: 2020-06-24
-  predicted probability: 0.432911
-  true label: True
-
-275.
   error type: FN
   case_id: 1236660
   current study_description: CT biopsy liver
   prior study_description: CT abdomen pelvis w con
   current study_date: 2022-01-03
-  prior study_date: 2021-12-29
-  predicted probability: 0.436083
+  prior study_date: 2020-09-23
+  predicted probability: 0.188639
   true label: True
 
-276.
+256.
   error type: FN
   case_id: 1236660
   current study_description: CT biopsy liver
   prior study_description: CT abdomen pelvis w con
   current study_date: 2022-01-03
   prior study_date: 2021-02-23
-  predicted probability: 0.436083
+  predicted probability: 0.188639
+  true label: True
+
+257.
+  error type: FN
+  case_id: 1236660
+  current study_description: CT biopsy liver
+  prior study_description: CT abdomen pelvis w con
+  current study_date: 2022-01-03
+  prior study_date: 2021-05-27
+  predicted probability: 0.188639
+  true label: True
+
+258.
+  error type: FN
+  case_id: 1236660
+  current study_description: CT biopsy liver
+  prior study_description: CT abdomen pelvis w con
+  current study_date: 2022-01-03
+  prior study_date: 2021-12-29
+  predicted probability: 0.188639
+  true label: True
+
+259.
+  error type: FN
+  case_id: 1156675
+  current study_description: US pelvic & transvaginal
+  prior study_description: CT ABD/PEL WITH CNTRST
+  current study_date: 2021-09-29
+  prior study_date: 2011-08-19
+  predicted probability: 0.194289
+  true label: True
+
+260.
+  error type: FN
+  case_id: 1382662
+  current study_description: US pelvic & transvaginal
+  prior study_description: CT ABD/PEL WITH CNTRST
+  current study_date: 2022-07-04
+  prior study_date: 2011-06-28
+  predicted probability: 0.194289
+  true label: True
+
+261.
+  error type: FN
+  case_id: 1022686
+  current study_description: VAS transcranial doppler
+  prior study_description: MRI BRAIN WITHOUT CONTRAST
+  current study_date: 2021-04-13
+  prior study_date: 2021-04-13
+  predicted probability: 0.198014
+  true label: True
+
+262.
+  error type: FN
+  case_id: 1385483
+  current study_description: VAS venous doppler LE BI
+  prior study_description: VAS venous doppler LE LT
+  current study_date: 2022-07-05
+  prior study_date: 2021-11-16
+  predicted probability: 0.200355
+  true label: True
+
+263.
+  error type: FN
+  case_id: 1273114
+  current study_description: CT HEAD WITHOUT CNTRST
+  prior study_description: CT angio carotid
+  current study_date: 2022-02-18
+  prior study_date: 2022-02-18
+  predicted probability: 0.205153
+  true label: True
+
+264.
+  error type: FN
+  case_id: 1277033
+  current study_description: CT HEAD WITHOUT CNTRST
+  prior study_description: CT angio carotid
+  current study_date: 2022-02-25
+  prior study_date: 2022-02-18
+  predicted probability: 0.205153
+  true label: True
+
+265.
+  error type: FN
+  case_id: 1489566
+  current study_description: ECHO Transesophageal
+  prior study_description: LUM TTE W/DOPPL COMPLETE W/CO
+  current study_date: 2022-11-07
+  prior study_date: 2022-07-20
+  predicted probability: 0.217036
+  true label: True
+
+266.
+  error type: FN
+  case_id: 1484417
+  current study_description: LUM TTE W/DOPPL COMPLETE W/CO
+  prior study_description: CT chest wo con
+  current study_date: 2022-11-02
+  prior study_date: 2020-09-16
+  predicted probability: 0.219733
+  true label: True
+
+267.
+  error type: FN
+  case_id: 1568222
+  current study_description: PET^PETCT_SKULLBASE_TO_MIDTHIGH (Adult)
+  prior study_description: CT LE LT wo con
+  current study_date: 2023-02-08
+  prior study_date: 2021-11-09
+  predicted probability: 0.225423
+  true label: True
+
+268.
+  error type: FN
+  case_id: 1384234
+  current study_description: XR esophagram with air
+  prior study_description: XR chest 2V PA/lat
+  current study_date: 2022-07-05
+  prior study_date: 2022-07-05
+  predicted probability: 0.229493
+  true label: True
+
+269.
+  error type: FN
+  case_id: 1236660
+  current study_description: CT biopsy liver
+  prior study_description: CT biopsy abdomen percutaneous
+  current study_date: 2022-01-03
+  prior study_date: 2020-09-20
+  predicted probability: 0.235715
+  true label: True
+
+270.
+  error type: FN
+  case_id: 1484417
+  current study_description: LUM TTE W/DOPPL COMPLETE W/CO
+  prior study_description: CT chest w con
+  current study_date: 2022-11-02
+  prior study_date: 2022-11-01
+  predicted probability: 0.239030
+  true label: True
+
+271.
+  error type: FN
+  case_id: 1544146
+  current study_description: BONE DENSITY (HIP_SPINE)
+  prior study_description: DXA (Hip/Spine Only)
+  current study_date: 2023-01-10
+  prior study_date: 2021-04-26
+  predicted probability: 0.246633
+  true label: True
+
+272.
+  error type: FN
+  case_id: 1677865
+  current study_description: PET-CT SKULL TO THIGH INITIAL
+  prior study_description: CT ABD_PEL WITH CNTRST
+  current study_date: 2023-06-14
+  prior study_date: 2021-05-20
+  predicted probability: 0.255484
+  true label: True
+
+273.
+  error type: FN
+  case_id: 1677865
+  current study_description: PET-CT SKULL TO THIGH INITIAL
+  prior study_description: CT ABD_PEL WITH CNTRST
+  current study_date: 2023-06-14
+  prior study_date: 2021-05-19
+  predicted probability: 0.255484
+  true label: True
+
+274.
+  error type: FN
+  case_id: 10915
+  current study_description: US KIDNEY AND BLADDER
+  prior study_description: US PELVIC COMPLETE, WITH DOPPLER
+  current study_date: 2025-08-28
+  prior study_date: 2025-08-28
+  predicted probability: 0.263100
+  true label: True
+
+275.
+  error type: FN
+  case_id: 1022686
+  current study_description: VAS transcranial doppler
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2021-04-13
+  prior study_date: 2019-09-23
+  predicted probability: 0.275597
+  true label: True
+
+276.
+  error type: FN
+  case_id: 1022686
+  current study_description: VAS transcranial doppler
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2021-04-13
+  prior study_date: 2021-04-13
+  predicted probability: 0.275597
   true label: True
 
 277.
   error type: FN
-  case_id: 1364636
-  current study_description: US PELVIC AND ENDOVAGINAL
-  prior study_description: US ENDOVAGINAL
-  current study_date: 2022-06-13
-  prior study_date: 2018-11-09
-  predicted probability: 0.443468
+  case_id: 1489566
+  current study_description: ECHO Transesophageal
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2022-11-07
+  prior study_date: 2015-03-31
+  predicted probability: 0.285602
   true label: True
 
 278.
   error type: FN
-  case_id: 1364636
-  current study_description: US PELVIC AND ENDOVAGINAL
-  prior study_description: US ENDOVAGINAL
-  current study_date: 2022-06-13
-  prior study_date: 2015-08-06
-  predicted probability: 0.443468
+  case_id: 1489566
+  current study_description: ECHO Transesophageal
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2022-11-07
+  prior study_date: 2014-03-26
+  predicted probability: 0.285602
   true label: True
 
 279.
   error type: FN
-  case_id: 1364636
-  current study_description: US PELVIC AND ENDOVAGINAL
-  prior study_description: US ENDOVAGINAL
-  current study_date: 2022-06-13
-  prior study_date: 2018-04-30
-  predicted probability: 0.443468
+  case_id: 1018103
+  current study_description: PET-CT SKULL TO THIGH SUBSQNT
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2021-04-06
+  prior study_date: 2020-03-25
+  predicted probability: 0.287856
   true label: True
 
 280.
   error type: FN
-  case_id: 1190104
-  current study_description: ECHO Transesophageal
-  prior study_description: CT CHEST WITHOUT CNTRST
-  current study_date: 2021-11-07
-  prior study_date: 2013-08-07
-  predicted probability: 0.444738
+  case_id: 1156038
+  current study_description: PET-CT SKULL TO THIGH SUBSQNT
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2021-09-28
+  prior study_date: 2021-08-05
+  predicted probability: 0.287856
   true label: True
 
 281.
   error type: FN
-  case_id: 1645176
-  current study_description: XR cervical spine limited
-  prior study_description: XR cerv spine ap/lat/flx/ext
-  current study_date: 2023-05-09
-  prior study_date: 2023-02-05
-  predicted probability: 0.444912
+  case_id: 1156038
+  current study_description: PET-CT SKULL TO THIGH SUBSQNT
+  prior study_description: CT CHEST WITH CNTRST
+  current study_date: 2021-09-28
+  prior study_date: 2020-03-25
+  predicted probability: 0.287856
   true label: True
 
 282.
   error type: FN
-  case_id: 1429311
-  current study_description: CT abdomen wo con
-  prior study_description: PET/CT skull to thigh int/F18
-  current study_date: 2022-08-28
-  prior study_date: 2015-10-19
-  predicted probability: 0.450879
+  case_id: 1382662
+  current study_description: US pelvic & transvaginal
+  prior study_description: US ENDOVAGINAL
+  current study_date: 2022-07-04
+  prior study_date: 2017-04-24
+  predicted probability: 0.290477
   true label: True
 
 283.
   error type: FN
-  case_id: 1038574
-  current study_description: XR hip RT 2 or 3 views
-  prior study_description: CT ABD W/O CNTRS - RENAL COLIC
-  current study_date: 2021-05-03
-  prior study_date: 2009-11-20
-  predicted probability: 0.455545
+  case_id: 1342689
+  current study_description: CT angio coronary artery
+  prior study_description: CT ANGIOGRAM, CHEST
+  current study_date: 2022-05-12
+  prior study_date: 2022-05-10
+  predicted probability: 0.298574
   true label: True
 
 284.
   error type: FN
-  case_id: 1143303
-  current study_description: CT abdomen pelvis wo con
-  prior study_description: PET/CT skull to thigh int/F18
-  current study_date: 2021-09-09
-  prior study_date: 2016-07-28
-  predicted probability: 0.465780
+  case_id: 1342689
+  current study_description: CT angio coronary artery
+  prior study_description: CT ANGIOGRAM, CHEST
+  current study_date: 2022-05-12
+  prior study_date: 2022-05-10
+  predicted probability: 0.298574
   true label: True
 
 285.
   error type: FN
-  case_id: 1273312
-  current study_description: MRI thoracic spine wo con
-  prior study_description: MRI LUMBAR SPINE WITHOUT CNTRS
-  current study_date: 2022-02-18
-  prior study_date: 2013-03-24
-  predicted probability: 0.472767
+  case_id: 1616810
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: CT CHEST WITHOUT CNTRST
+  current study_date: 2023-04-03
+  prior study_date: 2020-09-28
+  predicted probability: 0.310275
   true label: True
 
 286.
   error type: FN
-  case_id: 1012075
-  current study_description: MAM SCREEN 3D
-  prior study_description: ULTRASOUND BILAT DIAG COMP
-  current study_date: 2021-03-30
-  prior study_date: 2021-03-30
-  predicted probability: 0.472914
+  case_id: 1616810
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: CT CHEST WITHOUT CNTRST
+  current study_date: 2023-04-03
+  prior study_date: 2022-09-13
+  predicted probability: 0.310275
   true label: True
 
 287.
   error type: FN
-  case_id: 1293428
-  current study_description: THORACENTESIS (CT GUIDED)
-  prior study_description: XR Chest 1V Frontal Only
-  current study_date: 2022-03-15
-  prior study_date: 2022-01-11
-  predicted probability: 0.473512
+  case_id: 1616810
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: CT CHEST WITHOUT CNTRST
+  current study_date: 2023-04-03
+  prior study_date: 2022-06-07
+  predicted probability: 0.310275
   true label: True
 
 288.
   error type: FN
-  case_id: 1142422
-  current study_description: XR thoracic spine 2V
-  prior study_description: MRI CERV SPINE WITHOUT CNTRST
-  current study_date: 2021-09-13
-  prior study_date: 2016-07-31
-  predicted probability: 0.478281
+  case_id: 1616810
+  current study_description: ECHO 2D Mmode transthorac TTE
+  prior study_description: CT CHEST WITHOUT CNTRST
+  current study_date: 2023-04-03
+  prior study_date: 2012-10-03
+  predicted probability: 0.310275
   true label: True
 
 289.
   error type: FN
-  case_id: 1142421
-  current study_description: CERVICL SPINE AP_LAT W FLX_EX
-  prior study_description: MRI CERV SPINE WITHOUT CNTRST
-  current study_date: 2021-09-13
-  prior study_date: 2020-05-15
-  predicted probability: 0.480034
+  case_id: 1458573
+  current study_description: MRI SHOULDER RIGHT WITHOUT CONTRAST
+  prior study_description: CT UPPR RGT EXTREM W/O CTRST
+  current study_date: 2022-10-03
+  prior study_date: 2022-04-26
+  predicted probability: 0.313732
   true label: True
 
 290.
   error type: FN
-  case_id: 1486869
-  current study_description: VAS US carotid BIL
-  prior study_description: CT angio carotid
-  current study_date: 2022-11-03
-  prior study_date: 2022-11-03
-  predicted probability: 0.483387
+  case_id: 1458573
+  current study_description: MRI SHOULDER RIGHT WITHOUT CONTRAST
+  prior study_description: CT UPPR RGT EXTREM W/O CTRST
+  current study_date: 2022-10-03
+  prior study_date: 2022-09-13
+  predicted probability: 0.313732
   true label: True
 
 291.
   error type: FN
-  case_id: 1628514
-  current study_description: MAM screen BI with tomo
-  prior study_description: Standard Screening - ComboHD
-  current study_date: 2023-04-13
-  prior study_date: 2019-08-07
-  predicted probability: 0.486079
+  case_id: 103200
+  current study_description: CT CHEST WITH CONTRAST
+  prior study_description: PET^PETCT_SKULLBASE_TO_MIDTHIGH (Adult)
+  current study_date: 2025-08-29
+  prior study_date: 2023-12-26
+  predicted probability: 0.318059
   true label: True
 
 292.
   error type: FN
-  case_id: 1142422
-  current study_description: XR thoracic spine 2V
-  prior study_description: CERVICL SPINE, LIMITED
-  current study_date: 2021-09-13
-  prior study_date: 2019-11-08
-  predicted probability: 0.488851
+  case_id: 103200
+  current study_description: CT CHEST WITH CONTRAST
+  prior study_description: PET^PETCT_SKULLBASE_TO_MIDTHIGH (Adult)
+  current study_date: 2025-08-29
+  prior study_date: 2025-01-30
+  predicted probability: 0.318059
   true label: True
 
 293.
   error type: FN
-  case_id: 10383
-  current study_description: SCREENING BREAST ULTRASOUND, BILATERAL
-  prior study_description: ULTRASOUND BILAT DIAG COMP
-  current study_date: 2025-08-28
-  prior study_date: 2021-06-28
-  predicted probability: 0.492708
+  case_id: 1018103
+  current study_description: PET-CT SKULL TO THIGH SUBSQNT
+  prior study_description: CT ANGIOGRAM, CHEST
+  current study_date: 2021-04-06
+  prior study_date: 2020-09-21
+  predicted probability: 0.324149
   true label: True
 
 294.
   error type: FN
-  case_id: 1427247
-  current study_description: MAM screen BI - diag LT
-  prior study_description: MAM diagnostic RT with tomo
-  current study_date: 2022-08-28
-  prior study_date: 2021-06-15
-  predicted probability: 0.897927
+  case_id: 1444490
+  current study_description: CT angio chest
+  prior study_description: CT angio coronary artery
+  current study_date: 2022-09-15
+  prior study_date: 2021-11-15
+  predicted probability: 0.329420
+  true label: True
+
+295.
+  error type: FN
+  case_id: 1156675
+  current study_description: US pelvic & transvaginal
+  prior study_description: US transvaginal
+  current study_date: 2021-09-29
+  prior study_date: 2020-07-07
+  predicted probability: 0.330698
+  true label: True
+
+296.
+  error type: FN
+  case_id: 1194452
+  current study_description: MRI cervical spine wo/w con
+  prior study_description: MRI CERV SPINE WITHOUT CNTRST
+  current study_date: 2021-11-13
+  prior study_date: 2018-01-20
+  predicted probability: 0.331628
+  true label: True
+
+297.
+  error type: FN
+  case_id: 1194452
+  current study_description: MRI cervical spine wo/w con
+  prior study_description: MRI CERV SPINE WITHOUT CNTRST
+  current study_date: 2021-11-13
+  prior study_date: 2011-11-30
+  predicted probability: 0.331628
+  true label: True
+
+298.
+  error type: FN
+  case_id: 1635986
+  current study_description: NE EEG Request
+  prior study_description: MRI BRAIN WITHOUT CONTRAST
+  current study_date: 2023-04-28
+  prior study_date: 2021-11-24
+  predicted probability: 0.338815
+  true label: True
+
+299.
+  error type: FN
+  case_id: 1635986
+  current study_description: NE EEG Request
+  prior study_description: MRI BRAIN WITHOUT CONTRAST
+  current study_date: 2023-04-28
+  prior study_date: 2020-07-09
+  predicted probability: 0.338815
+  true label: True
+
+300.
+  error type: FN
+  case_id: 1635986
+  current study_description: NE EEG Request
+  prior study_description: MRI BRAIN WITHOUT CONTRAST
+  current study_date: 2023-04-28
+  prior study_date: 2019-12-17
+  predicted probability: 0.338815
+  true label: True
+
+301.
+  error type: FN
+  case_id: 1635986
+  current study_description: NE EEG Request
+  prior study_description: MRI BRAIN WITHOUT CONTRAST
+  current study_date: 2023-04-28
+  prior study_date: 2016-09-01
+  predicted probability: 0.338815
+  true label: True
+
+302.
+  error type: FN
+  case_id: 1486869
+  current study_description: VAS US carotid BIL
+  prior study_description: CT soft tissue neck w con
+  current study_date: 2022-11-03
+  prior study_date: 2021-10-19
+  predicted probability: 0.346077
+  true label: True
+
+303.
+  error type: FN
+  case_id: 1388473
+  current study_description: MAMMO SCREEN BILAT W/ CAD/TOMO
+  prior study_description: Bilat-Screening w/CAD - G0202
+  current study_date: 2022-07-12
+  prior study_date: 2010-10-11
+  predicted probability: 0.360528
+  true label: True
+
+304.
+  error type: FN
+  case_id: 1687700
+  current study_description: BONE DENSITY (HIP/SPINE)
+  prior study_description: DXA (Hip/Spine Only)
+  current study_date: 2023-06-27
+  prior study_date: 2021-05-06
+  predicted probability: 0.380055
+  true label: True
+
+305.
+  error type: FN
+  case_id: 1361064
+  current study_description: MAM screen BI with tomo
+  prior study_description: ULTRASOUND LT DIAG TARGET
+  current study_date: 2022-06-07
+  prior study_date: 2020-12-21
+  predicted probability: 0.402963
+  true label: True
+
+306.
+  error type: FN
+  case_id: 1151924
+  current study_description: MAM stereo bx w pst clp mam LT
+  prior study_description: ULTRASOUND BILAT SCREEN COMP
+  current study_date: 2021-09-22
+  prior study_date: 2021-09-15
+  predicted probability: 0.411425
+  true label: True
+
+307.
+  error type: FN
+  case_id: 1361064
+  current study_description: MAM screen BI with tomo
+  prior study_description: DIGITAL SCREENER W CAD
+  current study_date: 2022-06-07
+  prior study_date: 2010-01-26
+  predicted probability: 0.422750
+  true label: True
+
+308.
+  error type: FN
+  case_id: 1361064
+  current study_description: MAM screen BI with tomo
+  prior study_description: DIGITAL SCREENER W CAD
+  current study_date: 2022-06-07
+  prior study_date: 2011-02-01
+  predicted probability: 0.422750
+  true label: True
+
+309.
+  error type: FN
+  case_id: 1018103
+  current study_description: PET-CT SKULL TO THIGH SUBSQNT
+  prior study_description: CT CHEST_ABD_PEL W CNTRST
+  current study_date: 2021-04-06
+  prior study_date: 2020-09-21
+  predicted probability: 0.425026
+  true label: True
+
+310.
+  error type: FN
+  case_id: 1156038
+  current study_description: PET-CT SKULL TO THIGH SUBSQNT
+  prior study_description: CT CHEST_ABD_PEL W CNTRST
+  current study_date: 2021-09-28
+  prior study_date: 2020-09-21
+  predicted probability: 0.425026
+  true label: True
+
+311.
+  error type: FN
+  case_id: 1484417
+  current study_description: LUM TTE W/DOPPL COMPLETE W/CO
+  prior study_description: CT coronary calc screening
+  current study_date: 2022-11-02
+  prior study_date: 2021-11-07
+  predicted probability: 0.428737
+  true label: True
+
+312.
+  error type: FN
+  case_id: 1105861
+  current study_description: NE EEG Request
+  prior study_description: MRI head/brain wo/w con
+  current study_date: 2021-07-26
+  prior study_date: 2021-07-26
+  predicted probability: 0.440658
+  true label: True
+
+313.
+  error type: FN
+  case_id: 1635986
+  current study_description: NE EEG Request
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2023-04-28
+  prior study_date: 2023-03-19
+  predicted probability: 0.441215
+  true label: True
+
+314.
+  error type: FN
+  case_id: 1635986
+  current study_description: NE EEG Request
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2023-04-28
+  prior study_date: 2023-04-28
+  predicted probability: 0.441215
+  true label: True
+
+315.
+  error type: FN
+  case_id: 1635986
+  current study_description: NE EEG Request
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2023-04-28
+  prior study_date: 2021-11-24
+  predicted probability: 0.441215
+  true label: True
+
+316.
+  error type: FN
+  case_id: 1635986
+  current study_description: NE EEG Request
+  prior study_description: CT HEAD WITHOUT CNTRST
+  current study_date: 2023-04-28
+  prior study_date: 2020-07-09
+  predicted probability: 0.441215
+  true label: True
+
+317.
+  error type: FN
+  case_id: 1635986
+  current study_description: NE EEG Request
+  prior study_description: CT ANGIOGRAM, HEAD
+  current study_date: 2023-04-28
+  prior study_date: 2023-03-19
+  predicted probability: 0.450236
+  true label: True
+
+318.
+  error type: FN
+  case_id: 1454921
+  current study_description: US kidneys and bladder
+  prior study_description: CT abdomen pelvis w con
+  current study_date: 2022-09-30
+  prior study_date: 2021-09-02
+  predicted probability: 0.463872
+  true label: True
+
+319.
+  error type: FN
+  case_id: 1046592
+  current study_description: MAM screen BI with tomo
+  prior study_description: STANDARD SCREENING COMBO
+  current study_date: 2021-05-12
+  prior study_date: 2020-02-25
+  predicted probability: 0.473471
+  true label: True
+
+320.
+  error type: FN
+  case_id: 1239276
+  current study_description: MRI lumbar spine wo/w con
+  prior study_description: L-SPINE^ROUTINE
+  current study_date: 2022-01-06
+  prior study_date: 2017-09-20
+  predicted probability: 0.477430
+  true label: True
+
+321.
+  error type: FN
+  case_id: 1672748
+  current study_description: CT angio coronary artery
+  prior study_description: CT chest w con
+  current study_date: 2023-06-09
+  prior study_date: 2020-07-17
+  predicted probability: 0.478755
+  true label: True
+
+322.
+  error type: FN
+  case_id: 1022686
+  current study_description: VAS transcranial doppler
+  prior study_description: CT brain perfusion w/cont
+  current study_date: 2021-04-13
+  prior study_date: 2021-04-13
+  predicted probability: 0.486138
+  true label: True
+
+323.
+  error type: FN
+  case_id: 1672748
+  current study_description: CT angio coronary artery
+  prior study_description: CT chest wo con
+  current study_date: 2023-06-09
+  prior study_date: 2021-09-10
+  predicted probability: 0.499715
+  true label: True
+
+324.
+  error type: FN
+  case_id: 1194452
+  current study_description: MRI cervical spine wo/w con
+  prior study_description: MRI THORACIC SPINE WITHOUT CNT
+  current study_date: 2021-11-13
+  prior study_date: 2018-01-20
+  predicted probability: 0.503151
   true label: True
 

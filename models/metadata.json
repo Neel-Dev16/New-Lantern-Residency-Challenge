@@ -1,0 +1,20 @@
+{
+  "threshold": 0.51,
+  "split": {
+    "type": "case_id",
+    "random_state": 42,
+    "train_cases": 796,
+    "validation_cases": 200,
+    "train_rows": 22487,
+    "validation_rows": 5127
+  },
+  "validation_metrics": {
+    "accuracy": 0.9368051492100644,
+    "precision": 0.8713826366559485,
+    "recall": 0.799410029498525,
+    "false_positives": 120,
+    "false_negatives": 204,
+    "true_positives": 813,
+    "true_negatives": 3990
+  }
+}
